@@ -10,6 +10,6 @@ namespace Poker
 
         int Wins { get; }
 
-        ICard[] Discard {get; set; }
+        ICard[] Discard { get; set; }
     }
 }

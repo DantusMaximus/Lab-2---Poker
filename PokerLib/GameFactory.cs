@@ -2,14 +2,15 @@ namespace Poker.Lib
 {
     public static class GameFactory
     {
-        public static IPokerGame NewGame(string[] playerNames)
+        public static Game NewGame(string[] playerNames)
         {
-            return null;
+            Game game = new Game(playerNames);
+            return game;
         }
 
-        public static IPokerGame LoadGame(string fileName)
+        public static Game LoadGame(string fileName)
         {
-            return null;
+
         }
     }
 }

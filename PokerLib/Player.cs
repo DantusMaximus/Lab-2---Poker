@@ -1,0 +1,3 @@
+class Player : Poker.IPlayer
+{
+}

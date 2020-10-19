@@ -1,0 +1,94 @@
+@startuml Design
+class GameFactory
+{
+    +Game NewGame(string[] playerNames)
+    +Game LoadGame(string fileName)
+}
+GameFactory ==> IPokerGame
+interface IPokerGame
+{
+    IPlayer[] Players
+    void RunGame();
+
+    void Exit();
+
+    void SaveGameAndExit(string fileName);
+
+    <<event>> NewDeal();
+
+    <<event>> SelectCardsToDiscard(IPlayer player);
+
+    <<event>> RecievedReplacementCards(IPlayer player)
+
+    <<event>> ShowAllHands();
+
+    <<event>> Winner(IPlayer winner);
+
+    <<event>> Draw(IPlayer[] tiedPlayers);
+}
+Game ..> IPokerGame
+class ScoreLogic{
+    void SetHandType(Player player)
+}
+Game --> ScoreLogic
+IPokerGame "1" ==o "1-5"IPlayer
+interface IPlayer{
+    string Name { get; }
+
+    ICard[] Hand { get; }
+
+    HandType HandType { get; }
+
+    int Wins { get; }
+
+    ICard[] Discard {get; set; }
+}
+Player ..> IPlayer
+IPlayer ==* HandType
+enum HandType
+{
+    HighCard,
+    Pair,
+    TwoPairs,
+    ThreeOfAKind,
+    Straight,
+    Flush,
+    FullHouse,
+    FourOfAKind,
+    StraightFlush,
+    RoyalStraightFlush,
+}
+IPlayer ==o ICard
+Deck ..> ICard
+interface ICard
+{
+    Suite Suite { get; }
+
+    Rank Rank { get; }
+}
+ICard ==* Rank
+ICard ==* Suite
+enum Rank{
+    Two = 2,
+    Three,
+    Four,
+    Five,
+    Six,
+    Seven,
+    Eight,
+    Nine,
+    Ten,
+    Jack,
+    Queen,
+    King,
+    Ace
+}
+enum Suite{
+    Clubs,
+    Diamonds,
+    Hearts,
+    Spades
+}
+
+
+@enduml

@@ -1,4 +1,5 @@
 @startuml Design
+left to right direction
 class GameFactory
 {
     +Game NewGame(string[] playerNames)
@@ -26,13 +27,52 @@ interface IPokerGame
 
     <<event>> Draw(IPlayer[] tiedPlayers);
 }
-Game ..> IPokerGame
-class ScoreLogic{
-    void SetHandType(Player player)
+class StandardGame
+{
+    -private Deck;
+    -IPlayer[] Players;
+    void RunGame();
+
+    void Exit();
+
+    void SaveGameAndExit(string fileName);
+
+    <<event>> NewDeal();
+
+    <<event>> SelectCardsToDiscard(IPlayer player);
+
+    <<event>> RecievedReplacementCards(IPlayer player)
+
+    <<event>> ShowAllHands();
+
+    <<event>> Winner(IPlayer winner);
+
+    <<event>> Draw(IPlayer[] tiedPlayers);
 }
-Game --> ScoreLogic
-IPokerGame "1" ==o "1-5"IPlayer
+StandardGame --> Player
+StandardGame --> Deck
+StandardGame ..> IPokerGame
+StandardGame --> GameFactory
+StandardGame --> ScoreLogic
+class ScoreLogic{
+    +void SetHandType(ICard[] Hand)
+    -HandType GetHighestHandType(IPlayer[] players)
+    +IPlayer[] DetermineWinners(List<IPlayer>)
+}
+ScoreLogic --> HandType
+IPokerGame "1" ==o "2-5"IPlayer
 interface IPlayer{
+    string Name { get; }
+
+    ICard[] Hand { get; }
+
+    HandType HandType { get; }
+
+    int Wins { get; }
+
+    ICard[] Discard {get; set; }
+}
+class Player{
     string Name { get; }
 
     ICard[] Hand { get; }
@@ -59,12 +99,25 @@ enum HandType
     RoyalStraightFlush,
 }
 IPlayer ==o ICard
-Deck ..> ICard
+Card ..> ICard
+Deck "1" --o "0-52" Card
+class Deck{
+    +void Shuffle()
+    +ICard[] Draw(int amount)
+    -ICard Draw()
+    List<ICard> Deck{get; set;}
+}
 interface ICard
 {
     Suite Suite { get; }
 
     Rank Rank { get; }
+}
+class Card
+{
+    +Suite Suite{ get; }
+
+    +Rank Rank{ get; }
 }
 ICard ==* Rank
 ICard ==* Suite

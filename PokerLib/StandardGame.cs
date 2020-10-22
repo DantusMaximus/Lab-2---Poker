@@ -1,58 +1,29 @@
+using System;
 namespace Poker.Lib{
-class StandardGame : IPokerGame
-{
-    IPlayer[] IPokerGame.Players { get; }
+    class StandardGame : IPokerGame
+    {
+        public IPlayer[] Players => throw new NotImplementedException();
 
-        void IPokerGame.RunGame(){
-            System.Console.WriteLine("default implementation");
-            IPokerGame.NewDeal newDeal += System.Console.WriteLine("tjena");
+        public event OnNewDeal NewDeal;
+        public event OnSelectCardsToDiscard SelectCardsToDiscard;
+        public event OnRecievedReplacementCards RecievedReplacementCards;
+        public event OnShowAllHands ShowAllHands;
+        public event OnWinner Winner;
+        public event OnDraw Draw;
+
+        public void Exit()
+        {
+            throw new NotImplementedException();
         }
 
-        void IPokerGame.Exit(){
+        public void RunGame()
+        {
+            throw new NotImplementedException();
         }
 
-        void IPokerGame.SaveGameAndExit(string fileName){
-
+        public void SaveGameAndExit(string fileName)
+        {
+            throw new NotImplementedException();
         }
-
-        void ShowAllHands(){
-            IPokerGame.ShapeChanged?.Invoke(this);
-        }
-        event OnNewDeal IPokerGame.NewDeal;
-
-        event OnSelectCardsToDiscard IPokerGame.SelectCardsToDiscard;
-
-        event OnRecievedReplacementCards IPokerGame.RecievedReplacementCards;
-
-        event OnShowAllHands IPokerGame.ShowAllHands;
-
-        event OnWinner IPokerGame.Winner;
-
-        event OnDraw IPokerGame.Draw;
-
-        void OnNewDeal(){
-            
-        }
-        OnSelectCardsToDiscard(IPlayer player){
-
-        }
-        void OnRecievedReplacementCards(IPlayer player){
-
-        }
-
-        
-
-    
-
-        void OnWinner(IPlayer winner){
-
-        }
-
-        void OnDraw(IPlayer[] tiedPlayers){
-            
-        }
-
-
-
-}
+    }
 }

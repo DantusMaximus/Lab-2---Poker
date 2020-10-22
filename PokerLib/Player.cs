@@ -1,6 +1,7 @@
 using Poker;
 class Player : Poker.IPlayer
 {
+    //Player(string name)
     string IPlayer.Name { get; }
 
         ICard[] IPlayer.Hand { get; }

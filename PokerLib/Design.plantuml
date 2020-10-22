@@ -33,7 +33,7 @@ class StandardGame
     +StandardGame(string[] playerNames)
     +StandardGame(string fileName)
     -Deck deck;
-    -IPlayer[] Players;
+    +IPlayer[] Players;
     void RunGame();
 
     void Exit();

@@ -1,10 +1,14 @@
 using Poker;
-class Player : Poker.IPlayer
+class Player : IPlayer
 {
-    //Player(string name)
-    string IPlayer.Name { get; }
+    private string name;
 
-        ICard[] IPlayer.Hand { get; }
+    public Player(string name)
+    {
+        this.name = name;
+    }
+    string IPlayer.Name { get => name; }
+    ICard[] IPlayer.Hand { get; }
 
         HandType IPlayer.HandType { get; }
 

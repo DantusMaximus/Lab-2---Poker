@@ -4,16 +4,16 @@ namespace Poker.Lib
     {
         public static IPokerGame NewGame(string[] playerNames)
         {
-           // StandardGame standardGame = new StandardGame(playerNames);
-            //return standardGame;
-            return null;
+            if(playerNames.Length > 5){ throw new System.Exception("Argt felmeddelande");}
+            if(playerNames.Length < 2){ throw new System.Exception("Argt felmeddelande");}
+            StandardGame standardGame = new StandardGame(playerNames);
+            return standardGame;
         }
 
         public static IPokerGame LoadGame(string fileName)
         {
-            //StandardGame standardGame = new StandardGame(fileName);
-            //return standardGame;
-            return null;
+            StandardGame standardGame = new StandardGame(fileName);
+            return standardGame;
         }
     }
 }

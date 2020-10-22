@@ -2,8 +2,8 @@
 left to right direction
 class GameFactory
 {
-    +Game NewGame(string[] playerNames)
-    +Game LoadGame(string fileName)
+    +IPokerGame NewGame(string[] playerNames)
+    +IPokerGame LoadGame(string fileName)
 }
 GameFactory ==> IPokerGame
 interface IPokerGame
@@ -27,9 +27,12 @@ interface IPokerGame
 
     <<event>> Draw(IPlayer[] tiedPlayers);
 }
+IPokerGame "1" ==o "2-5"IPlayer
 class StandardGame
 {
-    -private Deck;
+    +StandardGame(string[] playerNames)
+    +StandardGame(string fileName)
+    -Deck deck;
     -IPlayer[] Players;
     void RunGame();
 
@@ -55,12 +58,19 @@ StandardGame ..> IPokerGame
 StandardGame --> GameFactory
 StandardGame --> ScoreLogic
 class ScoreLogic{
-    +void SetHandType(ICard[] Hand)
-    -HandType GetHighestHandType(IPlayer[] players)
-    +IPlayer[] DetermineWinners(List<IPlayer>)
+    -static HandType GetHighestHandType(IPlayer[] players)
+    +static void SetHandType(ICard[] Hand)
+    +static IPlayer[] DetermineWinners(List<IPlayer>)
 }
-ScoreLogic --> HandType
-IPokerGame "1" ==o "2-5"IPlayer
+ScoreLogic --> Hand
+class Hand{
+    +Hand(IPlayer player)
+    +IPlayer{get;}
+    +List<ICard> Hand{ get; set;};
+    +HandType HandType{ get; set; }
+    +ICard HighCard{get; set;}
+}
+Hand --> IPlayer
 interface IPlayer{
     string Name { get; }
 
@@ -73,18 +83,19 @@ interface IPlayer{
     ICard[] Discard {get; set; }
 }
 class Player{
-    string Name { get; }
+    +Player()
+    +string Name { get; }
 
-    ICard[] Hand { get; }
+    +ICard[] Hand { get; }
 
-    HandType HandType { get; }
+    +HandType HandType { get; }
 
-    int Wins { get; }
+    +int Wins { get; }
 
-    ICard[] Discard {get; set; }
+    +ICard[] Discard {get; set; }
 }
 Player ..> IPlayer
-IPlayer ==* HandType
+IPlayer --* HandType
 enum HandType
 {
     HighCard,
@@ -102,6 +113,7 @@ IPlayer ==o ICard
 Card ..> ICard
 Deck "1" --o "0-52" Card
 class Deck{
+    +Deck()
     +void Shuffle()
     +ICard[] Draw(int amount)
     -ICard Draw()
@@ -115,8 +127,8 @@ interface ICard
 }
 class Card
 {
+    +Card(Rank rank, Suite suite)
     +Suite Suite{ get; }
-
     +Rank Rank{ get; }
 }
 ICard ==* Rank

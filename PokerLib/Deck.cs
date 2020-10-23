@@ -30,12 +30,12 @@ namespace Poker
                 n++;
             }
         }
-         public ICard[] Draw(int cardAmmount)
+         public List<ICard> Draw(int cardAmmount)
         {
-            ICard[] temp = new ICard[cardAmmount];
+            List<ICard> temp = new List<ICard>();
             for(int i = 0; i<cardAmmount;i++)
             {
-            temp[i] = Content[Content.Count-1];
+            temp.Add(Content[Content.Count-1]);
             Content.RemoveAt(Content.Count-1); 
             }
             return temp;

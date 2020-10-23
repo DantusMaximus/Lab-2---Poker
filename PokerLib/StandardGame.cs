@@ -38,12 +38,15 @@ namespace Poker.Lib
         {
             Deck deck = new Deck();
             //Deal cards to every player, untill everyone has 5 cards, with backside up
+            NewDeal();
             foreach(Player player in Players){
                 player.Give(deck.Draw(5));
             }
-            foreach(IPlayer player in Players){
+            foreach(Player player in Players){
                 SelectCardsToDiscard(player);
-                player.Discard;
+                player.RemoveCards();
+                player.Give(deck.Draw(5-player.hand.Count));
+                RecievedReplacementCards(player);
             }
             //Sort hands
             //Players choose discard

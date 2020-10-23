@@ -1,45 +1,43 @@
 using Poker;
+using System.Collections.Generic;
 class Player : IPlayer
 {
     private string name;
-    private ICard[] hand;
-    private int cardAmmount;
-    private int maxCardAmmount = 5;
+    public Hand hand;
     private ICard[] discard;
 
     public Player(string name)
     {
-        hand = new ICard[maxCardAmmount];
         discard = new ICard[0];
         this.name = name;
-        cardAmmount = 0;
+        hand = new Hand(this);
     }
-    public void Give(ICard[] givenCards)
+    public void Give(List<ICard> givenCards)
     {
-        //TODO felhantering
-        int i = 0;
-        while(cardAmmount < maxCardAmmount)
+        while (!hand.IsFull())
         {
-            hand[cardAmmount] = givenCards[i++];
-            cardAmmount++;
+            int lastIndex = givenCards.Count - 1;
+            hand.Add(givenCards[lastIndex]);
+            givenCards.RemoveAt(lastIndex);
+        }
+    }
+    public void RemoveCards()
+    {
+        foreach (var disc in discard)
+        {
+            if (hand.Contains(disc))
+            {
+                hand.Remove(disc);
+            }
         }
     }
 
     string IPlayer.Name { get => name; }
-    ICard[] IPlayer.Hand { get => hand; }
+    ICard[] IPlayer.Hand { get => hand.Cards.ToArray(); }
 
     HandType IPlayer.HandType { get; }
 
     int IPlayer.Wins { get; }
 
-    ICard[] IPlayer.Discard { get{return discard;} set{
-        discard = new ICard[value.Length];
-        discard = value;
-        for(int i = 0; i< cardAmmount;i++){
-            if(discard[i].Equals(hand[i])){
-
-            }
-        }
-    }
-    }
+    ICard[] IPlayer.Discard { get => discard; set { discard = value; } }
 }

@@ -20,7 +20,7 @@ namespace Poker.Lib
             }
         }
 
-        public IPlayer[] Players { get; }
+        public IPlayer[] Players { get; set;}
 
         public event OnNewDeal NewDeal;
         public event OnSelectCardsToDiscard SelectCardsToDiscard;
@@ -37,9 +37,17 @@ namespace Poker.Lib
         public void RunGame()
         {
             Deck deck = new Deck();
-            //Deal cards to every player, 1 to each in order untill everyone has 5 cards, with backside up
+            //Deal cards to every player, untill everyone has 5 cards, with backside up
+            foreach(Player player in Players){
+                player.Give(deck.Draw(5));
+            }
+            foreach(IPlayer player in Players){
+                SelectCardsToDiscard(player);
+                player.Discard;
+            }
             //Sort hands
             //Players choose discard
+
             //Players get cards from deck
             //Determine winner
             //Redo

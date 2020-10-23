@@ -6,6 +6,7 @@ namespace Poker
         private List<ICard> Content { get; set; }
         public Deck()
         {
+            Content = new List<ICard>();
             for (int rank = 2; rank < 15; rank++)
             {
                 for (int suite = 0; suite < 4; suite++)
@@ -26,12 +27,17 @@ namespace Poker
                 var temp = Content[swapIndex];
                 Content[swapIndex] = Content[n];
                 Content[n] = temp;
+                n++;
             }
         }
-         public ICard Draw()
+         public ICard[] Draw(int cardAmmount)
         {
-            var temp = Content[Content.Count-1];
-            Content.RemoveAt(Content.Count-1);
+            ICard[] temp = new ICard[cardAmmount];
+            for(int i = 0; i<cardAmmount;i++)
+            {
+            temp[i] = Content[Content.Count-1];
+            Content.RemoveAt(Content.Count-1); 
+            }
             return temp;
         }
         private bool Exists(ICard card)

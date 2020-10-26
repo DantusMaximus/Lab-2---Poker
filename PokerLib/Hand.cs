@@ -8,6 +8,9 @@ namespace Poker
         IPlayer player;
         public int Count { get; set; }
         public int MaxCardAmmount { get; set; }
+        public List<ICard> Cards { get => cards; set { cards = value; } }
+        public IPlayer Player { get => player; }
+        public HandType HandType { get; set; }
         public Hand(IPlayer player)
         {
             this.player = player;
@@ -43,9 +46,5 @@ namespace Poker
         {
             return cards.Count == 5;
         }
-        public List<ICard> Cards { get => cards; set { cards = value; } }
-        IPlayer Player { get; }
-        HandType HandType { get; set; }
-
     }
 }

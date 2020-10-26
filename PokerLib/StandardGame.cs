@@ -1,11 +1,14 @@
-using System;
+using System.Collections.Generic;
+
 namespace Poker.Lib
 {
     class StandardGame : IPokerGame
     {
         private string fileName;
         private string[] playerNames;
-
+        private List<IPlayer> players;
+        private Deck deck;        
+        public IPlayer[] Players { get => players.ToArray();}
         public StandardGame(string fileName)//TODO implement a way to load saved files
         {
             this.fileName = fileName;
@@ -13,15 +16,12 @@ namespace Poker.Lib
 
         public StandardGame(string[] playerNames)
         {
-            Players = new IPlayer[playerNames.Length];
+            players = new List<IPlayer>();
             for (int i = 0; i < playerNames.Length; i++)
             {
-                Players[i] = new Player(playerNames[i]);
+                players.Add(new Player(playerNames[i]));
             }
         }
-
-        public IPlayer[] Players { get; set;}
-
         public event OnNewDeal NewDeal;
         public event OnSelectCardsToDiscard SelectCardsToDiscard;
         public event OnRecievedReplacementCards RecievedReplacementCards;
@@ -31,36 +31,60 @@ namespace Poker.Lib
 
         public void Exit()
         {
-            throw new NotImplementedException();
+            throw new System.NotImplementedException();
         }
 
         public void RunGame()
         {
-            Console.OutputEncoding = System.Text.Encoding.UTF8;
-            Deck deck = new Deck();
-            //Deal cards to every player, untill everyone has 5 cards, with backside up
-            NewDeal();
-            foreach(Player player in Players){
-                player.Give(deck.Draw(5));
-            }
-            foreach(Player player in Players){
-                SelectCardsToDiscard(player);
-                player.RemoveCards();
-                player.Give(deck.Draw(5-player.hand.Count));
-                RecievedReplacementCards(player);
-            }
-            //Sort hands
-            //Players choose discard
-
-            //Players get cards from deck
+            System.Console.OutputEncoding = System.Text.Encoding.UTF8;
+            deck = new Deck();
+            InitialDeal();
+            Playerturns();
+            DetermineWinner();
             //Determine winner
             //Redo
-            throw new NotImplementedException();
+            throw new System.NotImplementedException();
+        }
+
+        private void DetermineWinner()
+        {   
+            List<IPlayer> winners = ScoreLogic.DetermineWinners(players);
+            ShowAllHands();
+            if(winners.Count == 1){
+                Winner(winners.ToArray()[0]);
+            }
+            else{
+                Draw(winners.ToArray());
+            }
+            throw new System.NotImplementedException();
         }
 
         public void SaveGameAndExit(string fileName)
         {
-            throw new NotImplementedException();
+            throw new System.NotImplementedException();
         }
+        private void InitialDeal(){
+            NewDeal();
+            foreach(Player player in players){
+                player.Give(deck.Draw(5));
+                player.hand.Cards = ScoreLogic.SortByRankAndSuite(player.hand.Cards);
+            }
+            
+        }
+        
+        
+        private void Playerturns(){
+            foreach(Player player in players){
+                SelectCardsToDiscard(player);
+                player.RemoveCards();
+                Hand hand = player.hand;
+                player.Give(deck.Draw(5-hand.Count));
+                hand.Cards = ScoreLogic.SortByRankAndSuite(hand.Cards);
+                hand.HandType = ScoreLogic.DetermineHandType(hand.Cards);
+                RecievedReplacementCards(player);
+            }
+        }
+        
+        
     }
 }

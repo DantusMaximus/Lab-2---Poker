@@ -6,6 +6,7 @@ class Player : IPlayer
     public Hand hand;
     private ICard[] discard;
 
+
     public Player(string name)
     {
         discard = new ICard[0];

@@ -15,7 +15,12 @@ namespace Poker
         }
         public Hand(IPlayer player, List<ICard> cards)
         {
+            this.player = player;
+            this.cards = cards;
+        }
 
+        public Hand Clone(){
+            return new Hand(player, cards);
         }
         public void Add(ICard card)
         {

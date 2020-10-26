@@ -36,6 +36,7 @@ namespace Poker.Lib
 
         public void RunGame()
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             Deck deck = new Deck();
             //Deal cards to every player, untill everyone has 5 cards, with backside up
             NewDeal();

@@ -37,7 +37,7 @@ namespace Poker.Lib
         public void RunGame()
         {
             System.Console.OutputEncoding = System.Text.Encoding.UTF8;
-            deck = new Deck();
+            deck = new CheatDeck(); //TODO:byt till "Deck"
             InitialDeal();
             Playerturns();
             DetermineWinner();

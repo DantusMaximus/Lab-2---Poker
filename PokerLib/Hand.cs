@@ -6,7 +6,7 @@ namespace Poker
     {
         List<ICard> cards;
         IPlayer player;
-        public int Count { get; set; }
+        public int Count { get => cards.Count; }
         public int MaxCardAmmount { get; set; }
         public List<ICard> Cards { get => cards; set { cards = value; } }
         public IPlayer Player { get => player; }

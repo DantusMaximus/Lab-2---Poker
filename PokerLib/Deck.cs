@@ -3,7 +3,7 @@ namespace Poker
 {
     class Deck
     {
-        private List<ICard> Content { get; set; }
+        protected List<ICard> Content { get; set; }
         public Deck()
         {
             Content = new List<ICard>();
@@ -35,6 +35,7 @@ namespace Poker
             List<ICard> temp = new List<ICard>();
             for(int i = 0; i<cardAmmount;i++)
             {
+            //System.Console.WriteLine("giving card #" + i);
             temp.Add(Content[Content.Count-1]);
             Content.RemoveAt(Content.Count-1); 
             }

@@ -12,14 +12,15 @@ namespace Poker
             var hand = new List<ICard>(inputHand);
             SortByRankAndSuite(hand);
             //TODO: ROYAL STRAIGHT FLUSH
-            if(IsStraightFlush(hand))    { return HandType.StraightFlush;}
-            if(IsFourOfAKind(hand))      { return HandType.FourOfAKind;}
-            if(IsFullHouse(hand))        { return HandType.FullHouse;}
-            if(IsFlush(hand))            { return HandType.Flush;}
-            if(IsStraight(hand))         { return HandType.Straight;}
-            if(IsThreeOfAKind(hand))     { return HandType.ThreeOfAKind;}
-            if(IsTwoPair(hand))          { return HandType.TwoPairs;}
-            if(IsPair(hand))             { return HandType.Pair;}
+            if(IsRoyalStraightFlush(hand)){ return HandType.RoyalStraightFlush;}
+            if(IsStraightFlush(hand))     { return HandType.StraightFlush;}
+            if(IsFourOfAKind(hand))       { return HandType.FourOfAKind;}
+            if(IsFullHouse(hand))         { return HandType.FullHouse;}
+            if(IsFlush(hand))             { return HandType.Flush;}
+            if(IsStraight(hand))          { return HandType.Straight;}
+            if(IsThreeOfAKind(hand))      { return HandType.ThreeOfAKind;}
+            if(IsTwoPair(hand))           { return HandType.TwoPairs;}
+            if(IsPair(hand))              { return HandType.Pair;}
             return HandType.HighCard;
         }
         private static bool IsRoyalStraightFlush(List<ICard> hand)
@@ -29,7 +30,7 @@ namespace Poker
         }
         private static bool IsStraightFlush(List<ICard> hand)
         {
-            if(IsFlush(hand) && IsFlush(hand)){ return true;}
+            if(IsFlush(hand) && IsStraight(hand)){ return true;}
             return false;
         }
         private static bool IsFourOfAKind(List<ICard> hand)
@@ -49,7 +50,10 @@ namespace Poker
 
         private static bool IsFlush(List<ICard> hand)
         {
-            if(hand.Select(h => h.Suite == hand[0].Suite).Count() == 5){ return true;}
+            if(hand.FindAll(h => h.Suite == hand[0].Suite).Count() == 5){ 
+                Console.WriteLine("hej");
+                return true;
+            }
             return false;
         }
 
@@ -63,7 +67,7 @@ namespace Poker
 
             bool isIncrementalByOne(int LastIndexToCheck){
                 for(int i = 0; i < LastIndexToCheck -1; i++){
-                    if(hand[i+1].Rank == hand[i].Rank + 1 ){return false;}                    
+                    if((int)hand[i+1].Rank != (int)hand[i].Rank + 1 ){return false;}                    
                 }   
                 return true;
             }
@@ -140,7 +144,7 @@ namespace Poker
 
         private static HandType GetHighestHandType(List<Hand> hands)
         {
-           return hands.Select(hand => hand.HandType).Max();
+           return hands.OrderBy(hand =>  hand.HandType).Last().HandType;
         }
         //TODO: test
         public static List<ICard> SortByRankAndSuite(List<ICard> cards)
@@ -163,7 +167,7 @@ namespace Poker
         }
         private static bool IsAmmountOfMost(int ammount,List<ICard> cards ){
             Rank mostPop = MostPopularCard(cards);
-            int amountOfMost = cards.Select(cards => cards.Rank == mostPop).Count();
+            int amountOfMost = cards.FindAll(cards => cards.Rank == mostPop).Count();
             if(amountOfMost == ammount){return true;}
             return false;
         }
@@ -182,7 +186,6 @@ namespace Poker
             var sorting = hand.HandType;
             List<ICard> cards = hand.Cards;
             cards.Reverse();
-
             switch(sorting){
                 
                 case HandType.RoyalStraightFlush:
@@ -274,8 +277,8 @@ namespace Poker
                 {
                     Rank popRank = MostPopularCard(cards);
                     List<ICard> pair = cards.FindAll(card => card.Rank == popRank);
-                    List<ICard> rest = cards.FindAll(card =>card.Rank != popRank);
-                    rest = (List<ICard>)rest.OrderBy(card => card.Rank);
+                    List<ICard> rest = cards.FindAll(card => card.Rank != popRank);
+                    rest.OrderBy(card => card.Rank);
                     cards = new List<ICard>();
                     cards.AddRange(pair);
                     cards.AddRange(rest);
@@ -293,7 +296,16 @@ namespace Poker
                 handRanks += card.Rank;
             }
 
-            System.Console.WriteLine("type is " + sorting + " and card ranks are: " + cards);
+            //REMOVE ME===========
+            String cardRanks = "";
+            for (int i = 0; i <5; i++){
+                cardRanks += cards[i].Rank + " ";
+            }
+
+            //====================
+
+
+            System.Console.WriteLine("type is " + sorting + " and card ranks are: " + cardRanks);
             return new Hand(hand.Player, cards);
         }
 

@@ -36,7 +36,7 @@ class Player : IPlayer
     string IPlayer.Name { get => name; }
     ICard[] IPlayer.Hand { get => hand.Cards.ToArray(); }
 
-    HandType IPlayer.HandType { get; }
+    HandType IPlayer.HandType { get => hand.HandType; }
 
     int IPlayer.Wins { get; }
 

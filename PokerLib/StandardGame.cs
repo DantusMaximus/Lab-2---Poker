@@ -8,6 +8,7 @@ namespace Poker.Lib
         private string[] playerNames;
         private List<IPlayer> players;
         private Deck deck;        
+        private bool onGoing;
         public IPlayer[] Players { get => players.ToArray();}
         public StandardGame(string fileName)//TODO implement a way to load saved files
         {
@@ -31,19 +32,23 @@ namespace Poker.Lib
 
         public void Exit()
         {
-            throw new System.NotImplementedException();
+            onGoing = false;
         }
 
         public void RunGame()
         {
             System.Console.OutputEncoding = System.Text.Encoding.UTF8;
+            onGoing = true;
+            while(onGoing){
+                fullGame();
+            }               
+        }
+
+        private void fullGame(){
             deck = new CheatDeck(); //TODO:byt till "Deck"
             InitialDeal();
             Playerturns();
-            DetermineWinner();
-            //Determine winner
-            //Redo
-            throw new System.NotImplementedException();
+            DetermineWinner();  
         }
 
         private void DetermineWinner()
@@ -51,16 +56,18 @@ namespace Poker.Lib
             List<IPlayer> winners = ScoreLogic.DetermineWinners(players);
             ShowAllHands();
             if(winners.Count == 1){
+                Player theWinner = (Player)winners[0];
+                theWinner.JustWon();
                 Winner(winners.ToArray()[0]);
             }
-            else{
+            else{            
                 Draw(winners.ToArray());
-            }
-            throw new System.NotImplementedException();
+            }            
         }
 
         public void SaveGameAndExit(string fileName)
         {
+            
             throw new System.NotImplementedException();
         }
         private void InitialDeal(){

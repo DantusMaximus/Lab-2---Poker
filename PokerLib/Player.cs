@@ -5,13 +5,18 @@ class Player : IPlayer
     private string name;
     public Hand hand;
     private ICard[] discard;
-
+    private int wins;
 
     public Player(string name)
-    {
+        : this(name,0){
+
+    }
+    public Player(string name, int wins){        
+        this.wins = wins;
         discard = new ICard[0];
         this.name = name;
         hand = new Hand(this);
+        this.wins = wins;
     }
     public void Give(List<ICard> givenCards)
     {
@@ -32,13 +37,16 @@ class Player : IPlayer
             }
         }
     }
+    public void JustWon(){
+        wins++;
+    }
 
     string IPlayer.Name { get => name; }
     ICard[] IPlayer.Hand { get => hand.Cards.ToArray(); }
 
     HandType IPlayer.HandType { get => hand.HandType; }
 
-    int IPlayer.Wins { get; }
+    int IPlayer.Wins { get => wins; }
 
     ICard[] IPlayer.Discard { get => discard; set { discard = value; } }
 }

@@ -40,7 +40,13 @@ class Player : IPlayer
     public void JustWon(){
         wins++;
     }
-
+    public override string ToString()
+    {        
+            string playerTXT = name;
+            playerTXT += " ";
+            playerTXT += wins;          
+            return playerTXT;
+    }
     string IPlayer.Name { get => name; }
     ICard[] IPlayer.Hand { get => hand.Cards.ToArray(); }
 
@@ -49,4 +55,6 @@ class Player : IPlayer
     int IPlayer.Wins { get => wins; }
 
     ICard[] IPlayer.Discard { get => discard; set { discard = value; } }
+
+
 }

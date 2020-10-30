@@ -13,6 +13,7 @@ namespace Poker.Lib
         public StandardGame(string fileName)//TODO implement a way to load saved files
         {
             this.fileName = fileName;
+            players = FileManager.LoadGame(fileName);
         }
 
         public StandardGame(string[] playerNames)
@@ -45,7 +46,7 @@ namespace Poker.Lib
         }
 
         private void fullGame(){
-            deck = new CheatDeck(); //TODO:byt till "Deck"
+            deck = new Deck(); //TODO:byt till "Deck"
             InitialDeal();
             Playerturns();
             DetermineWinner();  
@@ -67,8 +68,8 @@ namespace Poker.Lib
 
         public void SaveGameAndExit(string fileName)
         {
-            
-            throw new System.NotImplementedException();
+            FileManager.SaveGame(fileName, players);
+            Exit();
         }
         private void InitialDeal(){
             NewDeal();

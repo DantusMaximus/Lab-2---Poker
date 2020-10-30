@@ -54,7 +54,7 @@ class StandardGame
 }
 StandardGame --> Player
 StandardGame --> Deck
-StandardGame ..> IPokerGame
+StandardGame ..|> IPokerGame
 StandardGame --> GameFactory
 StandardGame --> ScoreLogic
 class ScoreLogic{
@@ -94,7 +94,7 @@ class Player{
 
     +ICard[] Discard {get; set; }
 }
-Player ..> IPlayer
+Player ..|> IPlayer
 IPlayer --* HandType
 enum HandType
 {
@@ -110,7 +110,7 @@ enum HandType
     RoyalStraightFlush,
 }
 IPlayer ==o ICard
-Card ..> ICard
+Card ..|> ICard
 Deck "1" --o "0-52" Card
 class Deck{
     +Deck()

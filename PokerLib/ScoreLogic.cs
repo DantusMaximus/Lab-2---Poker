@@ -11,25 +11,25 @@ namespace Poker
         {
             var hand = new List<ICard>(inputHand);
             SortByRankAndSuite(hand);
-            if(IsRoyalStraightFlush(hand)){ return HandType.RoyalStraightFlush;}
-            if(IsStraightFlush(hand))     { return HandType.StraightFlush;}
-            if(IsFourOfAKind(hand))       { return HandType.FourOfAKind;}
-            if(IsFullHouse(hand))         { return HandType.FullHouse;}
-            if(IsFlush(hand))             { return HandType.Flush;}
-            if(IsStraight(hand))          { return HandType.Straight;}
-            if(IsThreeOfAKind(hand))      { return HandType.ThreeOfAKind;}
-            if(IsTwoPair(hand))           { return HandType.TwoPairs;}
-            if(IsPair(hand))              { return HandType.Pair;}
+            if (IsRoyalStraightFlush(hand)) { return HandType.RoyalStraightFlush; }
+            if (IsStraightFlush(hand)) { return HandType.StraightFlush; }
+            if (IsFourOfAKind(hand)) { return HandType.FourOfAKind; }
+            if (IsFullHouse(hand)) { return HandType.FullHouse; }
+            if (IsFlush(hand)) { return HandType.Flush; }
+            if (IsStraight(hand)) { return HandType.Straight; }
+            if (IsThreeOfAKind(hand)) { return HandType.ThreeOfAKind; }
+            if (IsTwoPair(hand)) { return HandType.TwoPairs; }
+            if (IsPair(hand)) { return HandType.Pair; }
             return HandType.HighCard;
         }
         private static bool IsRoyalStraightFlush(List<ICard> hand)
         {
-            if(IsStraightFlush(hand) && hand[0].Rank == Rank.Ten){ return true;}
+            if (IsStraightFlush(hand) && hand[0].Rank == Rank.Ten) { return true; }
             return false;
         }
         private static bool IsStraightFlush(List<ICard> hand)
         {
-            if(IsFlush(hand) && IsStraight(hand)){ return true;}
+            if (IsFlush(hand) && IsStraight(hand)) { return true; }
             return false;
         }
         private static bool IsFourOfAKind(List<ICard> hand)
@@ -39,17 +39,19 @@ namespace Poker
 
         private static bool IsFullHouse(List<ICard> hand)
         {
-            if(!IsThreeOfAKind(hand)){
+            if (!IsThreeOfAKind(hand))
+            {
                 return false;
             }
-            if(hand[0].Rank != hand[1].Rank ){ return false;}
-            if(hand[3].Rank != hand[4].Rank ){ return false;}
-            return true;            
+            if (hand[0].Rank != hand[1].Rank) { return false; }
+            if (hand[3].Rank != hand[4].Rank) { return false; }
+            return true;
         }
 
         private static bool IsFlush(List<ICard> hand)
         {
-            if(hand.FindAll(h => h.Suite == hand[0].Suite).Count() == 5){ 
+            if (hand.FindAll(h => h.Suite == hand[0].Suite).Count() == 5)
+            {
                 Console.WriteLine("hej");
                 return true;
             }
@@ -57,17 +59,19 @@ namespace Poker
         }
 
         private static bool IsStraight(List<ICard> hand)
-        {   
-            if(isIncrementalByOne(4)){return true;}
-            
-            if( hand[4].Rank != Rank.Ace) {return false;}
-            if(isIncrementalByOne(3)){ return true;}
-            return false;            
+        {
+            if (isIncrementalByOne(4)) { return true; }
 
-            bool isIncrementalByOne(int LastIndexToCheck){
-                for(int i = 0; i < LastIndexToCheck -1; i++){
-                    if((int)hand[i+1].Rank != (int)hand[i].Rank + 1 ){return false;}                    
-                }   
+            if (hand[4].Rank != Rank.Ace) { return false; }
+            if (isIncrementalByOne(3)) { return true; }
+            return false;
+
+            bool isIncrementalByOne(int LastIndexToCheck)
+            {
+                for (int i = 0; i < LastIndexToCheck - 1; i++)
+                {
+                    if ((int)hand[i + 1].Rank != (int)hand[i].Rank + 1) { return false; }
+                }
                 return true;
             }
         }
@@ -81,15 +85,15 @@ namespace Poker
         {
             var tempHand = new List<ICard>(hand);
             //first pair
-            if(!IsPair(tempHand)){ return false;}
+            if (!IsPair(tempHand)) { return false; }
             Rank mostPop = MostPopularCard(tempHand);
 
             //remove first pair
             tempHand.RemoveAll(card => card.Rank == mostPop);
 
             //second pair
-            if(!IsPair(tempHand)){ return false;}
-            return true;           
+            if (!IsPair(tempHand)) { return false; }
+            return true;
         }
 
         private static bool IsPair(List<ICard> hand)
@@ -101,7 +105,8 @@ namespace Poker
         {
             List<Hand> hands = new List<Hand>();
             List<IPlayer> winners = new List<IPlayer>();
-            foreach(Player player in players){
+            foreach (Player player in players)
+            {
                 hands.Add(player.hand);
             }
 
@@ -109,18 +114,22 @@ namespace Poker
             System.Console.WriteLine("highest handtype is: " + highHand);
             List<Hand> highestHands = hands.FindAll(hand => hand.HandType == highHand);
 
-            if(highestHands.Count() == 1){
+            if (highestHands.Count() == 1)
+            {
                 winners.Add(highestHands[0].Player);
                 return winners;
             }
-            
+
             highestHands = SortByPointCards(highestHands);
-            
-            for(int i = 0; i <4; i++){
+
+            for (int i = 0; i < hands[0].Count; i++)
+            {
 
                 Rank highRank = Rank.Two;
-                foreach(Hand hand in highestHands){
-                    if (hand.Cards[i].Rank > highRank){
+                foreach (Hand hand in highestHands)
+                {
+                    if (hand.Cards[i].Rank > highRank)
+                    {
                         highRank = hand.Cards[i].Rank;
                     }
                 }
@@ -130,190 +139,182 @@ namespace Poker
                 highestHands.RemoveAll(hand => hand.Cards[i].Rank != highRank);
             }
             winners = new List<IPlayer>();
-            
-            foreach(Hand hand in highestHands){
+
+            foreach (Hand hand in highestHands)
+            {
                 winners.Add(hand.Player);
             }
             return winners;
-
-            throw new System.NotImplementedException();
         }
 
-    
+
 
         private static HandType GetHighestHandType(List<Hand> hands)
         {
-           return hands.OrderBy(hand =>  hand.HandType).Last().HandType;
+            return hands.OrderBy(hand => hand.HandType).Last().HandType;
         }
         //TODO: test
         public static List<ICard> SortByRankAndSuite(List<ICard> cards)
-        {                      
+        {
             var query = cards.OrderBy(card => (int)card.Suite);
-            query = cards.OrderBy(card => (int)card.Rank);     
+            query = cards.OrderBy(card => (int)card.Rank);
             cards = new List<ICard>();
-            foreach(ICard card in query){
+            foreach (ICard card in query)
+            {
                 cards.Add(card);
             }
-           
-            return cards;       
+
+            return cards;
         }
-        private static Rank MostPopularCard(List<ICard> cards){
+        private static Rank MostPopularCard(List<ICard> cards)
+        {
             Rank mostPop = (from l in cards
-                         group l by l.Rank into gr
-                         orderby gr.Count() descending
-                         select gr.Key).First();
+                            group l by l.Rank into gr
+                            orderby gr.Count() descending
+                            select gr.Key).First();
             return mostPop;
         }
-        private static bool IsAmmountOfMost(int ammount,List<ICard> cards ){
+        private static bool IsAmmountOfMost(int ammount, List<ICard> cards)
+        {
             Rank mostPop = MostPopularCard(cards);
             int amountOfMost = cards.FindAll(cards => cards.Rank == mostPop).Count();
-            if(amountOfMost == ammount){return true;}
+            if (amountOfMost == ammount) { return true; }
             return false;
         }
 
-          private static List<Hand> SortByPointCards(List<Hand> hands)
+        private static List<Hand> SortByPointCards(List<Hand> hands)
         {
             List<Hand> result = new List<Hand>();
-            foreach(Hand hand in hands){
+            foreach (Hand hand in hands)
+            {
                 result.Add(SortByPointCards(hand));
             }
             return result;
         }
 
-          private static Hand SortByPointCards(Hand hand)
+        private static Hand SortByPointCards(Hand hand)
         {
             var sorting = hand.HandType;
             List<ICard> cards = hand.Cards;
             cards.Reverse();
-            switch(sorting){
-                
+            switch (sorting)
+            {
+
                 case HandType.RoyalStraightFlush:
-
-                
-                break;
-
-                case HandType.StraightFlush:
-                {
-                    if (cards[4].Rank != Rank.Ace)
                     {
+                        //already sorted for scenario
                         break;
                     }
-                    ICard temp = cards[4];
-                    cards[4] = cards[0];
-                    cards[0] = temp;
-
-                    break;
-                }
+                case HandType.StraightFlush:
+                    {
+                        StraightCase();
+                        break;
+                    }
                 case HandType.FourOfAKind:
-                {
-                Rank popRank = MostPopularCard(cards);
-                List<ICard> fourOfAKind = cards.FindAll(card =>card.Rank == popRank);
-                var rest = cards.FindAll(card => card.Rank != popRank);
-                cards = fourOfAKind;
-                cards.AddRange(rest);
-                 break;
-                }
+                    {
+                        cards = OrderByPopThenRank();
+                        break;
+                    }
 
                 case HandType.FullHouse:
-                {
-                Rank popRank = MostPopularCard(cards);
-                var threes = cards.FindAll(card =>card.Rank == popRank);
-                var twoes = cards.FindAll(card =>card.Rank != popRank);
-                cards = threes;
-                cards.AddRange(twoes);
-                 break;           
-                }
-
-                case HandType.Flush:
-                {
-                 break;
-                }
-
-                case HandType.Straight:
-                {
-                    if (cards[4].Rank != Rank.Ace){
+                    {
+                        cards = OrderByPopThenRank();
                         break;
                     }
-                    if(cards[3].Rank != Rank.King){
-                    ICard temp = cards[4];
-                    cards[4] = cards[0];
-                    cards[0] = temp;
-                    }
-                 break;
-                }
-                case HandType.ThreeOfAKind:
-                {
-                    Rank popRank = MostPopularCard(cards);
-                    List<ICard> threes = cards.FindAll(card => card.Rank == popRank);
-                    List<ICard> rest = cards.FindAll(card => card.Rank != popRank);
-                    cards = threes;
-                    cards.AddRange(rest);
-                 break;
-                }
-                case HandType.TwoPairs:
-                {
-                    Rank popRank = MostPopularCard(cards);
-                    List<ICard> pair = cards.FindAll(card => card.Rank == popRank);
-                    List<ICard> rest = cards.FindAll(card =>card.Rank != popRank);
-                    
-                    Rank otherPopRank = MostPopularCard(cards);
-                    List<ICard> otherPair = cards.FindAll(card => card.Rank == otherPopRank);
-                    rest = cards.FindAll(card =>card.Rank != popRank);
 
-                    cards = new List<ICard>();
-                    if(popRank > otherPopRank){
-                        cards.AddRange(pair);
-                        cards.AddRange(otherPair);
-                    }else{
-                        cards.AddRange(otherPair);
-                        cards.AddRange(pair);   
+                case HandType.Flush:
+                    {
+                        //already sorted for scenario
+                        break;
                     }
-                    cards.AddRange(rest);
-                    
-                 break;
-                 }
-                case HandType.Pair:        
-                {
-                    Rank popRank = MostPopularCard(cards);
-                    List<ICard> pair = cards.FindAll(card => card.Rank == popRank);
-                    List<ICard> rest = cards.FindAll(card => card.Rank != popRank);
-                    rest.OrderBy(card => card.Rank);
-                    cards = new List<ICard>();
-                    cards.AddRange(pair);
-                    cards.AddRange(rest);
-                    break;
-                } 
+
+                case HandType.Straight:
+                    {
+                        StraightCase();
+                        break;
+                    }
+                case HandType.ThreeOfAKind:
+                    {
+                        cards = OrderByPopThenRank();
+                        break;
+
+                    }
+                case HandType.TwoPairs:
+                    {
+                        List<ICard> pair = TakeAndRemove(MostPopularCard(cards));
+                        List<ICard> otherPair = TakeAndRemove(MostPopularCard(cards));
+                        ICard loneCard = TakeAndRemove(MostPopularCard(cards))[0];
+
+                        if (pair[0].Rank > otherPair[0].Rank)
+                        {
+                            cards.AddRange(pair);
+                            cards.AddRange(otherPair);
+                        }
+                        else
+                        {
+                            cards.AddRange(otherPair);
+                            cards.AddRange(pair);
+                        }
+
+                        cards.Add(loneCard);
+                        break;
+
+                    }
+                case HandType.Pair:
+                    {
+                        cards = OrderByPopThenRank();
+                        break;
+                    }
                 case HandType.HighCard:
-                
-                    cards.OrderBy(Card => Card.Rank);
-                 break;
-                 List<ICard> OrderByPopThenRank(List<ICard> cards){                  
-                    Rank popRank = MostPopularCard(cards);
-                    List<ICard> pair = cards.FindAll(card => card.Rank == popRank);
-                    List<ICard> rest = cards.FindAll(card => card.Rank != popRank);
-                    rest.OrderBy(card => card.Rank);
-                    cards = new List<ICard>();
-                    cards.AddRange(pair);
-                    cards.AddRange(rest);
-                    return cards;               
-                     
-                 }
-                
+                    {
+                        cards.OrderBy(Card => Card.Rank);
+                        break;
+                    }
             }
             String handRanks = "";
-            foreach(Card card in hand.Cards){
+            foreach (Card card in hand.Cards)
+            {
                 handRanks += card.Rank;
             }
 
             //REMOVE ME===========
             String cardRanks = "";
-            for (int i = 0; i <5; i++){
+            for (int i = 0; i < 5; i++)
+            {
                 cardRanks += cards[i].Rank + " ";
             }
             System.Console.WriteLine("type is " + sorting + " and card ranks are: " + cardRanks);
             //====================
             return new Hand(hand.Player, cards);
+            
+            void StraightCase()
+            {
+                if (cards[0].Rank == Rank.Ace)
+                {
+                    ICard ace = cards[0];
+                    cards.Remove(ace);
+                    cards.Add(ace);
+                }
+            }
+            List<ICard> TakeAndRemove(Rank rank)
+            {
+                List<ICard> relevantCards = cards.FindAll(card => card.Rank == rank);
+                cards.RemoveAll(card => card.Rank == rank);
+                return relevantCards;
+            }
+            List<ICard> OrderByPopThenRank()
+            {
+                Rank popRank = MostPopularCard(cards);
+                List<ICard> pair = cards.FindAll(card => card.Rank == popRank);
+                List<ICard> rest = cards.FindAll(card => card.Rank != popRank);
+                rest.OrderBy(card => card.Rank);
+                cards = new List<ICard>();
+                cards.AddRange(pair);
+                cards.AddRange(rest);
+                return cards;
+            }
+
         }
 
-}
+    }
 }

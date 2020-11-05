@@ -18,7 +18,7 @@ namespace Poker.Lib
 
         public StandardGame(string[] playerNames)
         {
-            deck = new Deck();
+            deck = new CheatDeck();
             
             players = new List<IPlayer>();
             for (int i = 0; i < playerNames.Length; i++)

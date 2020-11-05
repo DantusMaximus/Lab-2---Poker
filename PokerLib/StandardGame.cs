@@ -7,7 +7,7 @@ namespace Poker.Lib
         private string fileName;
         private string[] playerNames;
         private List<IPlayer> players;
-        private Deck deck;        
+        private Deck deck;       
         private bool onGoing;
         public IPlayer[] Players { get => players.ToArray();}
         public StandardGame(string fileName)//TODO implement a way to load saved files
@@ -18,6 +18,8 @@ namespace Poker.Lib
 
         public StandardGame(string[] playerNames)
         {
+            deck = new Deck();
+            
             players = new List<IPlayer>();
             for (int i = 0; i < playerNames.Length; i++)
             {
@@ -46,16 +48,16 @@ namespace Poker.Lib
         }
 
         private void fullGame(){
-            deck = new Deck(); //TODO:byt till "Deck"
             InitialDeal();
             Playerturns();
-            DetermineWinner();  
+            DetermineWinner();
+            deck.ShuffleInCards();
         }
 
         private void DetermineWinner()
         {   
-            List<IPlayer> winners = ScoreLogic.DetermineWinners(players);
             ShowAllHands();
+            List<IPlayer> winners = ScoreLogic.DetermineWinners(players);
             if(winners.Count == 1){
                 Player theWinner = (Player)winners[0];
                 theWinner.JustWon();
@@ -74,7 +76,7 @@ namespace Poker.Lib
         private void InitialDeal(){
             NewDeal();
             foreach(Player player in players){
-                player.Give(deck.Draw(5));
+                player.hand = new Hand(player, deck.Draw(5));
                 player.hand.Cards = ScoreLogic.SortByRankAndSuite(player.hand.Cards);
             }
             

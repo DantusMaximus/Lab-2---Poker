@@ -3,9 +3,15 @@ namespace Poker
 {
     class Deck
     {
+
         protected List<ICard> Content { get; set; }
+        private List<ICard> discardPile; 
+
+        public bool used{get => Content.Count == 52;}
+
         public Deck()
         {
+            discardPile = new List<ICard>();
             Content = new List<ICard>();
             for (int rank = 2; rank < 15; rank++)
             {
@@ -14,21 +20,27 @@ namespace Poker
                     Content.Add(new Card((Rank)rank, (Suite)suite));
                 }
             }
-            Shuffle();
+            Randomize();
         }
-        private void Shuffle() //Fishy Yates shuffle
-        {
+
+        private void Randomize() //Fishy Yates shuffle
+        {      
             System.Random random = new System.Random();
-            int n = 0;
+            int n = Content.Count-1;
             int swapIndex = 0;
-            while (n < Content.Count)
+            while (0 < n)
             {
-                swapIndex = random.Next(n, Content.Count-1);
+                swapIndex = random.Next(n+1);
                 var temp = Content[swapIndex];
                 Content[swapIndex] = Content[n];
                 Content[n] = temp;
-                n++;
+                n--;
             }
+        }
+        public void ShuffleInCards(){
+            Content.AddRange(discardPile);
+            discardPile.Clear();
+            Randomize();
         }
          public List<ICard> Draw(int cardAmmount)
         {
@@ -36,9 +48,11 @@ namespace Poker
             for(int i = 0; i<cardAmmount;i++)
             {
             //System.Console.WriteLine("giving card #" + i);
-            temp.Add(Content[Content.Count-1]);
-            Content.RemoveAt(Content.Count-1); 
+            int cardIndex = Content.Count-1;
+            temp.Add(Content[cardIndex]);
+            Content.RemoveAt(cardIndex); 
             }
+            discardPile.AddRange(temp);
             return temp;
         }
         private bool Exists(ICard card)
@@ -48,6 +62,7 @@ namespace Poker
             return false;
         }
     }
+    
 
 
 

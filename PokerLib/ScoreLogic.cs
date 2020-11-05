@@ -11,7 +11,6 @@ namespace Poker
         {
             var hand = new List<ICard>(inputHand);
             SortByRankAndSuite(hand);
-            //TODO: ROYAL STRAIGHT FLUSH
             if(IsRoyalStraightFlush(hand)){ return HandType.RoyalStraightFlush;}
             if(IsStraightFlush(hand))     { return HandType.StraightFlush;}
             if(IsFourOfAKind(hand))       { return HandType.FourOfAKind;}
@@ -288,7 +287,17 @@ namespace Poker
                 
                     cards.OrderBy(Card => Card.Rank);
                  break;
-
+                 List<ICard> OrderByPopThenRank(List<ICard> cards){                  
+                    Rank popRank = MostPopularCard(cards);
+                    List<ICard> pair = cards.FindAll(card => card.Rank == popRank);
+                    List<ICard> rest = cards.FindAll(card => card.Rank != popRank);
+                    rest.OrderBy(card => card.Rank);
+                    cards = new List<ICard>();
+                    cards.AddRange(pair);
+                    cards.AddRange(rest);
+                    return cards;               
+                     
+                 }
                 
             }
             String handRanks = "";
@@ -301,11 +310,8 @@ namespace Poker
             for (int i = 0; i <5; i++){
                 cardRanks += cards[i].Rank + " ";
             }
-
-            //====================
-
-
             System.Console.WriteLine("type is " + sorting + " and card ranks are: " + cardRanks);
+            //====================
             return new Hand(hand.Player, cards);
         }
 

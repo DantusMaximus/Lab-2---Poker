@@ -9,29 +9,26 @@ namespace Poker
     {
         //not relevant in current iteration
         private const string path = "";
-
+        //not relevant in current iteration
         static public bool SaveGame(string fileName, List<IPlayer> players)
         {
             CreateSaveDirIfNonExistent();
-            using (var stream = File.Open(path + fileName, FileMode.OpenOrCreate))
+            using(var writer = new StreamWriter(fileName))
             {
-                var reader = new BinaryWriter(stream);
-                string saveFile;
-                string playerTXT = ConvertToString(players);
-                saveFile = playerTXT;
-
-                reader.Write(saveFile);
-                return true;
+            string saveFile = ConvertToString(players);
+            writer.Write(saveFile, fileName);
+            return true;
             }
         }
         static private void CreateSaveDirIfNonExistent()
         {
             if (path == "") { return; }
             //not relevant in current iteration
-            if (!Directory.Exists(path))
+            /*if (!Directory.Exists(path))
             {
                 Directory.CreateDirectory(path);
-            }
+            }*/
+            //not relevant in current iteration
         }
         static public List<IPlayer> LoadGame(string fileName)
         {
@@ -55,7 +52,7 @@ namespace Poker
         }
 
         static private string ConvertToString(List<IPlayer> players)
-        { //<name><Space><ammount of wins>
+        { //<Name><Space><Ammount of wins> savefile format
             StringBuilder stringBuilder = new StringBuilder();
             foreach (var player in players)
             {
@@ -88,16 +85,15 @@ namespace Poker
         {
             using (var stream = File.Open(path + fileName, FileMode.Open))
             {
-                StringBuilder saveFileBuilder = new StringBuilder();
+                var playerStrings = new List<string>();
                 stream.Position = 0;
-                var reader = new BinaryReader(stream);
-                while (reader.PeekChar() != -1)
+                var reader = new StreamReader(stream);
+                string line;
+                while((line = reader.ReadLine()) != null)
                 {
-                    saveFileBuilder.Append(reader.ReadChar());
-                }
-                string fullFile = saveFileBuilder.ToString();
-            fullFile = Regex.Replace(fullFile, @"^\W+", "", RegexOptions.Singleline);
-            return fullFile.Split('\n');
+                   playerStrings.Add(line);
+                }        
+            return playerStrings.ToArray();
             }
         }
     }

@@ -52,7 +52,6 @@ namespace Poker
         {
             if (hand.FindAll(h => h.Suite == hand[0].Suite).Count() == 5)
             {
-                Console.WriteLine("hej");
                 return true;
             }
             return false;
@@ -72,7 +71,7 @@ namespace Poker
 
             bool isIncrementalByOne(int LastIndexToCheck)
             {
-                for (int i = 0; i < LastIndexToCheck - 1; i++)
+                for (int i = 0; i < LastIndexToCheck; i++)
                 {
                     if ((int)hand[i + 1].Rank != (int)hand[i].Rank + 1) { return false; }
                 }
@@ -88,14 +87,14 @@ namespace Poker
         private static bool IsTwoPair(List<ICard> hand)
         {
             var tempHand = new List<ICard>(hand);
-            //first pair
+            //First pair
             if (!IsPair(tempHand)) { return false; }
             Rank mostPop = MostPopularCard(tempHand);
 
-            //remove first pair
+            //Remove first pair
             tempHand.RemoveAll(card => card.Rank == mostPop);
 
-            //second pair
+            //Second pair
             if (!IsPair(tempHand)) { return false; }
             return true;
         }
@@ -113,9 +112,7 @@ namespace Poker
             {
                 hands.Add(player.hand);
             }
-
             var highHand = GetHighestHandType(hands);
-            System.Console.WriteLine("highest handtype is: " + highHand);
             List<Hand> highestHands = hands.FindAll(hand => hand.HandType == highHand);
 
             if (highestHands.Count() == 1)
@@ -157,7 +154,6 @@ namespace Poker
         {
             return hands.OrderBy(hand => hand.HandType).Last().HandType;
         }
-        //TODO: test
         public static List<ICard> SortByRankAndSuite(List<ICard> cards)
         {
             var query = cards.OrderBy(card => (int)card.Suite);
@@ -281,16 +277,8 @@ namespace Poker
                 handRanks += card.Rank;
             }
 
-            //REMOVE ME===========
-            String cardRanks = "";
-            for (int i = 0; i < 5; i++)
-            {
-                cardRanks += cards[i].Rank + " ";
-            }
-            System.Console.WriteLine("type is " + sorting + " and card ranks are: " + cardRanks);
-            //====================
             return new Hand(hand.Player, cards);
-            
+
             void StraightCase()
             {
                 if (cards[0].Rank == Rank.Ace)

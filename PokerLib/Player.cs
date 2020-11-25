@@ -8,10 +8,12 @@ class Player : IPlayer
     private int wins;
 
     public Player(string name)
-        : this(name,0){
+        : this(name, 0)
+    {
 
     }
-    public Player(string name, int wins){        
+    public Player(string name, int wins)
+    {
         this.wins = wins;
         discard = new ICard[0];
         this.name = name;
@@ -37,15 +39,16 @@ class Player : IPlayer
             }
         }
     }
-    public void JustWon(){
+    public void JustWon()
+    {
         wins++;
     }
     public override string ToString()
-    {        
-            string playerTXT = name;
-            playerTXT += " ";
-            playerTXT += wins;          
-            return playerTXT;
+    {
+        string playerTXT = name;
+        playerTXT += " ";
+        playerTXT += wins;
+        return playerTXT;
     }
     string IPlayer.Name { get => name; }
     ICard[] IPlayer.Hand { get => hand.Cards.ToArray(); }

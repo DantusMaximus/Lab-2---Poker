@@ -63,7 +63,11 @@ namespace Poker
             if (isIncrementalByOne(4)) { return true; }
 
             if (hand[4].Rank != Rank.Ace) { return false; }
-            if (isIncrementalByOne(3)) { return true; }
+
+            if (!isIncrementalByOne(3)) { return false; }
+
+            if( hand[0].Rank == Rank.Two) {return true; } 
+
             return false;
 
             bool isIncrementalByOne(int LastIndexToCheck)

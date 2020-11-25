@@ -1,5 +1,6 @@
 using System.Collections.Generic;
-
+using System.Runtime.CompilerServices;
+[assembly:InternalsVisibleTo("Poker.Lib.UnitTest")]
 namespace Poker.Lib
 {
     class StandardGame : IPokerGame

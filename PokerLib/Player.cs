@@ -14,11 +14,11 @@ class Player : IPlayer
     }
     public Player(string name, int wins)
     {
+        if(name.Equals(null)){throw new System.NullReferenceException();}
         this.wins = wins;
         discard = new ICard[0];
         this.name = name;
         hand = new Hand(this);
-        this.wins = wins;
     }
     public void Give(List<ICard> givenCards)
     {

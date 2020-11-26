@@ -4,7 +4,7 @@ using System.Linq;
 namespace Poker.Lib.UnitTest
 {
     public class DeckTest{
-        
+        //skum ändring
         Deck deck;
 
         [SetUp]

@@ -12,11 +12,13 @@ namespace Poker
         public HandType HandType { get; set; }
         public Hand(IPlayer player)
         {
+            if (player.Equals(null)){throw new NullReferenceException("Nonexistant Player");}
             this.player = player;
             cards = new List<ICard>();
         }
         public Hand(IPlayer player, List<ICard> cards)
         {
+            if(player.Equals(null) || cards.Equals(null)){throw new NullReferenceException();}
             this.player = player;
             this.cards = cards;
         }
@@ -24,8 +26,8 @@ namespace Poker
 
         public void Add(ICard card)
         {
-            if (cards.Contains(card)) { throw new System.Exception("Dublicate card"); }
-            if (IsFull()) { throw new System.Exception("Hand overflow"); }
+            if (cards.Contains(card)) { throw new Exception("Dublicate card"); }
+            if (IsFull()) { throw new Exception("Hand overflow"); }
             cards.Add(card);
         }
 

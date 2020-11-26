@@ -59,13 +59,12 @@ namespace Poker
 
         private static bool IsStraight(List<ICard> hand)
         {
-            if (isIncrementalByOne(4)) { return true; }
+            if (isIncrementalByOne(4)) { return true; }  
 
-            if (hand[4].Rank != Rank.Ace) { return false; }
+            if (hand[4].Rank != Rank.Ace) { return false; }   
+            if( hand[0].Rank != Rank.Two) {return false; } 
 
-            if (!isIncrementalByOne(3)) { return false; }
-
-            if( hand[0].Rank == Rank.Two) {return true; } 
+            if (isIncrementalByOne(3)) { return true; } 
 
             return false;
 

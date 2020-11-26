@@ -5,10 +5,11 @@ namespace Poker.Lib.UnitTest
      should be written here! */
     public class Tests
     {
+        int exampleSetupVar;
         [SetUp]
         public void Setup()
         {
-            
+            exampleSetupVar = 1337;
         }
 
         [Test]
@@ -32,7 +33,24 @@ namespace Poker.Lib.UnitTest
             CombinatorialTestExample(3, "A")
             CombinatorialTestExample(3, "B")
         */
-
+        [Test, Pairwise]
+        public void PairwiseTestExample(
+            [Values("a", "b", "c")] string a,
+            [Values("+", "-")] string b,
+            [Values("x", "y")] string c)
+        {
+            System.Console.WriteLine("{0} {0} {0}", a, b, c);
+        }
+        /*
+            IsCalled 6 Times, as follows:
+            a + y
+            a - x
+            b - y
+            b + x
+            c - x
+            c + y
+            approximatly tries 'every' combination to save toasters
+        */
 
         [Test, Sequential]
         public void SequentialTestExample(

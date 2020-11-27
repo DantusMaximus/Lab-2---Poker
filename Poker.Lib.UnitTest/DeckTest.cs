@@ -4,7 +4,7 @@ using System.Linq;
 namespace Poker.Lib.UnitTest
 {
     public class DeckTest{
-        //skum ändring
+      
         Deck deck;
 
         [SetUp]
@@ -22,7 +22,20 @@ namespace Poker.Lib.UnitTest
             
         }
         //Randomize()
-
+        [Test]
+        public void Probably_Randomize_isRandom(){
+            List<ICard> pull1 = deck.Draw(52);
+            List<ICard> pull2 = new Deck().Draw(52);
+            List<ICard> pull3 = new Deck().Draw(52);
+            bool identicalOrder = true;
+            for(int i = 0; i < pull1.Count; i++){
+                if(pull1[i] != pull2[i] || pull1[i] != pull3[i]){
+                    identicalOrder = false;
+                    break;
+                }
+            }
+            Assert.False(identicalOrder);
+        }
         //ShuffleInCards()
         [Test]
         public void Assert_ShuffleInCards_ShufflesInCards(){

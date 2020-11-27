@@ -21,7 +21,7 @@ namespace Poker.Lib.UnitTest
         [Test]
         public void Assert_Constructor_ThrowsNullReferenceExceptionOnNull()
         {
-            Assert.Throws(     typeof(System.NullReferenceException), delegate{new Player(null, 0);}    );
+            Assert.Throws(   typeof(System.NullReferenceException), delegate{new Player(null, 0);}    );
         }
         [Test]
         public void Assert_Give_GivesCard(){
@@ -33,9 +33,7 @@ namespace Poker.Lib.UnitTest
         }
         [Test]
         public void Assert_Give_ThrowsNullExceptionOnInvalidCards(){
-            var givenCards =
-            Assert.True()
-            Assert.Throws(     typeof(System.NullReferenceException), delegate{new Player(null, 0);}    );
+           //TA DEN ANDRA VERSIONEN!
         }
     }
 }

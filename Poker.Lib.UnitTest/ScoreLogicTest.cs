@@ -6,6 +6,7 @@ namespace Poker.Lib.UnitTest
 {
     public class ScoreLogicTest
     {
+        int[] apaLista;
         //HandType DetermineHandType(List<ICard> inputHand)
             //  if (IsRoyalStraightFlush(hand)) 
 
@@ -22,32 +23,40 @@ namespace Poker.Lib.UnitTest
             //    if (IsThreeOfAKind(hand)) 
         
             //    if (IsTwoPair(hand)) 
-       
+       [SetUp]
+       public void SetUp(){
+           apaLista = new int[] {123, 123};
+       }
    
 
         [Test, Combinatorial]
         public void Assert_DetermineHandType_CorrectlyOutputsTwoPair(
-            [Values(
-                "♣2♦2♥4♥A♣A",
-                "♣K♦2♥6♥K♣6"
-            )] string cardsString,
-             [Values(
-                 new string[] {"♣2", "♦2", "♥4", "♥A", "♣A"},
-                 new string[] {"♣2", "♦2", "♥4", "♥A", "♣A"},
-                 new string[] {"♣2", "♦2", "♥4", "♥A", "♣A"},
-                 new string[] {"♣2", "♦2", "♥4", "♥A", "♣A"},
-                 new string[] {"♣2", "♦2", "♥4", "♥A", "♣A"}
-            )] string[] secondVar
+             [Values("♣2", "♦2", "♥4", "♥A", "♣A")] string string1,
+             [Values("♣2", "♦2", "♥4", "♥A", "♣A")] string string2,
+             [Values("♣2", "♦2", "♥4", "♥A", "♣A")] string string3,
+             [Values("♣2", "♦2", "♥4", "♥A", "♣A")] string string4,
+             [Values("♣2", "♦2", "♥4", "♥A", "♣A")] string string5
         )
         {
-                List<ICard> cards = new List<ICard>(ToCards(cardsString));
-                ICard[] shuffledCards = new ICard[5];
-                for(int i = 0; i < cards.Count; i++){
-                  //  shuffledCards[positionsString[i]-1] =cards[i];
+            bool cheat = false;
+            string[] strings = {string1, string2, string3, string4, string5};
+            for(int i =0;i<5;i++){
+                for(int j = 0; j<5;j++){
+                    if(strings[i] == strings[j] && i!= j){
+                        cheat = true;
+                    }
                 }
-                
+            }
+            if(cheat == true){;}
+            else{
+                string cardStrings = "";
+                foreach(string str in strings){
+                    cardStrings += str;
+                }
+                List<ICard> cards = new List<ICard>(ToCards(cardStrings));
                 HandType actual = ScoreLogic.DetermineHandType(cards);
                 Assert.AreEqual(HandType.TwoPairs, actual);
+        }
         }
             //    if (IsPair(hand))
         [Test, Sequential]

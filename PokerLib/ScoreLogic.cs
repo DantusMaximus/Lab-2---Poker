@@ -59,20 +59,20 @@ namespace Poker
 
         private static bool IsStraight(List<ICard> hand)
         {
-            if (isIncrementalByOne(4)) { return true; }  
+            if (isIncrementalByOne(5)) { return true; }  
 
             if (hand[4].Rank != Rank.Ace) { return false; }   
             if( hand[0].Rank != Rank.Two) {return false; } 
 
-            if (isIncrementalByOne(3)) { return true; } 
+            if (isIncrementalByOne(4)) { return true; } 
 
             return false;
 
-            bool isIncrementalByOne(int LastIndexToCheck)
+            bool isIncrementalByOne(int ammount)
             {
-                for (int i = 0; i < LastIndexToCheck; i++)
+                for (int i = 0; i < ammount-1; i++)
                 {
-                    if ((int)hand[i + 1].Rank != (int)hand[i].Rank + 1) { return false; }
+                    if ((int)hand[i+1].Rank != ((int)hand[i].Rank) + 1) { return false; }
                 }
                 return true;
             }

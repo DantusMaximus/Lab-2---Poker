@@ -176,8 +176,38 @@ namespace Poker.Lib.UnitTest
 
 
         //List<IPlayer> DetermineWinners(List<IPlayer> players)
-
+        [Test]
+        public void Assert_DetermineWinners_DeterminesCorrectWinnersWhenSuperiorHandtype(){
+            //TODO write
+        }
+        [Test]
+        public void Assert_DetermineWinners_DeterminesCorrectlyWhenDraw(){
+            //TODO write
+        }
+        [Test]
+        public void Assert_DetermineWinners_WhenEqualHandtypeButSuperiorRank(){
+            //TODO write one function for each HandType
+        }
+        [Test]
+        public void Assert_DetermineWinners_EveryoneCanWin(){
+            //TODO write
+        }
         //List<ICard> SortByRankAndSuite(List<ICard> cards)
+        [Test, Sequential]
+        public void Assert_SortByRankAndSuite_Sorts([Values(
+                    "♣4♦3♥5♥2♣7",
+                    "♣A♦K♥Q♥J♣3"
+                )] string cardsStringInput, [Values(
+                    "♥2♦3♣4♥5♣7",
+                    "♣3♥J♥Q♦K♣A"
+                )] string cardsStringExpected){
+                    List<ICard> input = ToCards(cardsStringInput);
+                    List<ICard> expected = ToCards(cardsStringExpected);
+                    input = ScoreLogic.SortByRankAndSuite(input);
+                    for(int i = 0; i<expected.Count; i++){
+                        Assert.True(expected[0].Equals(input[0]))
+                    }
+        }
 
         static List<Card> ToCards(string text)
         {

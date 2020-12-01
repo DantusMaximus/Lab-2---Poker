@@ -6,7 +6,6 @@ namespace Poker.Lib.UnitTest
 {
     public class ScoreLogicTest
     {
-<<<<<<< HEAD
         static public int[][] allValidPositionCombos = allPositionCombinations();
         [SetUp]
         public void Setup()
@@ -72,65 +71,6 @@ namespace Poker.Lib.UnitTest
            [Values(
                 "♣2♦2♥4♥A♣A",
                 "♣K♦2♥6♥K♣6"
-=======
-        int[] apaLista;
-        //HandType DetermineHandType(List<ICard> inputHand)
-            //  if (IsRoyalStraightFlush(hand)) 
-
-            //  if (IsStraightFlush(hand))
-         
-            //   if (IsFourOfAKind(hand))
-         
-            //   if (IsFullHouse(hand))
-        
-            //    if (IsFlush(hand))
-        
-            //    if (IsStraight(hand)) 
-        
-            //    if (IsThreeOfAKind(hand)) 
-        
-            //    if (IsTwoPair(hand)) 
-       [SetUp]
-       public void SetUp(){
-           apaLista = new int[] {123, 123};
-       }
-   
-
-        [Test, Combinatorial]
-        public void Assert_DetermineHandType_CorrectlyOutputsTwoPair(
-             [Values("♣2", "♦2", "♥4", "♥A", "♣A")] string string1,
-             [Values("♣2", "♦2", "♥4", "♥A", "♣A")] string string2,
-             [Values("♣2", "♦2", "♥4", "♥A", "♣A")] string string3,
-             [Values("♣2", "♦2", "♥4", "♥A", "♣A")] string string4,
-             [Values("♣2", "♦2", "♥4", "♥A", "♣A")] string string5
-        )
-        {
-            bool cheat = false;
-            string[] strings = {string1, string2, string3, string4, string5};
-            for(int i =0;i<5;i++){
-                for(int j = 0; j<5;j++){
-                    if(strings[i] == strings[j] && i!= j){
-                        cheat = true;
-                    }
-                }
-            }
-            if(cheat == true){;}
-            else{
-                string cardStrings = "";
-                foreach(string str in strings){
-                    cardStrings += str;
-                }
-                List<ICard> cards = new List<ICard>(ToCards(cardStrings));
-                HandType actual = ScoreLogic.DetermineHandType(cards);
-                Assert.AreEqual(HandType.TwoPairs, actual);
-        }
-        }
-            //    if (IsPair(hand))
-        [Test, Sequential]
-        public void Assert_DetermineHandType_CorrectlyOutputsPair(
-            [Values(
-                "♣2♦2♥3♥4♥5", "♠3♥7♠7♠8♠9", "♣9♣10♦J♥J♣Q", "♦J♦Q♦K♣A♠A" 
->>>>>>> Dante
             )] string cardsString
         )
         {

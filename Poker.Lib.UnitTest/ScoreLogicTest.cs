@@ -7,29 +7,6 @@ namespace Poker.Lib.UnitTest
     public class ScoreLogicTest
     {
         static public int[][] allValidPositionCombos = allPositionCombinations();
-        [SetUp]
-        public void Setup()
-        {
-
-        }
-
-        //HandType DetermineHandType(List<ICard> inputHand)
-        //  if (IsRoyalStraightFlush(hand)) 
-
-        //  if (IsStraightFlush(hand))
-
-        //   if (IsFourOfAKind(hand))
-
-        //   if (IsFullHouse(hand))
-
-        //    if (IsFlush(hand))
-
-        //    if (IsStraight(hand)) 
-
-        //    if (IsThreeOfAKind(hand)) 
-
-        //    if (IsTwoPair(hand)) 
-
         static private int[][] allPositionCombinations()
         {
            
@@ -55,18 +32,109 @@ namespace Poker.Lib.UnitTest
                 }
             }
             return theList.ToArray();
-        }
-        static private bool IsValid(int[] numberArray)
+            bool IsValid(int[] numberArray)
         {
             int differentNumbers = (from i in numberArray
                                     group i by i into gr
                                     select gr).Count();
             return differentNumbers == 5;
         }
+        }
+        [SetUp]
+        public void Setup()
+        {
 
-        [Test, Combinatorial,]
-        // [TestCaseSource(nameof(allValidPositionCombos))]
-        public void Assert_DetermineHandType_CorrectlyOutputsTwoPair(/*int[] positionsString,*/
+        }
+
+        //HandType DetermineHandType(List<ICard> inputHand)
+        //  if (IsRoyalStraightFlush(hand))
+        [Test, Combinatorial]
+        public void Assert_DetermineHandType_CorrectlyOutputsRoyalStraightFlush(
+            [ValueSource("allValidPositionCombos")] int[] positionsPermutation,
+           [Values(
+                "♣10♣J♣Q♣K♣A",
+                "♥10♥J♥Q♥K♥A"
+            )] string cardsString
+        )
+        {
+            AssertCorrectHandType(HandType.RoyalStraightFlush, cardsString, positionsPermutation);
+        }
+
+        //  if (IsStraightFlush(hand))
+        [Test, Combinatorial]
+        public void Assert_DetermineHandType_CorrectlyOutputsStraightFlush(
+            [ValueSource("allValidPositionCombos")] int[] positionsPermutation,
+           [Values(
+                "♣9♣10♣J♣Q♣K",
+                "♥A♥2♥3♥4♥5"
+            )] string cardsString
+        )
+        {
+            AssertCorrectHandType(HandType.StraightFlush, cardsString, positionsPermutation);
+        }
+        //   if (IsFourOfAKind(hand))
+        [Test, Combinatorial]
+        public void Assert_DetermineHandType_CorrectlyOutputsFourOfAKind(
+            [ValueSource("allValidPositionCombos")] int[] positionsPermutation,
+           [Values(
+                "♦A♥A♣A♠A♣K",
+                "♦9♥9♣9♠9♣K"
+            )] string cardsString
+        )
+        {
+            AssertCorrectHandType(HandType.FourOfAKind, cardsString, positionsPermutation);
+        }
+        //   if (IsFullHouse(hand))
+        [Test, Combinatorial]
+        public void Assert_DetermineHandType_CorrectlyOutputsFullHouse(
+            [ValueSource("allValidPositionCombos")] int[] positionsPermutation,
+           [Values(
+                "♦A♥A♣A♠K♣K",
+                "♦9♥9♣9♠2♣2"
+            )] string cardsString
+        )
+        {
+            AssertCorrectHandType(HandType.FullHouse, cardsString, positionsPermutation);
+        }
+        //    if (IsFlush(hand))
+        [Test, Combinatorial]
+        public void Assert_DetermineHandType_CorrectlyOutputsFlush(
+            [ValueSource("allValidPositionCombos")] int[] positionsPermutation,
+           [Values(
+                "♥A♥2♥3♠4♥6",
+                "♦10♦J♦Q♦K♦8"
+            )] string cardsString
+        )
+        {
+            AssertCorrectHandType(HandType.Flush, cardsString, positionsPermutation);
+        }
+        //    if (IsStraight(hand)) 
+        [Test, Combinatorial]
+        public void Assert_DetermineHandType_CorrectlyOutputsStraight(
+            [ValueSource("allValidPositionCombos")] int[] positionsPermutation,
+           [Values(
+                "♦A♥2♣3♠4♣5",
+                "♦10♥J♣Q♠K♣9"
+            )] string cardsString
+        )
+        {
+            AssertCorrectHandType(HandType.Straight, cardsString, positionsPermutation);
+        }
+        //    if (IsThreeOfAKind(hand)) 
+        [Test, Combinatorial]
+        public void Assert_DetermineHandType_CorrectlyOutputsThreeOfAKind(
+            [ValueSource("allValidPositionCombos")] int[] positionsPermutation,
+           [Values(
+                "♦A♥A♣A♠4♣5",
+                "♦2♥2♣2♠K♣9"
+            )] string cardsString
+        )
+        {
+            AssertCorrectHandType(HandType.ThreeOfAKind, cardsString, positionsPermutation);
+        }
+        //    if (IsTwoPair(hand)) 
+        [Test, Combinatorial]
+        public void Assert_DetermineHandType_CorrectlyOutputsTwoPair(
             [ValueSource("allValidPositionCombos")] int[] positionsPermutation,
            [Values(
                 "♣2♦2♥4♥A♣A",
@@ -76,13 +144,10 @@ namespace Poker.Lib.UnitTest
         {
             AssertCorrectHandType(HandType.TwoPairs, cardsString, positionsPermutation);
         }
-
-
-     
-            static int[][] PositionCombos = ScoreLogicTest.allValidPositionCombos;
+        //    if (IsPair(hand))
              [Test, Combinatorial]
             public void Assert_DetermineHandType_CorrectlyOutputsPair(
-            [ValueSource("PositionCombos")] int[] positionsPermutation,
+            [ValueSource("allValidPositionCombos")] int[] positionsPermutation,
             [Values(
                     "♣2♦3♥4♥A♣A",
                     "♣K♦2♥4♥K♣5"
@@ -91,26 +156,24 @@ namespace Poker.Lib.UnitTest
             {
                 AssertCorrectHandType(HandType.Pair, cardsString, positionsPermutation);
             }
-     
-       
-       
-
-
-        //    if (IsPair(hand))
-
-        // [Test, Sequential]
-        public void SequentialTestExample(
-            [Values(1, 2, 3)] int x,
-            [Values("C", "D", "E")] string s
+        // if (IsHighCard(hand))
+        [Test, Combinatorial]
+            public void Assert_DetermineHandType_CorrectlyOutputsHighCard(
+            [ValueSource("allValidPositionCombos")] int[] positionsPermutation,
+            [Values(
+                    "♣2♦3♥4♥5♣7",
+                    "♣A♦K♥Q♥J♣3"
+                )] string cardsString
             )
-        {
-            Assert.True(x < 4 && s[0] >= 'C');
-        }
-        /* IsCalled 6 Times, as follows:
-             SequentialTestExample(1, "A")
-             SequentialTestExample(2, "B")
-             SequentialTestExample(3, "E")
-        */
+            {
+                AssertCorrectHandType(HandType.HighCard, cardsString, positionsPermutation);
+            }
+       
+       
+
+
+        
+
 
         //List<IPlayer> DetermineWinners(List<IPlayer> players)
 
@@ -128,11 +191,11 @@ namespace Poker.Lib.UnitTest
                     case '♣':
                         suite = Suite.Clubs;
                         break;
-                    case '♥':
-                        suite = Suite.Hearts;
-                        break;
                     case '♦':
                         suite = Suite.Diamonds;
+                        break;
+                    case '♥':
+                        suite = Suite.Hearts;
                         break;
                     case '♠':
                         suite = Suite.Spades;
@@ -144,9 +207,10 @@ namespace Poker.Lib.UnitTest
                 {@"^J",  _ => Rank.Jack}, {@"^Q", _ => Rank.Queen}, {@"^K", _ => Rank.King},
                 {@"^A", _ => Rank.Ace}, { @"^\d+", str => (Rank)int.Parse(str) }
             };
-                var func = rankFunc.Where(func => Regex.IsMatch(rankString, func.Key)).First();
+                try{var func = rankFunc.Where(func => Regex.IsMatch(rankString, func.Key)).First();
                 cards.Add(new Card(func.Value(Regex.Match(rankString, func.Key).Value), suite));
-                i += Regex.IsMatch(rankString, @"^\d\d") ? 3 : 2;
+                i += Regex.IsMatch(rankString, @"^\d\d") ? 3 : 2;}
+                catch{throw new System.Exception("Wrong cardstring syntax");}
             }
             return cards;
 

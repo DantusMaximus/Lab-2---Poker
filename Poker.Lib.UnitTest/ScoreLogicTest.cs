@@ -32,6 +32,7 @@ namespace Poker.Lib.UnitTest
 
         static private int[][] allPositionCombinations()
         {
+           
             List<int[]> theList = new List<int[]>();
             for (int a = 0; a < 5; a++)
             {

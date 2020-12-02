@@ -48,7 +48,7 @@ namespace Poker.Lib.UnitTest
 
         //HandType DetermineHandType(List<ICard> inputHand)
         //  if (IsRoyalStraightFlush(hand))
-        [Test, Combinatorial]
+     //   [Test, Combinatorial]
         public void Assert_DetermineHandType_CorrectlyOutputsRoyalStraightFlush(
             [ValueSource("allValidPositionCombos")] int[] positionsPermutation,
            [Values(
@@ -61,7 +61,7 @@ namespace Poker.Lib.UnitTest
         }
 
         //  if (IsStraightFlush(hand))
-        [Test, Combinatorial]
+    //    [Test, Combinatorial]
         public void Assert_DetermineHandType_CorrectlyOutputsStraightFlush(
             [ValueSource("allValidPositionCombos")] int[] positionsPermutation,
            [Values(
@@ -73,7 +73,7 @@ namespace Poker.Lib.UnitTest
             AssertCorrectHandType(HandType.StraightFlush, cardsString, positionsPermutation);
         }
         //   if (IsFourOfAKind(hand))
-        [Test, Combinatorial]
+     //   [Test, Combinatorial]
         public void Assert_DetermineHandType_CorrectlyOutputsFourOfAKind(
             [ValueSource("allValidPositionCombos")] int[] positionsPermutation,
            [Values(
@@ -85,7 +85,7 @@ namespace Poker.Lib.UnitTest
             AssertCorrectHandType(HandType.FourOfAKind, cardsString, positionsPermutation);
         }
         //   if (IsFullHouse(hand))
-        [Test, Combinatorial]
+     //   [Test, Combinatorial]
         public void Assert_DetermineHandType_CorrectlyOutputsFullHouse(
             [ValueSource("allValidPositionCombos")] int[] positionsPermutation,
            [Values(
@@ -97,7 +97,7 @@ namespace Poker.Lib.UnitTest
             AssertCorrectHandType(HandType.FullHouse, cardsString, positionsPermutation);
         }
         //    if (IsFlush(hand))
-        [Test, Combinatorial]
+    //    [Test, Combinatorial]
         public void Assert_DetermineHandType_CorrectlyOutputsFlush(
             [ValueSource("allValidPositionCombos")] int[] positionsPermutation,
            [Values(
@@ -109,7 +109,7 @@ namespace Poker.Lib.UnitTest
             AssertCorrectHandType(HandType.Flush, cardsString, positionsPermutation);
         }
         //    if (IsStraight(hand)) 
-        [Test, Combinatorial]
+     //   [Test, Combinatorial]
         public void Assert_DetermineHandType_CorrectlyOutputsStraight(
             [ValueSource("allValidPositionCombos")] int[] positionsPermutation,
            [Values(
@@ -201,12 +201,13 @@ namespace Poker.Lib.UnitTest
                     "♥2♦3♣4♥5♣7",
                     "♣3♥J♥Q♦K♣A"
                 )] string cardsStringExpected){
-                    List<ICard> input = ToCards(cardsStringInput);
-                    List<ICard> expected = ToCards(cardsStringExpected);
+                    List<ICard> input = new List<ICard>(ToCards(cardsStringInput));
+                    List<ICard> expected = new List<ICard>(ToCards(cardsStringExpected));
                     input = ScoreLogic.SortByRankAndSuite(input);
                     for(int i = 0; i<expected.Count; i++){
-                        Assert.True(expected[0].Equals(input[0]))
+                        Assert.True(expected[i].Equals(input[i]));
                     }
+                    
         }
 
         static List<Card> ToCards(string text)

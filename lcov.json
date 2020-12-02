@@ -1,0 +1,2058 @@
+{
+  "PokerLib.dll": {
+    "C:\\Users\\Some-Fish\\Documents\\Newton\\Objektorienterad_programmering\\Lab-2---Poker\\PokerLib\\Player.cs": {
+      "Player": {
+        "System.Void Player::Give(System.Collections.Generic.List`1<Poker.ICard>)": {
+          "Lines": {
+            "24": 2,
+            "25": 7,
+            "26": 6,
+            "27": 6,
+            "28": 6,
+            "29": 5,
+            "30": 5,
+            "31": 1
+          },
+          "Branches": [
+            {
+              "Line": 25,
+              "Offset": 57,
+              "EndOffset": 3,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 6
+            },
+            {
+              "Line": 25,
+              "Offset": 57,
+              "EndOffset": 59,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void Player::RemoveCards()": {
+          "Lines": {
+            "33": 1,
+            "34": 7,
+            "35": 2,
+            "36": 2,
+            "37": 2,
+            "38": 2,
+            "39": 2,
+            "40": 2,
+            "41": 1
+          },
+          "Branches": [
+            {
+              "Line": 34,
+              "Offset": 58,
+              "EndOffset": 13,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            },
+            {
+              "Line": 36,
+              "Offset": 32,
+              "EndOffset": 34,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 36,
+              "Offset": 32,
+              "EndOffset": 49,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 34,
+              "Offset": 58,
+              "EndOffset": 60,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void Player::JustWon()": {
+          "Lines": {
+            "43": 1,
+            "44": 1,
+            "45": 1
+          },
+          "Branches": []
+        },
+        "System.String Player::ToString()": {
+          "Lines": {
+            "47": 1,
+            "48": 1,
+            "49": 1,
+            "50": 1,
+            "51": 1,
+            "52": 1
+          },
+          "Branches": []
+        },
+        "System.String Player::Poker.IPlayer.get_Name()": {
+          "Lines": {
+            "53": 1
+          },
+          "Branches": []
+        },
+        "Poker.ICard[] Player::Poker.IPlayer.get_Hand()": {
+          "Lines": {
+            "54": 0
+          },
+          "Branches": []
+        },
+        "Poker.HandType Player::Poker.IPlayer.get_HandType()": {
+          "Lines": {
+            "56": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 Player::Poker.IPlayer.get_Wins()": {
+          "Lines": {
+            "58": 2
+          },
+          "Branches": []
+        },
+        "Poker.ICard[] Player::Poker.IPlayer.get_Discard()": {
+          "Lines": {
+            "60": 4
+          },
+          "Branches": []
+        },
+        "System.Void Player::.ctor(System.String)": {
+          "Lines": {
+            "11": 20,
+            "12": 20,
+            "14": 20
+          },
+          "Branches": []
+        },
+        "System.Void Player::.ctor(System.String,System.Int32)": {
+          "Lines": {
+            "15": 21,
+            "16": 21,
+            "17": 0,
+            "18": 20,
+            "19": 20,
+            "20": 20,
+            "21": 20,
+            "22": 20
+          },
+          "Branches": [
+            {
+              "Line": 17,
+              "Offset": 17,
+              "EndOffset": 19,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 17,
+              "EndOffset": 26,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 20
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\Some-Fish\\Documents\\Newton\\Objektorienterad_programmering\\Lab-2---Poker\\PokerLib\\Card.cs": {
+      "Poker.Card": {
+        "Poker.Suite Poker.Card::get_Suite()": {
+          "Lines": {
+            "7": 28887
+          },
+          "Branches": []
+        },
+        "Poker.Rank Poker.Card::get_Rank()": {
+          "Lines": {
+            "9": 57424
+          },
+          "Branches": []
+        },
+        "System.Boolean Poker.Card::Equals(System.Object)": {
+          "Lines": {
+            "16": 79,
+            "17": 79,
+            "18": 79,
+            "19": 61,
+            "20": 17,
+            "21": 0,
+            "22": 17,
+            "23": 78
+          },
+          "Branches": [
+            {
+              "Line": 18,
+              "Offset": 27,
+              "EndOffset": 29,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 61
+            },
+            {
+              "Line": 18,
+              "Offset": 27,
+              "EndOffset": 33,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 17
+            },
+            {
+              "Line": 20,
+              "Offset": 52,
+              "EndOffset": 54,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 52,
+              "EndOffset": 58,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 17
+            }
+          ]
+        },
+        "System.Int32 Poker.Card::GetHashCode()": {
+          "Lines": {
+            "25": 0,
+            "26": 0
+          },
+          "Branches": []
+        },
+        "System.Void Poker.Card::.ctor(Poker.Rank,Poker.Suite)": {
+          "Lines": {
+            "10": 5227,
+            "11": 5227,
+            "12": 5227,
+            "13": 5227,
+            "14": 5227
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Some-Fish\\Documents\\Newton\\Objektorienterad_programmering\\Lab-2---Poker\\PokerLib\\Deck.cs": {
+      "Poker.Deck": {
+        "System.Collections.Generic.List`1<Poker.ICard> Poker.Deck::get_Content()": {
+          "Lines": {
+            "7": 2953
+          },
+          "Branches": []
+        },
+        "System.Void Poker.Deck::Randomize()": {
+          "Lines": {
+            "25": 8,
+            "26": 8,
+            "27": 8,
+            "28": 8,
+            "29": 416,
+            "30": 408,
+            "31": 408,
+            "32": 408,
+            "33": 408,
+            "34": 408,
+            "35": 408,
+            "36": 408,
+            "37": 8
+          },
+          "Branches": [
+            {
+              "Line": 29,
+              "Offset": 101,
+              "EndOffset": 25,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 408
+            },
+            {
+              "Line": 29,
+              "Offset": 101,
+              "EndOffset": 103,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 8
+            }
+          ]
+        },
+        "System.Void Poker.Deck::ShuffleInCards()": {
+          "Lines": {
+            "39": 1,
+            "40": 1,
+            "41": 1,
+            "42": 1,
+            "43": 1
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<Poker.ICard> Poker.Deck::Draw(System.Int32)": {
+          "Lines": {
+            "45": 8,
+            "46": 8,
+            "47": 642,
+            "48": 314,
+            "49": 314,
+            "50": 314,
+            "51": 313,
+            "52": 313,
+            "53": 7,
+            "54": 7,
+            "55": 7
+          },
+          "Branches": [
+            {
+              "Line": 47,
+              "Offset": 69,
+              "EndOffset": 11,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 314
+            },
+            {
+              "Line": 47,
+              "Offset": 69,
+              "EndOffset": 71,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 7
+            }
+          ]
+        },
+        "System.Void Poker.Deck::.ctor()": {
+          "Lines": {
+            "10": 7,
+            "11": 7,
+            "12": 7,
+            "13": 7,
+            "14": 196,
+            "15": 91,
+            "16": 910,
+            "17": 364,
+            "18": 364,
+            "19": 364,
+            "20": 91,
+            "21": 7,
+            "22": 7
+          },
+          "Branches": [
+            {
+              "Line": 14,
+              "Offset": 85,
+              "EndOffset": 35,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 91
+            },
+            {
+              "Line": 16,
+              "Offset": 71,
+              "EndOffset": 40,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 364
+            },
+            {
+              "Line": 16,
+              "Offset": 71,
+              "EndOffset": 73,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 91
+            },
+            {
+              "Line": 14,
+              "Offset": 85,
+              "EndOffset": 87,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 7
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\Some-Fish\\Documents\\Newton\\Objektorienterad_programmering\\Lab-2---Poker\\PokerLib\\FileManager.cs": {
+      "Poker.FileManager": {
+        "System.Boolean Poker.FileManager::SaveGame(System.String,System.Collections.Generic.List`1<Poker.IPlayer>)": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "22": 0
+          },
+          "Branches": []
+        },
+        "System.Void Poker.FileManager::CreateSaveDirIfNonExistent()": {
+          "Lines": {
+            "24": 0,
+            "25": 0,
+            "32": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<Poker.IPlayer> Poker.FileManager::LoadGame(System.String)": {
+          "Lines": {
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "52": 0
+          },
+          "Branches": [
+            {
+              "Line": 38,
+              "Offset": 111,
+              "EndOffset": 33,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 40,
+              "Offset": 56,
+              "EndOffset": 58,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 40,
+              "Offset": 56,
+              "EndOffset": 61,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 44,
+              "Offset": 76,
+              "EndOffset": 78,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 44,
+              "Offset": 76,
+              "EndOffset": 90,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 38,
+              "Offset": 111,
+              "EndOffset": 113,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.String Poker.FileManager::ConvertToString(System.Collections.Generic.List`1<Poker.IPlayer>)": {
+          "Lines": {
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0
+          },
+          "Branches": [
+            {
+              "Line": 57,
+              "Offset": 57,
+              "EndOffset": 17,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 57,
+              "Offset": 57,
+              "EndOffset": 59,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Collections.Generic.List`1<Poker.IPlayer> Poker.FileManager::ConvertToPlayers(System.Collections.Generic.List`1<System.String>)": {
+          "Lines": {
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0
+          },
+          "Branches": [
+            {
+              "Line": 68,
+              "Offset": 49,
+              "EndOffset": 17,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 49,
+              "EndOffset": 51,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        },
+        "Poker.IPlayer Poker.FileManager::ConvertToPlayer(System.String)": {
+          "Lines": {
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0
+          },
+          "Branches": []
+        },
+        "System.String[] Poker.FileManager::FileToPlayerStrings(System.String)": {
+          "Lines": {
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "98": 0
+          },
+          "Branches": [
+            {
+              "Line": 86,
+              "Offset": 3,
+              "EndOffset": 5,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 86,
+              "Offset": 3,
+              "EndOffset": 11,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 92,
+              "Offset": 68,
+              "EndOffset": 43,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 92,
+              "Offset": 68,
+              "EndOffset": 70,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\Some-Fish\\Documents\\Newton\\Objektorienterad_programmering\\Lab-2---Poker\\PokerLib\\Hand.cs": {
+      "Poker.Hand": {
+        "System.Int32 Poker.Hand::get_Count()": {
+          "Lines": {
+            "9": 1
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<Poker.ICard> Poker.Hand::get_Cards()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "Poker.IPlayer Poker.Hand::get_Player()": {
+          "Lines": {
+            "11": 2
+          },
+          "Branches": []
+        },
+        "Poker.HandType Poker.Hand::get_HandType()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.Void Poker.Hand::Add(Poker.ICard)": {
+          "Lines": {
+            "28": 32,
+            "29": 0,
+            "30": 34,
+            "31": 31,
+            "32": 31
+          },
+          "Branches": [
+            {
+              "Line": 29,
+              "Offset": 15,
+              "EndOffset": 17,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 29,
+              "Offset": 15,
+              "EndOffset": 29,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 32
+            },
+            {
+              "Line": 30,
+              "Offset": 37,
+              "EndOffset": 39,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 30,
+              "Offset": 37,
+              "EndOffset": 51,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 31
+            }
+          ]
+        },
+        "System.Boolean Poker.Hand::Contains(Poker.ICard)": {
+          "Lines": {
+            "35": 4,
+            "36": 4,
+            "37": 4
+          },
+          "Branches": []
+        },
+        "System.Void Poker.Hand::Remove(Poker.ICard)": {
+          "Lines": {
+            "40": 3,
+            "41": 3,
+            "42": 3
+          },
+          "Branches": []
+        },
+        "System.Boolean Poker.Hand::IsFull()": {
+          "Lines": {
+            "45": 42,
+            "46": 42,
+            "47": 42
+          },
+          "Branches": []
+        },
+        "System.Void Poker.Hand::.ctor(Poker.IPlayer)": {
+          "Lines": {
+            "13": 22,
+            "14": 22,
+            "15": 0,
+            "16": 21,
+            "17": 21,
+            "18": 21
+          },
+          "Branches": [
+            {
+              "Line": 15,
+              "Offset": 17,
+              "EndOffset": 19,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 15,
+              "Offset": 17,
+              "EndOffset": 31,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 21
+            }
+          ]
+        },
+        "System.Void Poker.Hand::.ctor(Poker.IPlayer,System.Collections.Generic.List`1<Poker.ICard>)": {
+          "Lines": {
+            "19": 2,
+            "20": 2,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0
+          },
+          "Branches": [
+            {
+              "Line": 21,
+              "Offset": 15,
+              "EndOffset": 17,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 21,
+              "Offset": 15,
+              "EndOffset": 26,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 29,
+              "EndOffset": 31,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 29,
+              "EndOffset": 38,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\Some-Fish\\Documents\\Newton\\Objektorienterad_programmering\\Lab-2---Poker\\PokerLib\\ScoreLogic.cs": {
+      "Poker.ScoreLogic": {
+        "Poker.HandType Poker.ScoreLogic::DetermineHandType(System.Collections.Generic.List`1<Poker.ICard>)": {
+          "Lines": {
+            "11": 960,
+            "12": 960,
+            "13": 960,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 1440,
+            "21": 1200,
+            "22": 960,
+            "23": 240,
+            "24": 960
+          },
+          "Branches": [
+            {
+              "Line": 14,
+              "Offset": 23,
+              "EndOffset": 25,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 14,
+              "Offset": 23,
+              "EndOffset": 34,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 960
+            },
+            {
+              "Line": 15,
+              "Offset": 42,
+              "EndOffset": 44,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 15,
+              "Offset": 42,
+              "EndOffset": 49,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 960
+            },
+            {
+              "Line": 16,
+              "Offset": 59,
+              "EndOffset": 61,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 16,
+              "Offset": 59,
+              "EndOffset": 66,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 960
+            },
+            {
+              "Line": 17,
+              "Offset": 76,
+              "EndOffset": 78,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 76,
+              "EndOffset": 83,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 960
+            },
+            {
+              "Line": 18,
+              "Offset": 93,
+              "EndOffset": 95,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 18,
+              "Offset": 93,
+              "EndOffset": 100,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 960
+            },
+            {
+              "Line": 19,
+              "Offset": 110,
+              "EndOffset": 112,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 19,
+              "Offset": 110,
+              "EndOffset": 117,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 960
+            },
+            {
+              "Line": 20,
+              "Offset": 127,
+              "EndOffset": 129,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 240
+            },
+            {
+              "Line": 20,
+              "Offset": 127,
+              "EndOffset": 134,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 720
+            },
+            {
+              "Line": 21,
+              "Offset": 144,
+              "EndOffset": 146,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 240
+            },
+            {
+              "Line": 21,
+              "Offset": 144,
+              "EndOffset": 151,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 480
+            },
+            {
+              "Line": 22,
+              "Offset": 161,
+              "EndOffset": 163,
+              "Path": 0,
+              "Ordinal": 16,
+              "Hits": 240
+            },
+            {
+              "Line": 22,
+              "Offset": 161,
+              "EndOffset": 168,
+              "Path": 1,
+              "Ordinal": 17,
+              "Hits": 240
+            }
+          ]
+        },
+        "System.Boolean Poker.ScoreLogic::IsRoyalStraightFlush(System.Collections.Generic.List`1<Poker.ICard>)": {
+          "Lines": {
+            "26": 960,
+            "27": 0,
+            "28": 960,
+            "29": 960
+          },
+          "Branches": [
+            {
+              "Line": 27,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 7,
+              "EndOffset": 27,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 960
+            },
+            {
+              "Line": 27,
+              "Offset": 30,
+              "EndOffset": 32,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 30,
+              "EndOffset": 37,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 960
+            }
+          ]
+        },
+        "System.Boolean Poker.ScoreLogic::IsStraightFlush(System.Collections.Generic.List`1<Poker.ICard>)": {
+          "Lines": {
+            "31": 1920,
+            "32": 0,
+            "33": 1920,
+            "34": 1920
+          },
+          "Branches": [
+            {
+              "Line": 32,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 32,
+              "Offset": 7,
+              "EndOffset": 17,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1920
+            },
+            {
+              "Line": 32,
+              "Offset": 20,
+              "EndOffset": 22,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 32,
+              "Offset": 20,
+              "EndOffset": 27,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1920
+            }
+          ]
+        },
+        "System.Boolean Poker.ScoreLogic::IsFourOfAKind(System.Collections.Generic.List`1<Poker.ICard>)": {
+          "Lines": {
+            "36": 960,
+            "37": 960,
+            "38": 960
+          },
+          "Branches": []
+        },
+        "System.Boolean Poker.ScoreLogic::IsFullHouse(System.Collections.Generic.List`1<Poker.ICard>)": {
+          "Lines": {
+            "41": 960,
+            "42": 960,
+            "43": 720,
+            "44": 720,
+            "46": 576,
+            "47": 216,
+            "48": 0,
+            "49": 960
+          },
+          "Branches": [
+            {
+              "Line": 42,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 720
+            },
+            {
+              "Line": 42,
+              "Offset": 12,
+              "EndOffset": 19,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 240
+            },
+            {
+              "Line": 46,
+              "Offset": 50,
+              "EndOffset": 52,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 168
+            },
+            {
+              "Line": 46,
+              "Offset": 50,
+              "EndOffset": 57,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 72
+            },
+            {
+              "Line": 47,
+              "Offset": 88,
+              "EndOffset": 90,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 72
+            },
+            {
+              "Line": 47,
+              "Offset": 88,
+              "EndOffset": 95,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Boolean Poker.ScoreLogic::IsFlush(System.Collections.Generic.List`1<Poker.ICard>)": {
+          "Lines": {
+            "52": 2880,
+            "53": 17280,
+            "54": 0,
+            "55": 0,
+            "57": 2880,
+            "58": 2880
+          },
+          "Branches": [
+            {
+              "Line": 53,
+              "Offset": 47,
+              "EndOffset": 49,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 53,
+              "Offset": 47,
+              "EndOffset": 54,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2880
+            }
+          ]
+        },
+        "System.Boolean Poker.ScoreLogic::IsStraight(System.Collections.Generic.List`1<Poker.ICard>)": {
+          "Lines": {
+            "61": 960,
+            "62": 0,
+            "64": 2496,
+            "65": 504,
+            "67": 0,
+            "69": 36,
+            "79": 960
+          },
+          "Branches": [
+            {
+              "Line": 62,
+              "Offset": 19,
+              "EndOffset": 21,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 62,
+              "Offset": 19,
+              "EndOffset": 26,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 960
+            },
+            {
+              "Line": 64,
+              "Offset": 52,
+              "EndOffset": 54,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 768
+            },
+            {
+              "Line": 64,
+              "Offset": 52,
+              "EndOffset": 59,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 192
+            },
+            {
+              "Line": 65,
+              "Offset": 86,
+              "EndOffset": 88,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 156
+            },
+            {
+              "Line": 65,
+              "Offset": 86,
+              "EndOffset": 93,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 36
+            },
+            {
+              "Line": 67,
+              "Offset": 105,
+              "EndOffset": 107,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 67,
+              "Offset": 105,
+              "EndOffset": 112,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 36
+            }
+          ]
+        },
+        "System.Boolean Poker.ScoreLogic::IsThreeOfAKind(System.Collections.Generic.List`1<Poker.ICard>)": {
+          "Lines": {
+            "82": 1920,
+            "83": 1920,
+            "84": 1920
+          },
+          "Branches": []
+        },
+        "System.Boolean Poker.ScoreLogic::IsTwoPair(System.Collections.Generic.List`1<Poker.ICard>)": {
+          "Lines": {
+            "87": 720,
+            "88": 720,
+            "90": 1200,
+            "91": 480,
+            "94": 2880,
+            "97": 960,
+            "98": 240,
+            "99": 720
+          },
+          "Branches": [
+            {
+              "Line": 90,
+              "Offset": 25,
+              "EndOffset": 27,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 240
+            },
+            {
+              "Line": 90,
+              "Offset": 25,
+              "EndOffset": 32,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 480
+            },
+            {
+              "Line": 97,
+              "Offset": 76,
+              "EndOffset": 78,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 240
+            },
+            {
+              "Line": 97,
+              "Offset": 76,
+              "EndOffset": 83,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 240
+            }
+          ]
+        },
+        "System.Boolean Poker.ScoreLogic::IsPair(System.Collections.Generic.List`1<Poker.ICard>)": {
+          "Lines": {
+            "102": 1680,
+            "103": 1680,
+            "104": 1680
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<Poker.IPlayer> Poker.ScoreLogic::DetermineWinners(System.Collections.Generic.List`1<Poker.IPlayer>)": {
+          "Lines": {
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "123": 0,
+            "125": 0,
+            "126": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "141": 0,
+            "143": 0,
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0
+          },
+          "Branches": [
+            {
+              "Line": 110,
+              "Offset": 67,
+              "EndOffset": 30,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 110,
+              "Offset": 67,
+              "EndOffset": 69,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 117,
+              "Offset": 130,
+              "EndOffset": 132,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 117,
+              "Offset": 130,
+              "EndOffset": 160,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 125,
+              "Offset": 475,
+              "EndOffset": 187,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 129,
+              "Offset": 323,
+              "EndOffset": 223,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 131,
+              "Offset": 275,
+              "EndOffset": 277,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 131,
+              "Offset": 275,
+              "EndOffset": 315,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 129,
+              "Offset": 323,
+              "EndOffset": 325,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 125,
+              "Offset": 475,
+              "EndOffset": 480,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 143,
+              "Offset": 529,
+              "EndOffset": 497,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 0
+            },
+            {
+              "Line": 143,
+              "Offset": 529,
+              "EndOffset": 531,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            }
+          ]
+        },
+        "Poker.HandType Poker.ScoreLogic::GetHighestHandType(System.Collections.Generic.List`1<Poker.Hand>)": {
+          "Lines": {
+            "153": 0,
+            "154": 0,
+            "155": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<Poker.ICard> Poker.ScoreLogic::SortByRankAndSuite(System.Collections.Generic.List`1<Poker.ICard>)": {
+          "Lines": {
+            "157": 962,
+            "158": 0,
+            "159": 5772,
+            "160": 962,
+            "161": 12506,
+            "162": 4810,
+            "163": 4810,
+            "164": 4810,
+            "166": 962,
+            "167": 962
+          },
+          "Branches": [
+            {
+              "Line": 161,
+              "Offset": 117,
+              "EndOffset": 94,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4810
+            },
+            {
+              "Line": 161,
+              "Offset": 117,
+              "EndOffset": 119,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 962
+            }
+          ]
+        },
+        "Poker.Rank Poker.ScoreLogic::MostPopularCard(System.Collections.Generic.List`1<Poker.ICard>)": {
+          "Lines": {
+            "169": 5040,
+            "170": 5040,
+            "171": 29280,
+            "172": 23760,
+            "173": 10080,
+            "174": 5040,
+            "175": 5040
+          },
+          "Branches": []
+        },
+        "System.Boolean Poker.ScoreLogic::IsAmmountOfMost(System.Int32,System.Collections.Generic.List`1<Poker.ICard>)": {
+          "Lines": {
+            "177": 4560,
+            "178": 4560,
+            "179": 26400,
+            "180": 7440,
+            "181": 3120,
+            "182": 4560
+          },
+          "Branches": [
+            {
+              "Line": 180,
+              "Offset": 49,
+              "EndOffset": 51,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1440
+            },
+            {
+              "Line": 180,
+              "Offset": 49,
+              "EndOffset": 56,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 3120
+            }
+          ]
+        },
+        "System.Collections.Generic.List`1<Poker.Hand> Poker.ScoreLogic::SortByPointCards(System.Collections.Generic.List`1<Poker.Hand>)": {
+          "Lines": {
+            "185": 0,
+            "186": 0,
+            "187": 0,
+            "188": 0,
+            "189": 0,
+            "190": 0,
+            "191": 0,
+            "192": 0
+          },
+          "Branches": [
+            {
+              "Line": 187,
+              "Offset": 47,
+              "EndOffset": 17,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 187,
+              "Offset": 47,
+              "EndOffset": 49,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        },
+        "Poker.Hand Poker.ScoreLogic::SortByPointCards(Poker.Hand)": {
+          "Lines": {
+            "195": 0,
+            "196": 0,
+            "197": 0,
+            "198": 0,
+            "199": 0,
+            "203": 0,
+            "205": 0,
+            "208": 0,
+            "209": 0,
+            "210": 0,
+            "213": 0,
+            "214": 0,
+            "215": 0,
+            "219": 0,
+            "220": 0,
+            "221": 0,
+            "225": 0,
+            "227": 0,
+            "231": 0,
+            "232": 0,
+            "233": 0,
+            "236": 0,
+            "237": 0,
+            "238": 0,
+            "242": 0,
+            "243": 0,
+            "244": 0,
+            "245": 0,
+            "247": 0,
+            "248": 0,
+            "249": 0,
+            "250": 0,
+            "251": 0,
+            "253": 0,
+            "254": 0,
+            "255": 0,
+            "256": 0,
+            "258": 0,
+            "259": 0,
+            "263": 0,
+            "264": 0,
+            "265": 0,
+            "268": 0,
+            "269": 0,
+            "270": 0,
+            "273": 0,
+            "274": 0,
+            "275": 0,
+            "276": 0,
+            "277": 0,
+            "279": 0,
+            "308": 0
+          },
+          "Branches": [
+            {
+              "Line": 199,
+              "Offset": 40,
+              "EndOffset": 90,
+              "Path": 10,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 199,
+              "Offset": 40,
+              "EndOffset": 96,
+              "Path": 9,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 199,
+              "Offset": 40,
+              "EndOffset": 110,
+              "Path": 8,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 199,
+              "Offset": 40,
+              "EndOffset": 130,
+              "Path": 7,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 199,
+              "Offset": 40,
+              "EndOffset": 150,
+              "Path": 6,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 199,
+              "Offset": 40,
+              "EndOffset": 156,
+              "Path": 5,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 199,
+              "Offset": 40,
+              "EndOffset": 170,
+              "Path": 4,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 199,
+              "Offset": 40,
+              "EndOffset": 190,
+              "Path": 3,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 247,
+              "Offset": 289,
+              "EndOffset": 291,
+              "Path": 0,
+              "Ordinal": 11,
+              "Hits": 0
+            },
+            {
+              "Line": 247,
+              "Offset": 289,
+              "EndOffset": 323,
+              "Path": 1,
+              "Ordinal": 12,
+              "Hits": 0
+            },
+            {
+              "Line": 199,
+              "Offset": 40,
+              "EndOffset": 369,
+              "Path": 2,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 199,
+              "Offset": 40,
+              "EndOffset": 386,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 199,
+              "Offset": 40,
+              "EndOffset": 432,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 274,
+              "Offset": 506,
+              "EndOffset": 454,
+              "Path": 1,
+              "Ordinal": 14,
+              "Hits": 0
+            },
+            {
+              "Line": 274,
+              "Offset": 506,
+              "EndOffset": 508,
+              "Path": 0,
+              "Ordinal": 13,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Boolean Poker.ScoreLogic::<IsStraight>g__isIncrementalByOne|6_0(System.Int32,Poker.ScoreLogic/<>c__DisplayClass6_0&)": {
+          "Lines": {
+            "72": 996,
+            "73": 2148,
+            "74": 1074,
+            "75": 3066,
+            "76": 78,
+            "77": 0,
+            "78": 996
+          },
+          "Branches": [
+            {
+              "Line": 73,
+              "Offset": 71,
+              "EndOffset": 5,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1074
+            },
+            {
+              "Line": 75,
+              "Offset": 51,
+              "EndOffset": 53,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 996
+            },
+            {
+              "Line": 75,
+              "Offset": 51,
+              "EndOffset": 58,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 78
+            },
+            {
+              "Line": 73,
+              "Offset": 71,
+              "EndOffset": 73,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Poker.ScoreLogic::<SortByPointCards>g__StraightCase|16_0(Poker.ScoreLogic/<>c__DisplayClass16_0&)": {
+          "Lines": {
+            "282": 0,
+            "283": 0,
+            "284": 0,
+            "285": 0,
+            "286": 0,
+            "287": 0,
+            "288": 0,
+            "289": 0
+          },
+          "Branches": [
+            {
+              "Line": 283,
+              "Offset": 24,
+              "EndOffset": 26,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 283,
+              "Offset": 24,
+              "EndOffset": 67,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Collections.Generic.List`1<Poker.ICard> Poker.ScoreLogic::<SortByPointCards>g__TakeAndRemove|16_1(Poker.Rank,Poker.ScoreLogic/<>c__DisplayClass16_0&)": {
+          "Lines": {
+            "291": 0,
+            "292": 0,
+            "293": 0,
+            "294": 0,
+            "295": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<Poker.ICard> Poker.ScoreLogic::<SortByPointCards>g__OrderByPopThenRank|16_2(Poker.ScoreLogic/<>c__DisplayClass16_0&)": {
+          "Lines": {
+            "297": 0,
+            "298": 0,
+            "299": 0,
+            "300": 0,
+            "301": 0,
+            "302": 0,
+            "303": 0,
+            "304": 0,
+            "305": 0,
+            "306": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Some-Fish\\Documents\\Newton\\Objektorienterad_programmering\\Lab-2---Poker\\PokerLib\\GameFactory.cs": {
+      "Poker.Lib.GameFactory": {
+        "Poker.Lib.IPokerGame Poker.Lib.GameFactory::NewGame(System.String[])": {
+          "Lines": {
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0
+          },
+          "Branches": [
+            {
+              "Line": 7,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 7,
+              "Offset": 9,
+              "EndOffset": 23,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 8,
+              "Offset": 31,
+              "EndOffset": 33,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 8,
+              "Offset": 31,
+              "EndOffset": 45,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        },
+        "Poker.Lib.IPokerGame Poker.Lib.GameFactory::LoadGame(System.String)": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Some-Fish\\Documents\\Newton\\Objektorienterad_programmering\\Lab-2---Poker\\PokerLib\\StandardGame.cs": {
+      "Poker.Lib.StandardGame": {
+        "Poker.IPlayer[] Poker.Lib.StandardGame::get_Players()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "System.Void Poker.Lib.StandardGame::Exit()": {
+          "Lines": {
+            "38": 0,
+            "39": 0,
+            "40": 0
+          },
+          "Branches": []
+        },
+        "System.Void Poker.Lib.StandardGame::RunGame()": {
+          "Lines": {
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0
+          },
+          "Branches": [
+            {
+              "Line": 46,
+              "Offset": 38,
+              "EndOffset": 21,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 46,
+              "Offset": 38,
+              "EndOffset": 40,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Poker.Lib.StandardGame::fullGame()": {
+          "Lines": {
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0
+          },
+          "Branches": []
+        },
+        "System.Void Poker.Lib.StandardGame::DetermineWinner()": {
+          "Lines": {
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0
+          },
+          "Branches": [
+            {
+              "Line": 64,
+              "Offset": 36,
+              "EndOffset": 38,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 64,
+              "Offset": 36,
+              "EndOffset": 82,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Poker.Lib.StandardGame::SaveGameAndExit(System.String)": {
+          "Lines": {
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0
+          },
+          "Branches": []
+        },
+        "System.Void Poker.Lib.StandardGame::InitialDeal()": {
+          "Lines": {
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "90": 0
+          },
+          "Branches": [
+            {
+              "Line": 84,
+              "Offset": 102,
+              "EndOffset": 28,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 84,
+              "Offset": 102,
+              "EndOffset": 104,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Poker.Lib.StandardGame::Playerturns()": {
+          "Lines": {
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "105": 0
+          },
+          "Branches": [
+            {
+              "Line": 95,
+              "Offset": 140,
+              "EndOffset": 16,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 95,
+              "Offset": 140,
+              "EndOffset": 142,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Poker.Lib.StandardGame::.ctor(System.String)": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0
+          },
+          "Branches": []
+        },
+        "System.Void Poker.Lib.StandardGame::.ctor(System.String[])": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0
+          },
+          "Branches": [
+            {
+              "Line": 25,
+              "Offset": 68,
+              "EndOffset": 34,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 25,
+              "Offset": 68,
+              "EndOffset": 70,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    }
+  }
+}

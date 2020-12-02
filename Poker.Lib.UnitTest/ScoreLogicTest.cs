@@ -7,6 +7,15 @@ namespace Poker.Lib.UnitTest
     public class ScoreLogicTest
     {
         static public int[][] allValidPositionCombos = allPositionCombinations();
+
+        static public List<HandType> AllLowerHandTypesThan(HandType handType){
+            List<HandType> allLower= new List<HandType>();
+            for(int i = 0; i < (int)handType; i++ ){
+                allLower.Add((HandType)i);
+            }
+            return allLower;
+        }
+
         static private int[][] allPositionCombinations()
         {
            
@@ -33,12 +42,29 @@ namespace Poker.Lib.UnitTest
             }
             return theList.ToArray();
             bool IsValid(int[] numberArray)
-        {
-            int differentNumbers = (from i in numberArray
-                                    group i by i into gr
-                                    select gr).Count();
-            return differentNumbers == 5;
+            {
+                int differentNumbers = (from i in numberArray
+                                        group i by i into gr
+                                        select gr).Count();
+                return differentNumbers == 5;
+            }
         }
+        class MockPlayer : IPlayer
+        {
+            private HandType handType;
+            public string Name => throw new System.NotImplementedException();
+
+            public ICard[] Hand => throw new System.NotImplementedException();
+
+            public HandType HandType => handType;
+
+            public MockPlayer(HandType handType){
+                this.handType = handType;
+            }
+
+            public int Wins => throw new System.NotImplementedException();
+
+            public ICard[] Discard { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
         }
         [SetUp]
         public void Setup()
@@ -48,7 +74,7 @@ namespace Poker.Lib.UnitTest
 
         //HandType DetermineHandType(List<ICard> inputHand)
         //  if (IsRoyalStraightFlush(hand))
-     //   [Test, Combinatorial]
+        [Test, Combinatorial]
         public void Assert_DetermineHandType_CorrectlyOutputsRoyalStraightFlush(
             [ValueSource("allValidPositionCombos")] int[] positionsPermutation,
            [Values(
@@ -61,7 +87,7 @@ namespace Poker.Lib.UnitTest
         }
 
         //  if (IsStraightFlush(hand))
-    //    [Test, Combinatorial]
+        [Test, Combinatorial]
         public void Assert_DetermineHandType_CorrectlyOutputsStraightFlush(
             [ValueSource("allValidPositionCombos")] int[] positionsPermutation,
            [Values(
@@ -73,7 +99,7 @@ namespace Poker.Lib.UnitTest
             AssertCorrectHandType(HandType.StraightFlush, cardsString, positionsPermutation);
         }
         //   if (IsFourOfAKind(hand))
-     //   [Test, Combinatorial]
+        [Test, Combinatorial]
         public void Assert_DetermineHandType_CorrectlyOutputsFourOfAKind(
             [ValueSource("allValidPositionCombos")] int[] positionsPermutation,
            [Values(
@@ -85,7 +111,7 @@ namespace Poker.Lib.UnitTest
             AssertCorrectHandType(HandType.FourOfAKind, cardsString, positionsPermutation);
         }
         //   if (IsFullHouse(hand))
-     //   [Test, Combinatorial]
+        [Test, Combinatorial]
         public void Assert_DetermineHandType_CorrectlyOutputsFullHouse(
             [ValueSource("allValidPositionCombos")] int[] positionsPermutation,
            [Values(
@@ -97,11 +123,11 @@ namespace Poker.Lib.UnitTest
             AssertCorrectHandType(HandType.FullHouse, cardsString, positionsPermutation);
         }
         //    if (IsFlush(hand))
-    //    [Test, Combinatorial]
+        [Test, Combinatorial]
         public void Assert_DetermineHandType_CorrectlyOutputsFlush(
             [ValueSource("allValidPositionCombos")] int[] positionsPermutation,
            [Values(
-                "♥A♥2♥3♠4♥6",
+                "♥A♥2♥3♥4♥6",
                 "♦10♦J♦Q♦K♦8"
             )] string cardsString
         )
@@ -109,7 +135,7 @@ namespace Poker.Lib.UnitTest
             AssertCorrectHandType(HandType.Flush, cardsString, positionsPermutation);
         }
         //    if (IsStraight(hand)) 
-     //   [Test, Combinatorial]
+        [Test, Combinatorial]
         public void Assert_DetermineHandType_CorrectlyOutputsStraight(
             [ValueSource("allValidPositionCombos")] int[] positionsPermutation,
            [Values(
@@ -176,13 +202,112 @@ namespace Poker.Lib.UnitTest
 
 
         //List<IPlayer> DetermineWinners(List<IPlayer> players)
-        [Test]
-        public void Assert_DetermineWinners_DeterminesCorrectWinnersWhenSuperiorHandtype(){
-            //TODO write
+      
+            //if (IsRoyalStraightFlush(hand)) 
+           // if (IsStraightFlush(hand)) 
+           // if (IsFourOfAKind(hand)) 
+           // if (IsFullHouse(hand)) 
+           // if (IsFlush(hand))
+           // if (IsStraight(hand)) 
+           // if (IsThreeOfAKind(hand))
+           // if (IsTwoPair(hand)) 
+           // if (IsPair(hand))
+
+        public static List<HandType> allHandTypes(){
+            List<HandType> allHandTypes = new List<HandType>();
+            foreach(HandType handType in System.Enum.GetValues(typeof(HandType))){
+                allHandTypes.Add(handType);
+            }
+            return allHandTypes;
         }
-        [Test]
-        public void Assert_DetermineWinners_DeterminesCorrectlyWhenDraw(){
-            //TODO write
+
+        public static List<(HandType,HandType)> firstHigherThanSecondHandTypeCombos(){
+            var allCombos = new List<(HandType,HandType)>();            
+
+            foreach(HandType first in System.Enum.GetValues(typeof(HandType))){
+                foreach(HandType second in System.Enum.GetValues(typeof(HandType))){
+                    if(first > second){
+                        allCombos.Add((first, second));
+                    }                   
+                }
+            }
+            return allCombos;
+        }
+
+        [Test, Combinatorial]
+        public void Assert_DetermineWinners_DeterminesSuperiorHandtypeWinner(
+            [ValueSource("firstHigherThanSecondHandTypeCombos")] (HandType,HandType) typePair
+        ){
+            HandType expected = typePair.Item1;
+            HandType matchAgainst = typePair.Item2;
+        
+            AssertDetermineFirstAsWinner(expected,matchAgainst);         
+        }
+
+        private void AssertDetermineFirstAsWinner(HandType winnerHandType, HandType loserHandType){
+            MockPlayer winner = new MockPlayer(winnerHandType);
+            MockPlayer loser = new MockPlayer(loserHandType);           
+            var winners = ScoreLogic.DetermineWinners(new List<IPlayer>(){winner,loser});
+            Assert.AreEqual(1,winners.Count);
+            Assert.AreEqual(winnerHandType,winners[0].HandType);
+        }
+        private void AssertDetermineFirstAsWinner(string winnerHand, string loserHand){
+            Player winner = new Player(winnerHand);
+            Player loser = new Player(loserHand);
+            winner.Give(ToCards(winnerHand));
+            loser.Give(ToCards(loserHand));
+           
+            var winners = ScoreLogic.DetermineWinners(new List<IPlayer>(){winner,loser});
+            Assert.AreEqual(1,winners.Count);
+            Assert.AreEqual(winnerHand,winners[0].Name);
+        }
+
+
+
+        //if (IsRoyalStraightFlush(hand)) DONE
+           // if (IsStraightFlush(hand)) DONE
+           // if (IsFourOfAKind(hand)) DONE
+           // if (IsFullHouse(hand)) DONE
+           // if (IsFlush(hand)) DONE
+           // if (IsStraight(hand)) DONE
+           // if (IsThreeOfAKind(hand))
+           // if (IsTwoPair(hand)) 
+           // if (IsPair(hand))
+        //TODO:More testcases(longer inparam values[] lists)
+
+
+
+        public static List<(string,string)> testCasesForDraws(){
+            return new List<(string,string)>(){
+                ("♣A♣K♣Q♣J♣10","♦A♦K♦Q♦J♦10"), //RoyalStraightFlush
+                ("♣9♣K♣Q♣J♣10","♦9♦K♦Q♦J♦10"), //StraightFlush
+                ("♣K♦K♥K♠K♣10","♣K♦K♥K♠K♦10"), //FourOfakind
+                ("♣K♦K♥K♠10♣10","♣K♦K♥K♣10♦10") ,//fullhouse
+                ("♥2♥3♥4♥5♥7","♦2♦3♦4♦5♦7"), //flush
+                ("♣A♣K♣Q♦J♣10","♦A♦K♦Q♦J♣10"), //straight
+                ("♦2♣2♠2♠3♠4","♦2♣2♠2♠3♣4"), //ThreeOfAkind
+                ("♠8♣8♠A♣A♠4","♣8♠8♣A♠A♠4"), //TwoPair
+                ("♦8♣8♠2♠A♠3","♠8♣8♠2♠A♦3"), //Pair
+                ("♦2♣3♣4♥5♥8","♦2♣3♣4♣5♥8") //highCard
+                }; 
+        }
+        [Test, Sequential]
+        public void Assert_DetermineWinners_DeterminesCorrectlyWhenDraw(
+             [ValueSource("testCasesForDraws")] (string,string) hands            
+        ){
+            Player player1 = new Player("Charles Darwin");
+            player1.Give(ToCards(hands.Item1));
+            Player player2 = new Player("George Carlin");
+            player2.Give(ToCards(hands.Item2));
+            Player player3 = new Player("the looser");
+            player3.Give(ToCards("♦2♣3♣4♣5♥7"));
+
+            List<IPlayer> winners = ScoreLogic.DetermineWinners(new List<IPlayer>(){player1,player2,player3});
+            
+            
+            Assert.Contains(player1, winners);
+            Assert.Contains(player2, winners); 
+            Assert.AreEqual(2, winners.Count);           
         }
         [Test]
         public void Assert_DetermineWinners_WhenEqualHandtypeButSuperiorRank(){
@@ -201,8 +326,8 @@ namespace Poker.Lib.UnitTest
                     "♥2♦3♣4♥5♣7",
                     "♣3♥J♥Q♦K♣A"
                 )] string cardsStringExpected){
-                    List<ICard> input = new List<ICard>(ToCards(cardsStringInput));
-                    List<ICard> expected = new List<ICard>(ToCards(cardsStringExpected));
+                    List<ICard> input = ToCards(cardsStringInput);
+                    List<ICard> expected = ToCards(cardsStringExpected);
                     input = ScoreLogic.SortByRankAndSuite(input);
                     for(int i = 0; i<expected.Count; i++){
                         Assert.True(expected[i].Equals(input[i]));
@@ -210,7 +335,7 @@ namespace Poker.Lib.UnitTest
                     
         }
 
-        static List<Card> ToCards(string text)
+        static List<ICard> ToCards(string text)
         {
             var cards = new List<Card>();
             int i = 0;
@@ -243,13 +368,13 @@ namespace Poker.Lib.UnitTest
                 i += Regex.IsMatch(rankString, @"^\d\d") ? 3 : 2;}
                 catch{throw new System.Exception("Wrong cardstring syntax");}
             }
-            return cards;
+            return new List<ICard>(cards);
 
         }
 
         static public void AssertCorrectHandType(HandType expected, string cardsString, int[] permutation)
         {
-            List<ICard> cards = new List<ICard>(ToCards(cardsString));
+            List<ICard> cards = ToCards(cardsString);
             ICard[] shuffledCards = new ICard[5];
             for (int i = 0; i < cards.Count; i++)
             {

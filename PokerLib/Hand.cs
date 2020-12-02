@@ -7,7 +7,13 @@ namespace Poker
         List<ICard> cards;
         IPlayer player;
         public int Count { get => cards.Count; }
-        public List<ICard> Cards { get => cards; set { cards = value; } }
+        public List<ICard> Cards { 
+            get => cards; 
+            set { 
+                cards = value; 
+                if(IsFull()){HandType = ScoreLogic.DetermineHandType(cards);}
+            } 
+        }
         public IPlayer Player { get => player; }
         public HandType HandType { get; set; }
         public Hand(IPlayer player)
@@ -29,6 +35,7 @@ namespace Poker
             if (cards.Contains(card)) { throw new Exception("Dublicate card"); }
             if (IsFull()) { throw new Exception("Hand overflow"); }
             cards.Add(card);
+            if(IsFull()){HandType = ScoreLogic.DetermineHandType(cards);}
         }
 
         public bool Contains(ICard disc)

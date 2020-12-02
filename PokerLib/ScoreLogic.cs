@@ -10,7 +10,7 @@ namespace Poker
         static public HandType DetermineHandType(List<ICard> inputHand)
         {
             var hand = new List<ICard>(inputHand);
-            SortByRankAndSuite(hand);
+            hand = SortByRankAndSuite(hand);
             if (IsRoyalStraightFlush(hand)) { return HandType.RoyalStraightFlush; }
             if (IsStraightFlush(hand)) { return HandType.StraightFlush; }
             if (IsFourOfAKind(hand)) { return HandType.FourOfAKind; }
@@ -59,12 +59,19 @@ namespace Poker
 
         private static bool IsStraight(List<ICard> hand)
         {
-            if (isIncrementalByOne(5)) { return true; }  
+            if (isIncrementalByOne(5)) { 
+                return true; }  
 
-            if (hand[4].Rank != Rank.Ace) { return false; }   
-            if( hand[0].Rank != Rank.Two) {return false; } 
+            if (hand[4].Rank != Rank.Ace) { 
+                return false; 
+            }   
+            if( hand[0].Rank != Rank.Two) {
+                return false; 
+            } 
 
-            if (isIncrementalByOne(4)) { return true; } 
+            if (isIncrementalByOne(4)) { 
+                return true; 
+                } 
 
             return false;
 
@@ -105,40 +112,28 @@ namespace Poker
 
         public static List<IPlayer> DetermineWinners(List<IPlayer> players)
         {
-            List<Hand> hands = new List<Hand>();
-            List<IPlayer> winners = new List<IPlayer>();
-            foreach (Player player in players)
-            {
-                hands.Add(player.hand);
+        
+            var highHand = GetHighestHandType(players);
+            List<IPlayer> highestPlayers = players.FindAll(player => player.HandType == highHand);
+         
+            if (highestPlayers.Count() == 1)
+            {              
+                return new List<IPlayer>(){highestPlayers[0]};
+            } 
+
+            List<Hand> highestHands = new  List<Hand>();
+            foreach(Player player in highestPlayers){
+                highestHands.Add(player.hand);
             }
-            var highHand = GetHighestHandType(hands);
-            List<Hand> highestHands = hands.FindAll(hand => hand.HandType == highHand);
+            highestHands = SortByPointCards( highestHands);
 
-            if (highestHands.Count() == 1)
+            for (int i = 0; i < 5; i++)
             {
-                winners.Add(highestHands[0].Player);
-                return winners;
-            }
-
-            highestHands = SortByPointCards(highestHands);
-
-            for (int i = 0; i < hands[0].Count; i++)
-            {
-
-                Rank highRank = Rank.Two;
-                foreach (Hand hand in highestHands)
-                {
-                    if (hand.Cards[i].Rank > highRank)
-                    {
-                        highRank = hand.Cards[i].Rank;
-                    }
-                }
-
-                Hand indexWinner = highestHands.OrderBy(hand => hand.Cards[i].Rank).Last();
-                highRank = indexWinner.Cards[i].Rank;
+                var highRank = highestHands.OrderBy(hand => hand.Cards[i].Rank).Last().Cards[i].Rank;
                 highestHands.RemoveAll(hand => hand.Cards[i].Rank != highRank);
             }
-            winners = new List<IPlayer>();
+
+            List<IPlayer> winners = new List<IPlayer>();
 
             foreach (Hand hand in highestHands)
             {
@@ -149,9 +144,9 @@ namespace Poker
 
 
 
-        private static HandType GetHighestHandType(List<Hand> hands)
+        private static HandType GetHighestHandType(List<IPlayer> player)
         {
-            return hands.OrderBy(hand => hand.HandType).Last().HandType;
+            return player.OrderBy(player => player.HandType).Last().HandType;
         }
         public static List<ICard> SortByRankAndSuite(List<ICard> cards)
         {

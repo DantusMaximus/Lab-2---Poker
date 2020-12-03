@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CoverageSession>
-  <Summary numSequencePoints="486" visitedSequencePoints="322" numBranchPoints="143" visitedBranchPoints="107" sequenceCoverage="66.25" branchCoverage="74.82" maxCyclomaticComplexity="180" minCyclomaticComplexity="180" visitedClasses="5" numClasses="8" visitedMethods="50" numMethods="72" />
+  <Summary numSequencePoints="490" visitedSequencePoints="392" numBranchPoints="147" visitedBranchPoints="126" sequenceCoverage="80" branchCoverage="85.71" maxCyclomaticComplexity="186" minCyclomaticComplexity="186" visitedClasses="7" numClasses="8" visitedMethods="62" numMethods="73" />
   <Modules>
-    <Module hash="DF5740D6-E05D-4711-8502-F7F1FB81DF03">
+    <Module hash="A8F7FBE1-BDB4-4B96-9E4D-97F77985E803">
       <ModulePath>PokerLib.dll</ModulePath>
-      <ModuleTime>2020-12-02T03:03:43</ModuleTime>
+      <ModuleTime>2020-12-03T02:06:49</ModuleTime>
       <ModuleName>PokerLib</ModuleName>
       <Files>
-        <File uid="1" fullPath="c:\Users\Some-Fish\Documents\Newton\Objektorienterad_programmering\Lab-2---Poker\PokerLib\Player.cs" />
-        <File uid="2" fullPath="c:\Users\Some-Fish\Documents\Newton\Objektorienterad_programmering\Lab-2---Poker\PokerLib\Card.cs" />
-        <File uid="3" fullPath="c:\Users\Some-Fish\Documents\Newton\Objektorienterad_programmering\Lab-2---Poker\PokerLib\Deck.cs" />
-        <File uid="4" fullPath="c:\Users\Some-Fish\Documents\Newton\Objektorienterad_programmering\Lab-2---Poker\PokerLib\FileManager.cs" />
-        <File uid="5" fullPath="c:\Users\Some-Fish\Documents\Newton\Objektorienterad_programmering\Lab-2---Poker\PokerLib\Hand.cs" />
-        <File uid="6" fullPath="c:\Users\Some-Fish\Documents\Newton\Objektorienterad_programmering\Lab-2---Poker\PokerLib\ScoreLogic.cs" />
-        <File uid="7" fullPath="c:\Users\Some-Fish\Documents\Newton\Objektorienterad_programmering\Lab-2---Poker\PokerLib\GameFactory.cs" />
-        <File uid="8" fullPath="c:\Users\Some-Fish\Documents\Newton\Objektorienterad_programmering\Lab-2---Poker\PokerLib\StandardGame.cs" />
+        <File uid="1" fullPath="C:\Users\leokr\Documents\Visual Studio Code\Inlämningsuppgifter\Lab-2---Poker\PokerLib\Player.cs" />
+        <File uid="2" fullPath="C:\Users\leokr\Documents\Visual Studio Code\Inlämningsuppgifter\Lab-2---Poker\PokerLib\Card.cs" />
+        <File uid="3" fullPath="C:\Users\leokr\Documents\Visual Studio Code\Inlämningsuppgifter\Lab-2---Poker\PokerLib\Deck.cs" />
+        <File uid="4" fullPath="C:\Users\leokr\Documents\Visual Studio Code\Inlämningsuppgifter\Lab-2---Poker\PokerLib\FileManager.cs" />
+        <File uid="5" fullPath="C:\Users\leokr\Documents\Visual Studio Code\Inlämningsuppgifter\Lab-2---Poker\PokerLib\Hand.cs" />
+        <File uid="6" fullPath="C:\Users\leokr\Documents\Visual Studio Code\Inlämningsuppgifter\Lab-2---Poker\PokerLib\ScoreLogic.cs" />
+        <File uid="7" fullPath="C:\Users\leokr\Documents\Visual Studio Code\Inlämningsuppgifter\Lab-2---Poker\PokerLib\GameFactory.cs" />
+        <File uid="8" fullPath="C:\Users\leokr\Documents\Visual Studio Code\Inlämningsuppgifter\Lab-2---Poker\PokerLib\StandardGame.cs" />
       </Files>
       <Classes>
         <Class>
-          <Summary numSequencePoints="42" visitedSequencePoints="40" numBranchPoints="8" visitedBranchPoints="7" sequenceCoverage="95.23" branchCoverage="87.5" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="10" numMethods="11" />
+          <Summary numSequencePoints="42" visitedSequencePoints="41" numBranchPoints="8" visitedBranchPoints="7" sequenceCoverage="97.61" branchCoverage="87.5" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="11" numMethods="11" />
           <FullName>Player</FullName>
           <Methods>
             <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
@@ -27,18 +27,18 @@
               <Name>System.Void Player::Give(System.Collections.Generic.List`1&lt;Poker.ICard&gt;)</Name>
               <FileRef uid="1" />
               <SequencePoints>
-                <SequencePoint vc="32" uspid="24" ordinal="0" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="187" uspid="25" ordinal="1" sl="25" sc="1" el="25" ec="2" bec="2" bev="2" fileid="1" />
-                <SequencePoint vc="156" uspid="26" ordinal="2" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="156" uspid="27" ordinal="3" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="156" uspid="28" ordinal="4" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="155" uspid="29" ordinal="5" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="155" uspid="30" ordinal="6" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="31" uspid="31" ordinal="7" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="75" uspid="24" ordinal="0" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="430" uspid="25" ordinal="1" sl="25" sc="1" el="25" ec="2" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="356" uspid="26" ordinal="2" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="356" uspid="27" ordinal="3" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="356" uspid="28" ordinal="4" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="355" uspid="29" ordinal="5" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="355" uspid="30" ordinal="6" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="74" uspid="31" ordinal="7" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="1" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="156" uspid="25" ordinal="1" path="1" offset="57" offsetend="3" sl="25" fileid="1" />
-                <BranchPoint vc="31" uspid="25" ordinal="0" path="0" offset="57" offsetend="59" sl="25" fileid="1" />
+                <BranchPoint vc="356" uspid="25" ordinal="1" path="1" offset="57" offsetend="3" sl="25" fileid="1" />
+                <BranchPoint vc="74" uspid="25" ordinal="0" path="0" offset="57" offsetend="59" sl="25" fileid="1" />
               </BranchPoints>
               <MethodPoint vc="8" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="24" ec="1" el="31" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
             </Method>
@@ -48,21 +48,21 @@
               <Name>System.Void Player::RemoveCards()</Name>
               <FileRef uid="1" />
               <SequencePoints>
-                <SequencePoint vc="1" uspid="33" ordinal="0" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="7" uspid="34" ordinal="1" sl="34" sc="1" el="34" ec="2" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="4" uspid="33" ordinal="0" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="16" uspid="34" ordinal="1" sl="34" sc="1" el="34" ec="2" bec="2" bev="2" fileid="1" />
                 <SequencePoint vc="2" uspid="35" ordinal="2" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="1" />
                 <SequencePoint vc="2" uspid="36" ordinal="3" sl="36" sc="1" el="36" ec="2" bec="2" bev="2" fileid="1" />
                 <SequencePoint vc="2" uspid="37" ordinal="4" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="1" />
                 <SequencePoint vc="2" uspid="38" ordinal="5" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="1" />
                 <SequencePoint vc="2" uspid="39" ordinal="6" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="1" />
                 <SequencePoint vc="2" uspid="40" ordinal="7" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="41" ordinal="8" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="4" uspid="41" ordinal="8" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="1" />
               </SequencePoints>
               <BranchPoints>
                 <BranchPoint vc="2" uspid="34" ordinal="3" path="1" offset="58" offsetend="13" sl="34" fileid="1" />
                 <BranchPoint vc="2" uspid="36" ordinal="0" path="0" offset="32" offsetend="34" sl="36" fileid="1" />
                 <BranchPoint vc="2" uspid="36" ordinal="1" path="1" offset="32" offsetend="49" sl="36" fileid="1" />
-                <BranchPoint vc="1" uspid="34" ordinal="2" path="0" offset="58" offsetend="60" sl="34" fileid="1" />
+                <BranchPoint vc="4" uspid="34" ordinal="2" path="0" offset="58" offsetend="60" sl="34" fileid="1" />
               </BranchPoints>
               <MethodPoint vc="9" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="33" ec="1" el="41" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
             </Method>
@@ -72,9 +72,9 @@
               <Name>System.Void Player::JustWon()</Name>
               <FileRef uid="1" />
               <SequencePoints>
-                <SequencePoint vc="1" uspid="43" ordinal="0" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="44" ordinal="1" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="1" uspid="45" ordinal="2" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="43" ordinal="0" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="44" ordinal="1" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="45" ordinal="2" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="1" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="43" ec="1" el="45" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
@@ -101,21 +101,21 @@
               <Name>System.String Player::Poker.IPlayer.get_Name()</Name>
               <FileRef uid="1" />
               <SequencePoints>
-                <SequencePoint vc="1" uspid="53" ordinal="0" sl="53" sc="1" el="53" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="29" uspid="53" ordinal="0" sl="53" sc="1" el="53" ec="2" bec="0" bev="0" fileid="1" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="53" ec="1" el="53" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
             </Method>
-            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>Poker.ICard[] Player::Poker.IPlayer.get_Hand()</Name>
               <FileRef uid="1" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="54" ordinal="0" sl="54" sc="1" el="54" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="54" ordinal="0" sl="54" sc="1" el="54" ec="2" bec="0" bev="0" fileid="1" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="54" ec="1" el="54" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="54" ec="1" el="54" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
               <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
@@ -123,7 +123,7 @@
               <Name>Poker.HandType Player::Poker.IPlayer.get_HandType()</Name>
               <FileRef uid="1" />
               <SequencePoints>
-                <SequencePoint vc="70" uspid="56" ordinal="0" sl="56" sc="1" el="56" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="175" uspid="56" ordinal="0" sl="56" sc="1" el="56" ec="2" bec="0" bev="0" fileid="1" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="6" offset="6" sc="0" sl="56" ec="1" el="56" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
@@ -156,9 +156,9 @@
               <Name>System.Void Player::.ctor(System.String)</Name>
               <FileRef uid="1" />
               <SequencePoints>
-                <SequencePoint vc="50" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="50" uspid="12" ordinal="1" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="50" uspid="14" ordinal="2" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="106" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="106" uspid="12" ordinal="1" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="106" uspid="14" ordinal="2" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="1" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="9" offset="9" sc="0" sl="11" ec="1" el="14" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
@@ -169,18 +169,18 @@
               <Name>System.Void Player::.ctor(System.String,System.Int32)</Name>
               <FileRef uid="1" />
               <SequencePoints>
-                <SequencePoint vc="51" uspid="15" ordinal="0" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="51" uspid="16" ordinal="1" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="107" uspid="15" ordinal="0" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="107" uspid="16" ordinal="1" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="1" />
                 <SequencePoint vc="0" uspid="17" ordinal="2" sl="17" sc="1" el="17" ec="2" bec="2" bev="1" fileid="1" />
-                <SequencePoint vc="50" uspid="18" ordinal="3" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="50" uspid="19" ordinal="4" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="50" uspid="20" ordinal="5" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="50" uspid="21" ordinal="6" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="1" />
-                <SequencePoint vc="50" uspid="22" ordinal="7" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="106" uspid="18" ordinal="3" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="106" uspid="19" ordinal="4" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="106" uspid="20" ordinal="5" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="106" uspid="21" ordinal="6" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="106" uspid="22" ordinal="7" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="1" />
               </SequencePoints>
               <BranchPoints>
                 <BranchPoint vc="0" uspid="17" ordinal="0" path="0" offset="17" offsetend="19" sl="17" fileid="1" />
-                <BranchPoint vc="50" uspid="17" ordinal="1" path="1" offset="17" offsetend="26" sl="17" fileid="1" />
+                <BranchPoint vc="106" uspid="17" ordinal="1" path="1" offset="17" offsetend="26" sl="17" fileid="1" />
               </BranchPoints>
               <MethodPoint vc="7" uspid="0" p8:type="SequencePoint" ordinal="10" offset="10" sc="0" sl="15" ec="1" el="22" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
             </Method>
@@ -196,7 +196,7 @@
               <Name>Poker.Suite Poker.Card::get_Suite()</Name>
               <FileRef uid="2" />
               <SequencePoints>
-                <SequencePoint vc="61075" uspid="7" ordinal="0" sl="7" sc="1" el="7" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="62673" uspid="7" ordinal="0" sl="7" sc="1" el="7" ec="2" bec="0" bev="0" fileid="2" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="7" ec="1" el="7" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
@@ -207,7 +207,7 @@
               <Name>Poker.Rank Poker.Card::get_Rank()</Name>
               <FileRef uid="2" />
               <SequencePoints>
-                <SequencePoint vc="102853" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="107301" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="2" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="9" ec="1" el="9" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
@@ -218,20 +218,20 @@
               <Name>System.Boolean Poker.Card::Equals(System.Object)</Name>
               <FileRef uid="2" />
               <SequencePoints>
-                <SequencePoint vc="381" uspid="16" ordinal="0" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="381" uspid="17" ordinal="1" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="381" uspid="18" ordinal="2" sl="18" sc="1" el="18" ec="2" bec="2" bev="2" fileid="2" />
-                <SequencePoint vc="329" uspid="19" ordinal="3" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="51" uspid="20" ordinal="4" sl="20" sc="1" el="20" ec="2" bec="2" bev="2" fileid="2" />
-                <SequencePoint vc="32" uspid="21" ordinal="5" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="19" uspid="22" ordinal="6" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="380" uspid="23" ordinal="7" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="812" uspid="16" ordinal="0" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="812" uspid="17" ordinal="1" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="812" uspid="18" ordinal="2" sl="18" sc="1" el="18" ec="2" bec="2" bev="2" fileid="2" />
+                <SequencePoint vc="666" uspid="19" ordinal="3" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="145" uspid="20" ordinal="4" sl="20" sc="1" el="20" ec="2" bec="2" bev="2" fileid="2" />
+                <SequencePoint vc="115" uspid="21" ordinal="5" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="30" uspid="22" ordinal="6" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="811" uspid="23" ordinal="7" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="2" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="329" uspid="18" ordinal="0" path="0" offset="27" offsetend="29" sl="18" fileid="2" />
-                <BranchPoint vc="51" uspid="18" ordinal="1" path="1" offset="27" offsetend="33" sl="18" fileid="2" />
-                <BranchPoint vc="32" uspid="20" ordinal="2" path="0" offset="52" offsetend="54" sl="20" fileid="2" />
-                <BranchPoint vc="19" uspid="20" ordinal="3" path="1" offset="52" offsetend="58" sl="20" fileid="2" />
+                <BranchPoint vc="666" uspid="18" ordinal="0" path="0" offset="27" offsetend="29" sl="18" fileid="2" />
+                <BranchPoint vc="145" uspid="18" ordinal="1" path="1" offset="27" offsetend="33" sl="18" fileid="2" />
+                <BranchPoint vc="115" uspid="20" ordinal="2" path="0" offset="52" offsetend="54" sl="20" fileid="2" />
+                <BranchPoint vc="30" uspid="20" ordinal="3" path="1" offset="52" offsetend="58" sl="20" fileid="2" />
               </BranchPoints>
               <MethodPoint vc="8" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="16" ec="1" el="23" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
             </Method>
@@ -253,11 +253,11 @@
               <Name>System.Void Poker.Card::.ctor(Poker.Rank,Poker.Suite)</Name>
               <FileRef uid="2" />
               <SequencePoints>
-                <SequencePoint vc="12577" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="12577" uspid="11" ordinal="1" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="12577" uspid="12" ordinal="2" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="12577" uspid="13" ordinal="3" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="12577" uspid="14" ordinal="4" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="13047" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="13047" uspid="11" ordinal="1" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="13047" uspid="12" ordinal="2" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="13047" uspid="13" ordinal="3" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="13047" uspid="14" ordinal="4" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="2" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="10" ec="1" el="14" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
@@ -274,7 +274,7 @@
               <Name>System.Collections.Generic.List`1&lt;Poker.ICard&gt; Poker.Deck::get_Content()</Name>
               <FileRef uid="3" />
               <SequencePoints>
-                <SequencePoint vc="2953" uspid="7" ordinal="0" sl="7" sc="1" el="7" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="4303" uspid="7" ordinal="0" sl="7" sc="1" el="7" ec="2" bec="0" bev="0" fileid="3" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="7" ec="1" el="7" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
@@ -285,23 +285,23 @@
               <Name>System.Void Poker.Deck::Randomize()</Name>
               <FileRef uid="3" />
               <SequencePoints>
-                <SequencePoint vc="8" uspid="25" ordinal="0" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="8" uspid="26" ordinal="1" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="8" uspid="27" ordinal="2" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="8" uspid="28" ordinal="3" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="416" uspid="29" ordinal="4" sl="29" sc="1" el="29" ec="2" bec="2" bev="2" fileid="3" />
-                <SequencePoint vc="408" uspid="30" ordinal="5" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="408" uspid="31" ordinal="6" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="408" uspid="32" ordinal="7" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="408" uspid="33" ordinal="8" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="408" uspid="34" ordinal="9" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="408" uspid="35" ordinal="10" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="408" uspid="36" ordinal="11" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="8" uspid="37" ordinal="12" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="13" uspid="25" ordinal="0" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="13" uspid="26" ordinal="1" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="13" uspid="27" ordinal="2" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="13" uspid="28" ordinal="3" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="676" uspid="29" ordinal="4" sl="29" sc="1" el="29" ec="2" bec="2" bev="2" fileid="3" />
+                <SequencePoint vc="663" uspid="30" ordinal="5" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="663" uspid="31" ordinal="6" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="663" uspid="32" ordinal="7" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="663" uspid="33" ordinal="8" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="663" uspid="34" ordinal="9" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="663" uspid="35" ordinal="10" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="663" uspid="36" ordinal="11" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="13" uspid="37" ordinal="12" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="3" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="408" uspid="29" ordinal="1" path="1" offset="101" offsetend="25" sl="29" fileid="3" />
-                <BranchPoint vc="8" uspid="29" ordinal="0" path="0" offset="101" offsetend="103" sl="29" fileid="3" />
+                <BranchPoint vc="663" uspid="29" ordinal="1" path="1" offset="101" offsetend="25" sl="29" fileid="3" />
+                <BranchPoint vc="13" uspid="29" ordinal="0" path="0" offset="101" offsetend="103" sl="29" fileid="3" />
               </BranchPoints>
               <MethodPoint vc="13" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="25" ec="1" el="37" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
             </Method>
@@ -326,21 +326,21 @@
               <Name>System.Collections.Generic.List`1&lt;Poker.ICard&gt; Poker.Deck::Draw(System.Int32)</Name>
               <FileRef uid="3" />
               <SequencePoints>
-                <SequencePoint vc="8" uspid="45" ordinal="0" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="8" uspid="46" ordinal="1" sl="46" sc="1" el="46" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="642" uspid="47" ordinal="2" sl="47" sc="1" el="47" ec="2" bec="2" bev="2" fileid="3" />
-                <SequencePoint vc="314" uspid="48" ordinal="3" sl="48" sc="1" el="48" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="314" uspid="49" ordinal="4" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="314" uspid="50" ordinal="5" sl="50" sc="1" el="50" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="313" uspid="51" ordinal="6" sl="51" sc="1" el="51" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="313" uspid="52" ordinal="7" sl="52" sc="1" el="52" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="7" uspid="53" ordinal="8" sl="53" sc="1" el="53" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="7" uspid="54" ordinal="9" sl="54" sc="1" el="54" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="7" uspid="55" ordinal="10" sl="55" sc="1" el="55" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="15" uspid="45" ordinal="0" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="15" uspid="46" ordinal="1" sl="46" sc="1" el="46" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="696" uspid="47" ordinal="2" sl="47" sc="1" el="47" ec="2" bec="2" bev="2" fileid="3" />
+                <SequencePoint vc="334" uspid="48" ordinal="3" sl="48" sc="1" el="48" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="334" uspid="49" ordinal="4" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="334" uspid="50" ordinal="5" sl="50" sc="1" el="50" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="333" uspid="51" ordinal="6" sl="51" sc="1" el="51" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="333" uspid="52" ordinal="7" sl="52" sc="1" el="52" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="14" uspid="53" ordinal="8" sl="53" sc="1" el="53" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="14" uspid="54" ordinal="9" sl="54" sc="1" el="54" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="14" uspid="55" ordinal="10" sl="55" sc="1" el="55" ec="2" bec="0" bev="0" fileid="3" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="314" uspid="47" ordinal="1" path="1" offset="69" offsetend="11" sl="47" fileid="3" />
-                <BranchPoint vc="7" uspid="47" ordinal="0" path="0" offset="69" offsetend="71" sl="47" fileid="3" />
+                <BranchPoint vc="334" uspid="47" ordinal="1" path="1" offset="69" offsetend="11" sl="47" fileid="3" />
+                <BranchPoint vc="14" uspid="47" ordinal="0" path="0" offset="69" offsetend="71" sl="47" fileid="3" />
               </BranchPoints>
               <MethodPoint vc="11" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="45" ec="1" el="55" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
             </Method>
@@ -350,25 +350,25 @@
               <Name>System.Void Poker.Deck::.ctor()</Name>
               <FileRef uid="3" />
               <SequencePoints>
-                <SequencePoint vc="7" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="7" uspid="11" ordinal="1" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="7" uspid="12" ordinal="2" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="7" uspid="13" ordinal="3" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="196" uspid="14" ordinal="4" sl="14" sc="1" el="14" ec="2" bec="2" bev="2" fileid="3" />
-                <SequencePoint vc="91" uspid="15" ordinal="5" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="910" uspid="16" ordinal="6" sl="16" sc="1" el="16" ec="2" bec="2" bev="2" fileid="3" />
-                <SequencePoint vc="364" uspid="17" ordinal="7" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="364" uspid="18" ordinal="8" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="364" uspid="19" ordinal="9" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="91" uspid="20" ordinal="10" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="7" uspid="21" ordinal="11" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="3" />
-                <SequencePoint vc="7" uspid="22" ordinal="12" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="12" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="12" uspid="11" ordinal="1" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="12" uspid="12" ordinal="2" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="12" uspid="13" ordinal="3" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="336" uspid="14" ordinal="4" sl="14" sc="1" el="14" ec="2" bec="2" bev="2" fileid="3" />
+                <SequencePoint vc="156" uspid="15" ordinal="5" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="1560" uspid="16" ordinal="6" sl="16" sc="1" el="16" ec="2" bec="2" bev="2" fileid="3" />
+                <SequencePoint vc="624" uspid="17" ordinal="7" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="624" uspid="18" ordinal="8" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="624" uspid="19" ordinal="9" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="156" uspid="20" ordinal="10" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="12" uspid="21" ordinal="11" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="12" uspid="22" ordinal="12" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="3" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="91" uspid="14" ordinal="3" path="1" offset="85" offsetend="35" sl="14" fileid="3" />
-                <BranchPoint vc="364" uspid="16" ordinal="1" path="1" offset="71" offsetend="40" sl="16" fileid="3" />
-                <BranchPoint vc="91" uspid="16" ordinal="0" path="0" offset="71" offsetend="73" sl="16" fileid="3" />
-                <BranchPoint vc="7" uspid="14" ordinal="2" path="0" offset="85" offsetend="87" sl="14" fileid="3" />
+                <BranchPoint vc="156" uspid="14" ordinal="3" path="1" offset="85" offsetend="35" sl="14" fileid="3" />
+                <BranchPoint vc="624" uspid="16" ordinal="1" path="1" offset="71" offsetend="40" sl="16" fileid="3" />
+                <BranchPoint vc="156" uspid="16" ordinal="0" path="0" offset="71" offsetend="73" sl="16" fileid="3" />
+                <BranchPoint vc="12" uspid="14" ordinal="2" path="0" offset="85" offsetend="87" sl="14" fileid="3" />
               </BranchPoints>
               <MethodPoint vc="13" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="10" ec="1" el="22" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
             </Method>
@@ -535,7 +535,7 @@
           </Methods>
         </Class>
         <Class>
-          <Summary numSequencePoints="35" visitedSequencePoints="28" numBranchPoints="14" visitedBranchPoints="8" sequenceCoverage="80" branchCoverage="57.14" maxCyclomaticComplexity="6" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="10" numMethods="11" />
+          <Summary numSequencePoints="35" visitedSequencePoints="32" numBranchPoints="14" visitedBranchPoints="10" sequenceCoverage="91.42" branchCoverage="71.42" maxCyclomaticComplexity="6" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="11" numMethods="11" />
           <FullName>Poker.Hand</FullName>
           <Methods>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
@@ -544,7 +544,7 @@
               <Name>System.Int32 Poker.Hand::get_Count()</Name>
               <FileRef uid="5" />
               <SequencePoints>
-                <SequencePoint vc="1" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="4" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="5" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="9" ec="1" el="9" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
@@ -555,27 +555,27 @@
               <Name>System.Collections.Generic.List`1&lt;Poker.ICard&gt; Poker.Hand::get_Cards()</Name>
               <FileRef uid="5" />
               <SequencePoints>
-                <SequencePoint vc="304" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="771" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="5" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="11" ec="1" el="11" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
             </Method>
-            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="True" isStatic="True">
-              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="True" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.Void Poker.Hand::set_Cards(System.Collections.Generic.List`1&lt;Poker.ICard&gt;)</Name>
               <FileRef uid="5" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="0" uspid="13" ordinal="1" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="0" uspid="14" ordinal="2" sl="14" sc="1" el="14" ec="2" bec="2" bev="0" fileid="5" />
-                <SequencePoint vc="0" uspid="15" ordinal="3" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="7" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="7" uspid="13" ordinal="1" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="28" uspid="14" ordinal="2" sl="14" sc="1" el="14" ec="2" bec="2" bev="2" fileid="5" />
+                <SequencePoint vc="7" uspid="15" ordinal="3" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="5" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="0" uspid="14" ordinal="0" path="0" offset="16" offsetend="18" sl="14" fileid="5" />
-                <BranchPoint vc="0" uspid="14" ordinal="1" path="1" offset="16" offsetend="38" sl="14" fileid="5" />
+                <BranchPoint vc="7" uspid="14" ordinal="0" path="0" offset="16" offsetend="18" sl="14" fileid="5" />
+                <BranchPoint vc="7" uspid="14" ordinal="1" path="1" offset="16" offsetend="38" sl="14" fileid="5" />
               </BranchPoints>
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="12" ec="1" el="15" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="12" ec="1" el="15" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
               <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
@@ -583,7 +583,7 @@
               <Name>Poker.IPlayer Poker.Hand::get_Player()</Name>
               <FileRef uid="5" />
               <SequencePoints>
-                <SequencePoint vc="43" uspid="17" ordinal="0" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="100" uspid="17" ordinal="0" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="5" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="17" ec="1" el="17" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
@@ -594,7 +594,7 @@
               <Name>Poker.HandType Poker.Hand::get_HandType()</Name>
               <FileRef uid="5" />
               <SequencePoints>
-                <SequencePoint vc="126" uspid="18" ordinal="0" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="321" uspid="18" ordinal="0" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="5" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="18" ec="1" el="18" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
@@ -605,20 +605,20 @@
               <Name>System.Void Poker.Hand::Add(Poker.ICard)</Name>
               <FileRef uid="5" />
               <SequencePoints>
-                <SequencePoint vc="182" uspid="34" ordinal="0" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="392" uspid="34" ordinal="0" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="5" />
                 <SequencePoint vc="0" uspid="35" ordinal="1" sl="35" sc="1" el="35" ec="2" bec="2" bev="1" fileid="5" />
-                <SequencePoint vc="184" uspid="36" ordinal="2" sl="36" sc="1" el="36" ec="2" bec="2" bev="2" fileid="5" />
-                <SequencePoint vc="181" uspid="37" ordinal="3" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="286" uspid="38" ordinal="4" sl="38" sc="1" el="38" ec="2" bec="2" bev="2" fileid="5" />
-                <SequencePoint vc="181" uspid="39" ordinal="5" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="394" uspid="36" ordinal="2" sl="36" sc="1" el="36" ec="2" bec="2" bev="2" fileid="5" />
+                <SequencePoint vc="391" uspid="37" ordinal="3" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="622" uspid="38" ordinal="4" sl="38" sc="1" el="38" ec="2" bec="2" bev="2" fileid="5" />
+                <SequencePoint vc="391" uspid="39" ordinal="5" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="5" />
               </SequencePoints>
               <BranchPoints>
                 <BranchPoint vc="0" uspid="35" ordinal="0" path="0" offset="15" offsetend="17" sl="35" fileid="5" />
-                <BranchPoint vc="182" uspid="35" ordinal="1" path="1" offset="15" offsetend="29" sl="35" fileid="5" />
+                <BranchPoint vc="392" uspid="35" ordinal="1" path="1" offset="15" offsetend="29" sl="35" fileid="5" />
                 <BranchPoint vc="1" uspid="36" ordinal="2" path="0" offset="37" offsetend="39" sl="36" fileid="5" />
-                <BranchPoint vc="181" uspid="36" ordinal="3" path="1" offset="37" offsetend="51" sl="36" fileid="5" />
-                <BranchPoint vc="35" uspid="38" ordinal="4" path="0" offset="72" offsetend="74" sl="38" fileid="5" />
-                <BranchPoint vc="181" uspid="38" ordinal="5" path="1" offset="72" offsetend="94" sl="38" fileid="5" />
+                <BranchPoint vc="391" uspid="36" ordinal="3" path="1" offset="37" offsetend="51" sl="36" fileid="5" />
+                <BranchPoint vc="77" uspid="38" ordinal="4" path="0" offset="72" offsetend="74" sl="38" fileid="5" />
+                <BranchPoint vc="391" uspid="38" ordinal="5" path="1" offset="72" offsetend="94" sl="38" fileid="5" />
               </BranchPoints>
               <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="34" ec="1" el="39" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
             </Method>
@@ -641,9 +641,9 @@
               <Name>System.Void Poker.Hand::Remove(Poker.ICard)</Name>
               <FileRef uid="5" />
               <SequencePoints>
-                <SequencePoint vc="3" uspid="47" ordinal="0" sl="47" sc="1" el="47" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="3" uspid="48" ordinal="1" sl="48" sc="1" el="48" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="3" uspid="49" ordinal="2" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="13" uspid="47" ordinal="0" sl="47" sc="1" el="47" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="13" uspid="48" ordinal="1" sl="48" sc="1" el="48" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="13" uspid="49" ordinal="2" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="5" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="7" offset="7" sc="0" sl="47" ec="1" el="49" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
@@ -654,9 +654,9 @@
               <Name>System.Boolean Poker.Hand::IsFull()</Name>
               <FileRef uid="5" />
               <SequencePoints>
-                <SequencePoint vc="553" uspid="52" ordinal="0" sl="52" sc="1" el="52" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="553" uspid="53" ordinal="1" sl="53" sc="1" el="53" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="553" uspid="54" ordinal="2" sl="54" sc="1" el="54" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1223" uspid="52" ordinal="0" sl="52" sc="1" el="52" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1223" uspid="53" ordinal="1" sl="53" sc="1" el="53" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="1223" uspid="54" ordinal="2" sl="54" sc="1" el="54" ec="2" bec="0" bev="0" fileid="5" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="8" offset="8" sc="0" sl="52" ec="1" el="54" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
@@ -667,16 +667,16 @@
               <Name>System.Void Poker.Hand::.ctor(Poker.IPlayer)</Name>
               <FileRef uid="5" />
               <SequencePoints>
-                <SequencePoint vc="52" uspid="19" ordinal="0" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="52" uspid="20" ordinal="1" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="108" uspid="19" ordinal="0" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="108" uspid="20" ordinal="1" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="5" />
                 <SequencePoint vc="0" uspid="21" ordinal="2" sl="21" sc="1" el="21" ec="2" bec="2" bev="1" fileid="5" />
-                <SequencePoint vc="51" uspid="22" ordinal="3" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="51" uspid="23" ordinal="4" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="51" uspid="24" ordinal="5" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="107" uspid="22" ordinal="3" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="107" uspid="23" ordinal="4" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="107" uspid="24" ordinal="5" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="5" />
               </SequencePoints>
               <BranchPoints>
                 <BranchPoint vc="0" uspid="21" ordinal="0" path="0" offset="17" offsetend="19" sl="21" fileid="5" />
-                <BranchPoint vc="51" uspid="21" ordinal="1" path="1" offset="17" offsetend="31" sl="21" fileid="5" />
+                <BranchPoint vc="107" uspid="21" ordinal="1" path="1" offset="17" offsetend="31" sl="21" fileid="5" />
               </BranchPoints>
               <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="9" offset="9" sc="0" sl="19" ec="1" el="24" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
             </Method>
@@ -686,25 +686,25 @@
               <Name>System.Void Poker.Hand::.ctor(Poker.IPlayer,System.Collections.Generic.List`1&lt;Poker.ICard&gt;)</Name>
               <FileRef uid="5" />
               <SequencePoints>
-                <SequencePoint vc="23" uspid="25" ordinal="0" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="23" uspid="26" ordinal="1" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="65" uspid="25" ordinal="0" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="65" uspid="26" ordinal="1" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="5" />
                 <SequencePoint vc="0" uspid="27" ordinal="2" sl="27" sc="1" el="27" ec="2" bec="4" bev="2" fileid="5" />
-                <SequencePoint vc="21" uspid="28" ordinal="3" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="21" uspid="29" ordinal="4" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="5" />
-                <SequencePoint vc="21" uspid="30" ordinal="5" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="63" uspid="28" ordinal="3" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="63" uspid="29" ordinal="4" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="63" uspid="30" ordinal="5" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="5" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="22" uspid="27" ordinal="0" path="0" offset="15" offsetend="17" sl="27" fileid="5" />
+                <BranchPoint vc="64" uspid="27" ordinal="0" path="0" offset="15" offsetend="17" sl="27" fileid="5" />
                 <BranchPoint vc="0" uspid="27" ordinal="1" path="1" offset="15" offsetend="26" sl="27" fileid="5" />
                 <BranchPoint vc="0" uspid="27" ordinal="2" path="0" offset="29" offsetend="31" sl="27" fileid="5" />
-                <BranchPoint vc="21" uspid="27" ordinal="3" path="1" offset="29" offsetend="38" sl="27" fileid="5" />
+                <BranchPoint vc="63" uspid="27" ordinal="3" path="1" offset="29" offsetend="38" sl="27" fileid="5" />
               </BranchPoints>
               <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="10" offset="10" sc="0" sl="25" ec="1" el="30" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
             </Method>
           </Methods>
         </Class>
         <Class>
-          <Summary numSequencePoints="203" visitedSequencePoints="196" numBranchPoints="81" visitedBranchPoints="80" sequenceCoverage="96.55" branchCoverage="98.76" maxCyclomaticComplexity="18" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="21" numMethods="21" />
+          <Summary numSequencePoints="203" visitedSequencePoints="200" numBranchPoints="81" visitedBranchPoints="81" sequenceCoverage="98.52" branchCoverage="100" maxCyclomaticComplexity="18" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="21" numMethods="21" />
           <FullName>Poker.ScoreLogic</FullName>
           <Methods>
             <Method cyclomaticComplexity="18" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
@@ -713,40 +713,40 @@
               <Name>Poker.HandType Poker.ScoreLogic::DetermineHandType(System.Collections.Generic.List`1&lt;Poker.ICard&gt;)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="2435" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2435" uspid="12" ordinal="1" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2435" uspid="13" ordinal="2" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2919" uspid="14" ordinal="3" sl="14" sc="1" el="14" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="2683" uspid="15" ordinal="4" sl="15" sc="1" el="15" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="2432" uspid="16" ordinal="5" sl="16" sc="1" el="16" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="2190" uspid="17" ordinal="6" sl="17" sc="1" el="17" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="1948" uspid="18" ordinal="7" sl="18" sc="1" el="18" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="1706" uspid="19" ordinal="8" sl="19" sc="1" el="19" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="1464" uspid="20" ordinal="9" sl="20" sc="1" el="20" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="1222" uspid="21" ordinal="10" sl="21" sc="1" el="21" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="980" uspid="22" ordinal="11" sl="22" sc="1" el="22" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="254" uspid="23" ordinal="12" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2435" uspid="24" ordinal="13" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="2487" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="2487" uspid="12" ordinal="1" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="2487" uspid="13" ordinal="2" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="2975" uspid="14" ordinal="3" sl="14" sc="1" el="14" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="2735" uspid="15" ordinal="4" sl="15" sc="1" el="15" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="2489" uspid="16" ordinal="5" sl="16" sc="1" el="16" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="2247" uspid="17" ordinal="6" sl="17" sc="1" el="17" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="1995" uspid="18" ordinal="7" sl="18" sc="1" el="18" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="1749" uspid="19" ordinal="8" sl="19" sc="1" el="19" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="1507" uspid="20" ordinal="9" sl="20" sc="1" el="20" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="1261" uspid="21" ordinal="10" sl="21" sc="1" el="21" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="1014" uspid="22" ordinal="11" sl="22" sc="1" el="22" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="264" uspid="23" ordinal="12" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="2487" uspid="24" ordinal="13" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="242" uspid="14" ordinal="0" path="0" offset="23" offsetend="25" sl="14" fileid="6" />
-                <BranchPoint vc="2193" uspid="14" ordinal="1" path="1" offset="23" offsetend="34" sl="14" fileid="6" />
-                <BranchPoint vc="245" uspid="15" ordinal="2" path="0" offset="42" offsetend="44" sl="15" fileid="6" />
-                <BranchPoint vc="1948" uspid="15" ordinal="3" path="1" offset="42" offsetend="49" sl="15" fileid="6" />
-                <BranchPoint vc="242" uspid="16" ordinal="4" path="0" offset="59" offsetend="61" sl="16" fileid="6" />
-                <BranchPoint vc="1706" uspid="16" ordinal="5" path="1" offset="59" offsetend="66" sl="16" fileid="6" />
-                <BranchPoint vc="242" uspid="17" ordinal="6" path="0" offset="76" offsetend="78" sl="17" fileid="6" />
-                <BranchPoint vc="1464" uspid="17" ordinal="7" path="1" offset="76" offsetend="83" sl="17" fileid="6" />
-                <BranchPoint vc="242" uspid="18" ordinal="8" path="0" offset="93" offsetend="95" sl="18" fileid="6" />
-                <BranchPoint vc="1222" uspid="18" ordinal="9" path="1" offset="93" offsetend="100" sl="18" fileid="6" />
-                <BranchPoint vc="242" uspid="19" ordinal="10" path="0" offset="110" offsetend="112" sl="19" fileid="6" />
-                <BranchPoint vc="980" uspid="19" ordinal="11" path="1" offset="110" offsetend="117" sl="19" fileid="6" />
-                <BranchPoint vc="242" uspid="20" ordinal="12" path="0" offset="127" offsetend="129" sl="20" fileid="6" />
-                <BranchPoint vc="738" uspid="20" ordinal="13" path="1" offset="127" offsetend="134" sl="20" fileid="6" />
-                <BranchPoint vc="242" uspid="21" ordinal="14" path="0" offset="144" offsetend="146" sl="21" fileid="6" />
-                <BranchPoint vc="496" uspid="21" ordinal="15" path="1" offset="144" offsetend="151" sl="21" fileid="6" />
-                <BranchPoint vc="242" uspid="22" ordinal="16" path="0" offset="161" offsetend="163" sl="22" fileid="6" />
-                <BranchPoint vc="254" uspid="22" ordinal="17" path="1" offset="161" offsetend="168" sl="22" fileid="6" />
+                <BranchPoint vc="244" uspid="14" ordinal="0" path="0" offset="23" offsetend="25" sl="14" fileid="6" />
+                <BranchPoint vc="2243" uspid="14" ordinal="1" path="1" offset="23" offsetend="34" sl="14" fileid="6" />
+                <BranchPoint vc="246" uspid="15" ordinal="2" path="0" offset="42" offsetend="44" sl="15" fileid="6" />
+                <BranchPoint vc="1997" uspid="15" ordinal="3" path="1" offset="42" offsetend="49" sl="15" fileid="6" />
+                <BranchPoint vc="246" uspid="16" ordinal="4" path="0" offset="59" offsetend="61" sl="16" fileid="6" />
+                <BranchPoint vc="1751" uspid="16" ordinal="5" path="1" offset="59" offsetend="66" sl="16" fileid="6" />
+                <BranchPoint vc="248" uspid="17" ordinal="6" path="0" offset="76" offsetend="78" sl="17" fileid="6" />
+                <BranchPoint vc="1503" uspid="17" ordinal="7" path="1" offset="76" offsetend="83" sl="17" fileid="6" />
+                <BranchPoint vc="246" uspid="18" ordinal="8" path="0" offset="93" offsetend="95" sl="18" fileid="6" />
+                <BranchPoint vc="1257" uspid="18" ordinal="9" path="1" offset="93" offsetend="100" sl="18" fileid="6" />
+                <BranchPoint vc="246" uspid="19" ordinal="10" path="0" offset="110" offsetend="112" sl="19" fileid="6" />
+                <BranchPoint vc="1011" uspid="19" ordinal="11" path="1" offset="110" offsetend="117" sl="19" fileid="6" />
+                <BranchPoint vc="248" uspid="20" ordinal="12" path="0" offset="127" offsetend="129" sl="20" fileid="6" />
+                <BranchPoint vc="763" uspid="20" ordinal="13" path="1" offset="127" offsetend="134" sl="20" fileid="6" />
+                <BranchPoint vc="249" uspid="21" ordinal="14" path="0" offset="144" offsetend="146" sl="21" fileid="6" />
+                <BranchPoint vc="514" uspid="21" ordinal="15" path="1" offset="144" offsetend="151" sl="21" fileid="6" />
+                <BranchPoint vc="250" uspid="22" ordinal="16" path="0" offset="161" offsetend="163" sl="22" fileid="6" />
+                <BranchPoint vc="264" uspid="22" ordinal="17" path="1" offset="161" offsetend="168" sl="22" fileid="6" />
               </BranchPoints>
               <MethodPoint vc="14" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="11" ec="1" el="24" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
             </Method>
@@ -756,16 +756,16 @@
               <Name>System.Boolean Poker.ScoreLogic::IsRoyalStraightFlush(System.Collections.Generic.List`1&lt;Poker.ICard&gt;)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="2435" uspid="26" ordinal="0" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2919" uspid="27" ordinal="1" sl="27" sc="1" el="27" ec="2" bec="4" bev="4" fileid="6" />
-                <SequencePoint vc="2193" uspid="28" ordinal="2" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2435" uspid="29" ordinal="3" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="2487" uspid="26" ordinal="0" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="2975" uspid="27" ordinal="1" sl="27" sc="1" el="27" ec="2" bec="4" bev="4" fileid="6" />
+                <SequencePoint vc="2243" uspid="28" ordinal="2" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="2487" uspid="29" ordinal="3" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="487" uspid="27" ordinal="0" path="0" offset="7" offsetend="9" sl="27" fileid="6" />
-                <BranchPoint vc="1948" uspid="27" ordinal="1" path="1" offset="7" offsetend="27" sl="27" fileid="6" />
-                <BranchPoint vc="242" uspid="27" ordinal="2" path="0" offset="30" offsetend="32" sl="27" fileid="6" />
-                <BranchPoint vc="2193" uspid="27" ordinal="3" path="1" offset="30" offsetend="37" sl="27" fileid="6" />
+                <BranchPoint vc="490" uspid="27" ordinal="0" path="0" offset="7" offsetend="9" sl="27" fileid="6" />
+                <BranchPoint vc="1997" uspid="27" ordinal="1" path="1" offset="7" offsetend="27" sl="27" fileid="6" />
+                <BranchPoint vc="244" uspid="27" ordinal="2" path="0" offset="30" offsetend="32" sl="27" fileid="6" />
+                <BranchPoint vc="2243" uspid="27" ordinal="3" path="1" offset="30" offsetend="37" sl="27" fileid="6" />
               </BranchPoints>
               <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="26" ec="1" el="29" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
             </Method>
@@ -775,16 +775,16 @@
               <Name>System.Boolean Poker.ScoreLogic::IsStraightFlush(System.Collections.Generic.List`1&lt;Poker.ICard&gt;)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="4628" uspid="31" ordinal="0" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="6092" uspid="32" ordinal="1" sl="32" sc="1" el="32" ec="2" bec="4" bev="4" fileid="6" />
-                <SequencePoint vc="3896" uspid="33" ordinal="2" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="4628" uspid="34" ordinal="3" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="4730" uspid="31" ordinal="0" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="6202" uspid="32" ordinal="1" sl="32" sc="1" el="32" ec="2" bec="4" bev="4" fileid="6" />
+                <SequencePoint vc="3994" uspid="33" ordinal="2" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="4730" uspid="34" ordinal="3" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="1216" uspid="32" ordinal="0" path="0" offset="7" offsetend="9" sl="32" fileid="6" />
-                <BranchPoint vc="3412" uspid="32" ordinal="1" path="1" offset="7" offsetend="17" sl="32" fileid="6" />
-                <BranchPoint vc="732" uspid="32" ordinal="2" path="0" offset="20" offsetend="22" sl="32" fileid="6" />
-                <BranchPoint vc="3896" uspid="32" ordinal="3" path="1" offset="20" offsetend="27" sl="32" fileid="6" />
+                <BranchPoint vc="1228" uspid="32" ordinal="0" path="0" offset="7" offsetend="9" sl="32" fileid="6" />
+                <BranchPoint vc="3502" uspid="32" ordinal="1" path="1" offset="7" offsetend="17" sl="32" fileid="6" />
+                <BranchPoint vc="736" uspid="32" ordinal="2" path="0" offset="20" offsetend="22" sl="32" fileid="6" />
+                <BranchPoint vc="3994" uspid="32" ordinal="3" path="1" offset="20" offsetend="27" sl="32" fileid="6" />
               </BranchPoints>
               <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="31" ec="1" el="34" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
             </Method>
@@ -794,9 +794,9 @@
               <Name>System.Boolean Poker.ScoreLogic::IsFourOfAKind(System.Collections.Generic.List`1&lt;Poker.ICard&gt;)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="1948" uspid="36" ordinal="0" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="1948" uspid="37" ordinal="1" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="1948" uspid="38" ordinal="2" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1997" uspid="36" ordinal="0" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1997" uspid="37" ordinal="1" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1997" uspid="38" ordinal="2" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="36" ec="1" el="38" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
@@ -807,22 +807,22 @@
               <Name>System.Boolean Poker.ScoreLogic::IsFullHouse(System.Collections.Generic.List`1&lt;Poker.ICard&gt;)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="1706" uspid="41" ordinal="0" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="1706" uspid="42" ordinal="1" sl="42" sc="1" el="42" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="1222" uspid="43" ordinal="2" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="1222" uspid="44" ordinal="3" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="724" uspid="46" ordinal="4" sl="46" sc="1" el="46" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="608" uspid="47" ordinal="5" sl="47" sc="1" el="47" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="242" uspid="48" ordinal="6" sl="48" sc="1" el="48" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="1706" uspid="49" ordinal="7" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1751" uspid="41" ordinal="0" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1751" uspid="42" ordinal="1" sl="42" sc="1" el="42" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="1255" uspid="43" ordinal="2" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1255" uspid="44" ordinal="3" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="736" uspid="46" ordinal="4" sl="46" sc="1" el="46" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="632" uspid="47" ordinal="5" sl="47" sc="1" el="47" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="248" uspid="48" ordinal="6" sl="48" sc="1" el="48" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1751" uspid="49" ordinal="7" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="1222" uspid="42" ordinal="0" path="0" offset="12" offsetend="14" sl="42" fileid="6" />
-                <BranchPoint vc="484" uspid="42" ordinal="1" path="1" offset="12" offsetend="19" sl="42" fileid="6" />
+                <BranchPoint vc="1255" uspid="42" ordinal="0" path="0" offset="12" offsetend="14" sl="42" fileid="6" />
+                <BranchPoint vc="496" uspid="42" ordinal="1" path="1" offset="12" offsetend="19" sl="42" fileid="6" />
                 <BranchPoint vc="120" uspid="46" ordinal="2" path="0" offset="50" offsetend="52" sl="46" fileid="6" />
-                <BranchPoint vc="364" uspid="46" ordinal="3" path="1" offset="50" offsetend="57" sl="46" fileid="6" />
-                <BranchPoint vc="122" uspid="47" ordinal="4" path="0" offset="88" offsetend="90" sl="47" fileid="6" />
-                <BranchPoint vc="242" uspid="47" ordinal="5" path="1" offset="88" offsetend="95" sl="47" fileid="6" />
+                <BranchPoint vc="376" uspid="46" ordinal="3" path="1" offset="50" offsetend="57" sl="46" fileid="6" />
+                <BranchPoint vc="128" uspid="47" ordinal="4" path="0" offset="88" offsetend="90" sl="47" fileid="6" />
+                <BranchPoint vc="248" uspid="47" ordinal="5" path="1" offset="88" offsetend="95" sl="47" fileid="6" />
               </BranchPoints>
               <MethodPoint vc="8" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="41" ec="1" el="49" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
             </Method>
@@ -832,16 +832,16 @@
               <Name>System.Boolean Poker.ScoreLogic::IsFlush(System.Collections.Generic.List`1&lt;Poker.ICard&gt;)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="6092" uspid="52" ordinal="0" sl="52" sc="1" el="52" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="36552" uspid="53" ordinal="1" sl="53" sc="1" el="53" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="1458" uspid="54" ordinal="2" sl="54" sc="1" el="54" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="1458" uspid="55" ordinal="3" sl="55" sc="1" el="55" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="4634" uspid="57" ordinal="4" sl="57" sc="1" el="57" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="6092" uspid="58" ordinal="5" sl="58" sc="1" el="58" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="6233" uspid="52" ordinal="0" sl="52" sc="1" el="52" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="37398" uspid="53" ordinal="1" sl="53" sc="1" el="53" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="1474" uspid="54" ordinal="2" sl="54" sc="1" el="54" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1474" uspid="55" ordinal="3" sl="55" sc="1" el="55" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="4759" uspid="57" ordinal="4" sl="57" sc="1" el="57" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="6233" uspid="58" ordinal="5" sl="58" sc="1" el="58" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="1458" uspid="53" ordinal="0" path="0" offset="47" offsetend="49" sl="53" fileid="6" />
-                <BranchPoint vc="4634" uspid="53" ordinal="1" path="1" offset="47" offsetend="54" sl="53" fileid="6" />
+                <BranchPoint vc="1474" uspid="53" ordinal="0" path="0" offset="47" offsetend="49" sl="53" fileid="6" />
+                <BranchPoint vc="4759" uspid="53" ordinal="1" path="1" offset="47" offsetend="54" sl="53" fileid="6" />
               </BranchPoints>
               <MethodPoint vc="6" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="52" ec="1" el="58" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
             </Method>
@@ -851,27 +851,27 @@
               <Name>System.Boolean Poker.ScoreLogic::IsStraight(System.Collections.Generic.List`1&lt;Poker.ICard&gt;)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="2438" uspid="61" ordinal="0" sl="61" sc="1" el="61" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="3052" uspid="62" ordinal="1" sl="62" sc="1" el="62" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="614" uspid="63" ordinal="2" sl="63" sc="1" el="63" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2564" uspid="65" ordinal="3" sl="65" sc="1" el="65" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="740" uspid="66" ordinal="4" sl="66" sc="1" el="66" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="1326" uspid="68" ordinal="5" sl="68" sc="1" el="68" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="242" uspid="69" ordinal="6" sl="69" sc="1" el="69" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="1202" uspid="72" ordinal="7" sl="72" sc="1" el="72" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="360" uspid="73" ordinal="8" sl="73" sc="1" el="73" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="482" uspid="76" ordinal="9" sl="76" sc="1" el="76" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2438" uspid="86" ordinal="10" sl="86" sc="1" el="86" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="2485" uspid="61" ordinal="0" sl="61" sc="1" el="61" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="3104" uspid="62" ordinal="1" sl="62" sc="1" el="62" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="619" uspid="63" ordinal="2" sl="63" sc="1" el="63" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="2631" uspid="65" ordinal="3" sl="65" sc="1" el="65" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="765" uspid="66" ordinal="4" sl="66" sc="1" el="66" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1354" uspid="68" ordinal="5" sl="68" sc="1" el="68" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="253" uspid="69" ordinal="6" sl="69" sc="1" el="69" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1211" uspid="72" ordinal="7" sl="72" sc="1" el="72" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="363" uspid="73" ordinal="8" sl="73" sc="1" el="73" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="485" uspid="76" ordinal="9" sl="76" sc="1" el="76" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="2485" uspid="86" ordinal="10" sl="86" sc="1" el="86" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="614" uspid="62" ordinal="0" path="0" offset="19" offsetend="21" sl="62" fileid="6" />
-                <BranchPoint vc="1824" uspid="62" ordinal="1" path="1" offset="19" offsetend="26" sl="62" fileid="6" />
-                <BranchPoint vc="740" uspid="65" ordinal="2" path="0" offset="52" offsetend="54" sl="65" fileid="6" />
-                <BranchPoint vc="1084" uspid="65" ordinal="3" path="1" offset="52" offsetend="59" sl="65" fileid="6" />
-                <BranchPoint vc="242" uspid="68" ordinal="4" path="0" offset="86" offsetend="88" sl="68" fileid="6" />
-                <BranchPoint vc="842" uspid="68" ordinal="5" path="1" offset="86" offsetend="93" sl="68" fileid="6" />
-                <BranchPoint vc="360" uspid="72" ordinal="6" path="0" offset="105" offsetend="107" sl="72" fileid="6" />
-                <BranchPoint vc="482" uspid="72" ordinal="7" path="1" offset="105" offsetend="112" sl="72" fileid="6" />
+                <BranchPoint vc="619" uspid="62" ordinal="0" path="0" offset="19" offsetend="21" sl="62" fileid="6" />
+                <BranchPoint vc="1866" uspid="62" ordinal="1" path="1" offset="19" offsetend="26" sl="62" fileid="6" />
+                <BranchPoint vc="765" uspid="65" ordinal="2" path="0" offset="52" offsetend="54" sl="65" fileid="6" />
+                <BranchPoint vc="1101" uspid="65" ordinal="3" path="1" offset="52" offsetend="59" sl="65" fileid="6" />
+                <BranchPoint vc="253" uspid="68" ordinal="4" path="0" offset="86" offsetend="88" sl="68" fileid="6" />
+                <BranchPoint vc="848" uspid="68" ordinal="5" path="1" offset="86" offsetend="93" sl="68" fileid="6" />
+                <BranchPoint vc="363" uspid="72" ordinal="6" path="0" offset="105" offsetend="107" sl="72" fileid="6" />
+                <BranchPoint vc="485" uspid="72" ordinal="7" path="1" offset="105" offsetend="112" sl="72" fileid="6" />
               </BranchPoints>
               <MethodPoint vc="11" uspid="0" p8:type="SequencePoint" ordinal="6" offset="6" sc="0" sl="61" ec="1" el="86" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
             </Method>
@@ -881,9 +881,9 @@
               <Name>System.Boolean Poker.ScoreLogic::IsThreeOfAKind(System.Collections.Generic.List`1&lt;Poker.ICard&gt;)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="2686" uspid="89" ordinal="0" sl="89" sc="1" el="89" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2686" uspid="90" ordinal="1" sl="90" sc="1" el="90" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2686" uspid="91" ordinal="2" sl="91" sc="1" el="91" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="2762" uspid="89" ordinal="0" sl="89" sc="1" el="89" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="2762" uspid="90" ordinal="1" sl="90" sc="1" el="90" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="2762" uspid="91" ordinal="2" sl="91" sc="1" el="91" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="7" offset="7" sc="0" sl="89" ec="1" el="91" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
@@ -894,20 +894,20 @@
               <Name>System.Boolean Poker.ScoreLogic::IsTwoPair(System.Collections.Generic.List`1&lt;Poker.ICard&gt;)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="738" uspid="94" ordinal="0" sl="94" sc="1" el="94" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="738" uspid="95" ordinal="1" sl="95" sc="1" el="95" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="1246" uspid="97" ordinal="2" sl="97" sc="1" el="97" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="484" uspid="98" ordinal="3" sl="98" sc="1" el="98" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2904" uspid="101" ordinal="4" sl="101" sc="1" el="101" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="968" uspid="104" ordinal="5" sl="104" sc="1" el="104" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="242" uspid="105" ordinal="6" sl="105" sc="1" el="105" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="738" uspid="106" ordinal="7" sl="106" sc="1" el="106" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="763" uspid="94" ordinal="0" sl="94" sc="1" el="94" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="763" uspid="95" ordinal="1" sl="95" sc="1" el="95" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1291" uspid="97" ordinal="2" sl="97" sc="1" el="97" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="499" uspid="98" ordinal="3" sl="98" sc="1" el="98" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="2994" uspid="101" ordinal="4" sl="101" sc="1" el="101" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="999" uspid="104" ordinal="5" sl="104" sc="1" el="104" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="249" uspid="105" ordinal="6" sl="105" sc="1" el="105" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="763" uspid="106" ordinal="7" sl="106" sc="1" el="106" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="254" uspid="97" ordinal="0" path="0" offset="25" offsetend="27" sl="97" fileid="6" />
-                <BranchPoint vc="484" uspid="97" ordinal="1" path="1" offset="25" offsetend="32" sl="97" fileid="6" />
-                <BranchPoint vc="242" uspid="104" ordinal="2" path="0" offset="76" offsetend="78" sl="104" fileid="6" />
-                <BranchPoint vc="242" uspid="104" ordinal="3" path="1" offset="76" offsetend="83" sl="104" fileid="6" />
+                <BranchPoint vc="264" uspid="97" ordinal="0" path="0" offset="25" offsetend="27" sl="97" fileid="6" />
+                <BranchPoint vc="499" uspid="97" ordinal="1" path="1" offset="25" offsetend="32" sl="97" fileid="6" />
+                <BranchPoint vc="250" uspid="104" ordinal="2" path="0" offset="76" offsetend="78" sl="104" fileid="6" />
+                <BranchPoint vc="249" uspid="104" ordinal="3" path="1" offset="76" offsetend="83" sl="104" fileid="6" />
               </BranchPoints>
               <MethodPoint vc="8" uspid="0" p8:type="SequencePoint" ordinal="8" offset="8" sc="0" sl="94" ec="1" el="106" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
             </Method>
@@ -917,9 +917,9 @@
               <Name>System.Boolean Poker.ScoreLogic::IsPair(System.Collections.Generic.List`1&lt;Poker.ICard&gt;)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="1718" uspid="109" ordinal="0" sl="109" sc="1" el="109" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="1718" uspid="110" ordinal="1" sl="110" sc="1" el="110" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="1718" uspid="111" ordinal="2" sl="111" sc="1" el="111" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1776" uspid="109" ordinal="0" sl="109" sc="1" el="109" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1776" uspid="110" ordinal="1" sl="110" sc="1" el="110" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="1776" uspid="111" ordinal="2" sl="111" sc="1" el="111" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="9" offset="9" sc="0" sl="109" ec="1" el="111" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
@@ -930,39 +930,39 @@
               <Name>System.Collections.Generic.List`1&lt;Poker.IPlayer&gt; Poker.ScoreLogic::DetermineWinners(System.Collections.Generic.List`1&lt;Poker.IPlayer&gt;)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="55" uspid="114" ordinal="0" sl="114" sc="1" el="114" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="55" uspid="116" ordinal="1" sl="116" sc="1" el="116" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="175" uspid="117" ordinal="2" sl="117" sc="1" el="117" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="55" uspid="119" ordinal="3" sl="119" sc="1" el="119" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="45" uspid="120" ordinal="4" sl="120" sc="1" el="120" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="45" uspid="121" ordinal="5" sl="121" sc="1" el="121" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="10" uspid="124" ordinal="6" sl="124" sc="1" el="124" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="93" uspid="125" ordinal="7" sl="125" sc="1" el="125" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="21" uspid="126" ordinal="8" sl="126" sc="1" el="126" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="21" uspid="127" ordinal="9" sl="127" sc="1" el="127" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="10" uspid="128" ordinal="10" sl="128" sc="1" el="128" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="120" uspid="130" ordinal="11" sl="130" sc="1" el="130" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="50" uspid="131" ordinal="12" sl="131" sc="1" el="131" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="155" uspid="132" ordinal="13" sl="132" sc="1" el="132" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="155" uspid="133" ordinal="14" sl="133" sc="1" el="133" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="50" uspid="134" ordinal="15" sl="134" sc="1" el="134" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="10" uspid="136" ordinal="16" sl="136" sc="1" el="136" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="70" uspid="138" ordinal="17" sl="138" sc="1" el="138" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="20" uspid="139" ordinal="18" sl="139" sc="1" el="139" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="20" uspid="140" ordinal="19" sl="140" sc="1" el="140" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="20" uspid="141" ordinal="20" sl="141" sc="1" el="141" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="10" uspid="142" ordinal="21" sl="142" sc="1" el="142" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="55" uspid="143" ordinal="22" sl="143" sc="1" el="143" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="81" uspid="114" ordinal="0" sl="114" sc="1" el="114" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="81" uspid="116" ordinal="1" sl="116" sc="1" el="116" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="268" uspid="117" ordinal="2" sl="117" sc="1" el="117" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="81" uspid="119" ordinal="3" sl="119" sc="1" el="119" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="52" uspid="120" ordinal="4" sl="120" sc="1" el="120" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="52" uspid="121" ordinal="5" sl="121" sc="1" el="121" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="29" uspid="124" ordinal="6" sl="124" sc="1" el="124" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="264" uspid="125" ordinal="7" sl="125" sc="1" el="125" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="59" uspid="126" ordinal="8" sl="126" sc="1" el="126" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="59" uspid="127" ordinal="9" sl="127" sc="1" el="127" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="29" uspid="128" ordinal="10" sl="128" sc="1" el="128" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="348" uspid="130" ordinal="11" sl="130" sc="1" el="130" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="145" uspid="131" ordinal="12" sl="131" sc="1" el="131" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="391" uspid="132" ordinal="13" sl="132" sc="1" el="132" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="391" uspid="133" ordinal="14" sl="133" sc="1" el="133" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="145" uspid="134" ordinal="15" sl="134" sc="1" el="134" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="29" uspid="136" ordinal="16" sl="136" sc="1" el="136" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="165" uspid="138" ordinal="17" sl="138" sc="1" el="138" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="39" uspid="139" ordinal="18" sl="139" sc="1" el="139" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="39" uspid="140" ordinal="19" sl="140" sc="1" el="140" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="39" uspid="141" ordinal="20" sl="141" sc="1" el="141" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="29" uspid="142" ordinal="21" sl="142" sc="1" el="142" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="81" uspid="143" ordinal="22" sl="143" sc="1" el="143" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="45" uspid="119" ordinal="0" path="0" offset="51" offsetend="53" sl="119" fileid="6" />
-                <BranchPoint vc="10" uspid="119" ordinal="1" path="1" offset="51" offsetend="80" sl="119" fileid="6" />
-                <BranchPoint vc="21" uspid="125" ordinal="3" path="1" offset="134" offsetend="97" sl="125" fileid="6" />
-                <BranchPoint vc="10" uspid="125" ordinal="2" path="0" offset="134" offsetend="136" sl="125" fileid="6" />
-                <BranchPoint vc="50" uspid="130" ordinal="5" path="1" offset="312" offsetend="177" sl="130" fileid="6" />
-                <BranchPoint vc="10" uspid="130" ordinal="4" path="0" offset="312" offsetend="317" sl="130" fileid="6" />
-                <BranchPoint vc="20" uspid="138" ordinal="7" path="1" offset="366" offsetend="334" sl="138" fileid="6" />
-                <BranchPoint vc="10" uspid="138" ordinal="6" path="0" offset="366" offsetend="368" sl="138" fileid="6" />
+                <BranchPoint vc="52" uspid="119" ordinal="0" path="0" offset="51" offsetend="53" sl="119" fileid="6" />
+                <BranchPoint vc="29" uspid="119" ordinal="1" path="1" offset="51" offsetend="80" sl="119" fileid="6" />
+                <BranchPoint vc="59" uspid="125" ordinal="3" path="1" offset="134" offsetend="97" sl="125" fileid="6" />
+                <BranchPoint vc="29" uspid="125" ordinal="2" path="0" offset="134" offsetend="136" sl="125" fileid="6" />
+                <BranchPoint vc="145" uspid="130" ordinal="5" path="1" offset="312" offsetend="177" sl="130" fileid="6" />
+                <BranchPoint vc="29" uspid="130" ordinal="4" path="0" offset="312" offsetend="317" sl="130" fileid="6" />
+                <BranchPoint vc="39" uspid="138" ordinal="7" path="1" offset="366" offsetend="334" sl="138" fileid="6" />
+                <BranchPoint vc="29" uspid="138" ordinal="6" path="0" offset="366" offsetend="368" sl="138" fileid="6" />
               </BranchPoints>
               <MethodPoint vc="23" uspid="0" p8:type="SequencePoint" ordinal="10" offset="10" sc="0" sl="114" ec="1" el="143" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
             </Method>
@@ -972,9 +972,9 @@
               <Name>Poker.HandType Poker.ScoreLogic::GetHighestHandType(System.Collections.Generic.List`1&lt;Poker.IPlayer&gt;)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="55" uspid="148" ordinal="0" sl="148" sc="1" el="148" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="175" uspid="149" ordinal="1" sl="149" sc="1" el="149" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="55" uspid="150" ordinal="2" sl="150" sc="1" el="150" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="81" uspid="148" ordinal="0" sl="148" sc="1" el="148" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="268" uspid="149" ordinal="1" sl="149" sc="1" el="149" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="81" uspid="150" ordinal="2" sl="150" sc="1" el="150" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="11" offset="11" sc="0" sl="148" ec="1" el="150" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
@@ -985,20 +985,20 @@
               <Name>System.Collections.Generic.List`1&lt;Poker.ICard&gt; Poker.ScoreLogic::SortByRankAndSuite(System.Collections.Generic.List`1&lt;Poker.ICard&gt;)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="2437" uspid="152" ordinal="0" sl="152" sc="1" el="152" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="2496" uspid="152" ordinal="0" sl="152" sc="1" el="152" ec="2" bec="0" bev="0" fileid="6" />
                 <SequencePoint vc="0" uspid="153" ordinal="1" sl="153" sc="1" el="153" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="14622" uspid="154" ordinal="2" sl="154" sc="1" el="154" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2437" uspid="155" ordinal="3" sl="155" sc="1" el="155" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="31681" uspid="156" ordinal="4" sl="156" sc="1" el="156" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="12185" uspid="157" ordinal="5" sl="157" sc="1" el="157" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="12185" uspid="158" ordinal="6" sl="158" sc="1" el="158" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="12185" uspid="159" ordinal="7" sl="159" sc="1" el="159" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2437" uspid="161" ordinal="8" sl="161" sc="1" el="161" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2437" uspid="162" ordinal="9" sl="162" sc="1" el="162" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="14976" uspid="154" ordinal="2" sl="154" sc="1" el="154" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="2496" uspid="155" ordinal="3" sl="155" sc="1" el="155" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="32448" uspid="156" ordinal="4" sl="156" sc="1" el="156" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="12480" uspid="157" ordinal="5" sl="157" sc="1" el="157" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="12480" uspid="158" ordinal="6" sl="158" sc="1" el="158" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="12480" uspid="159" ordinal="7" sl="159" sc="1" el="159" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="2496" uspid="161" ordinal="8" sl="161" sc="1" el="161" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="2496" uspid="162" ordinal="9" sl="162" sc="1" el="162" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="12185" uspid="156" ordinal="1" path="1" offset="117" offsetend="94" sl="156" fileid="6" />
-                <BranchPoint vc="2437" uspid="156" ordinal="0" path="0" offset="117" offsetend="119" sl="156" fileid="6" />
+                <BranchPoint vc="12480" uspid="156" ordinal="1" path="1" offset="117" offsetend="94" sl="156" fileid="6" />
+                <BranchPoint vc="2496" uspid="156" ordinal="0" path="0" offset="117" offsetend="119" sl="156" fileid="6" />
               </BranchPoints>
               <MethodPoint vc="9" uspid="0" p8:type="SequencePoint" ordinal="12" offset="12" sc="0" sl="152" ec="1" el="162" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
             </Method>
@@ -1008,13 +1008,13 @@
               <Name>Poker.Rank Poker.ScoreLogic::MostPopularCard(System.Collections.Generic.List`1&lt;Poker.ICard&gt;)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="6850" uspid="164" ordinal="0" sl="164" sc="1" el="164" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="6850" uspid="165" ordinal="1" sl="165" sc="1" el="165" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="40120" uspid="166" ordinal="2" sl="166" sc="1" el="166" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="32352" uspid="167" ordinal="3" sl="167" sc="1" el="167" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="13700" uspid="168" ordinal="4" sl="168" sc="1" el="168" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="6850" uspid="169" ordinal="5" sl="169" sc="1" el="169" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="6850" uspid="170" ordinal="6" sl="170" sc="1" el="170" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="7086" uspid="164" ordinal="0" sl="164" sc="1" el="164" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="7086" uspid="165" ordinal="1" sl="165" sc="1" el="165" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="41470" uspid="166" ordinal="2" sl="166" sc="1" el="166" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="33429" uspid="167" ordinal="3" sl="167" sc="1" el="167" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="14172" uspid="168" ordinal="4" sl="168" sc="1" el="168" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="7086" uspid="169" ordinal="5" sl="169" sc="1" el="169" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="7086" uspid="170" ordinal="6" sl="170" sc="1" el="170" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="7" uspid="0" p8:type="SequencePoint" ordinal="13" offset="13" sc="0" sl="164" ec="1" el="170" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
@@ -1025,16 +1025,16 @@
               <Name>System.Boolean Poker.ScoreLogic::IsAmmountOfMost(System.Int32,System.Collections.Generic.List`1&lt;Poker.ICard&gt;)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="6352" uspid="172" ordinal="0" sl="172" sc="1" el="172" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="6352" uspid="173" ordinal="1" sl="173" sc="1" el="173" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="37144" uspid="174" ordinal="2" sl="174" sc="1" el="174" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="10224" uspid="175" ordinal="3" sl="175" sc="1" el="175" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="4416" uspid="176" ordinal="4" sl="176" sc="1" el="176" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="6352" uspid="177" ordinal="5" sl="177" sc="1" el="177" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="6535" uspid="172" ordinal="0" sl="172" sc="1" el="172" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="6535" uspid="173" ordinal="1" sl="173" sc="1" el="173" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="38212" uspid="174" ordinal="2" sl="174" sc="1" el="174" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="10511" uspid="175" ordinal="3" sl="175" sc="1" el="175" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="4547" uspid="176" ordinal="4" sl="176" sc="1" el="176" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="6535" uspid="177" ordinal="5" sl="177" sc="1" el="177" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="1936" uspid="175" ordinal="0" path="0" offset="49" offsetend="51" sl="175" fileid="6" />
-                <BranchPoint vc="4416" uspid="175" ordinal="1" path="1" offset="49" offsetend="56" sl="175" fileid="6" />
+                <BranchPoint vc="1988" uspid="175" ordinal="0" path="0" offset="49" offsetend="51" sl="175" fileid="6" />
+                <BranchPoint vc="4547" uspid="175" ordinal="1" path="1" offset="49" offsetend="56" sl="175" fileid="6" />
               </BranchPoints>
               <MethodPoint vc="6" uspid="0" p8:type="SequencePoint" ordinal="14" offset="14" sc="0" sl="172" ec="1" el="177" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
             </Method>
@@ -1044,98 +1044,98 @@
               <Name>System.Collections.Generic.List`1&lt;Poker.Hand&gt; Poker.ScoreLogic::SortByPointCards(System.Collections.Generic.List`1&lt;Poker.Hand&gt;)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="10" uspid="180" ordinal="0" sl="180" sc="1" el="180" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="10" uspid="181" ordinal="1" sl="181" sc="1" el="181" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="72" uspid="182" ordinal="2" sl="182" sc="1" el="182" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="21" uspid="183" ordinal="3" sl="183" sc="1" el="183" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="21" uspid="184" ordinal="4" sl="184" sc="1" el="184" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="21" uspid="185" ordinal="5" sl="185" sc="1" el="185" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="10" uspid="186" ordinal="6" sl="186" sc="1" el="186" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="10" uspid="187" ordinal="7" sl="187" sc="1" el="187" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="29" uspid="180" ordinal="0" sl="180" sc="1" el="180" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="29" uspid="181" ordinal="1" sl="181" sc="1" el="181" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="205" uspid="182" ordinal="2" sl="182" sc="1" el="182" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="59" uspid="183" ordinal="3" sl="183" sc="1" el="183" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="59" uspid="184" ordinal="4" sl="184" sc="1" el="184" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="59" uspid="185" ordinal="5" sl="185" sc="1" el="185" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="29" uspid="186" ordinal="6" sl="186" sc="1" el="186" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="29" uspid="187" ordinal="7" sl="187" sc="1" el="187" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="21" uspid="182" ordinal="1" path="1" offset="47" offsetend="17" sl="182" fileid="6" />
-                <BranchPoint vc="10" uspid="182" ordinal="0" path="0" offset="47" offsetend="49" sl="182" fileid="6" />
+                <BranchPoint vc="59" uspid="182" ordinal="1" path="1" offset="47" offsetend="17" sl="182" fileid="6" />
+                <BranchPoint vc="29" uspid="182" ordinal="0" path="0" offset="47" offsetend="49" sl="182" fileid="6" />
               </BranchPoints>
               <MethodPoint vc="8" uspid="0" p8:type="SequencePoint" ordinal="15" offset="15" sc="0" sl="180" ec="1" el="187" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
             </Method>
-            <Method cyclomaticComplexity="15" nPathComplexity="0" sequenceCoverage="90.38" branchCoverage="93.33" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="52" visitedSequencePoints="47" numBranchPoints="15" visitedBranchPoints="14" sequenceCoverage="90.38" branchCoverage="93.33" maxCyclomaticComplexity="15" minCyclomaticComplexity="15" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+            <Method cyclomaticComplexity="15" nPathComplexity="0" sequenceCoverage="98.07" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="52" visitedSequencePoints="51" numBranchPoints="15" visitedBranchPoints="15" sequenceCoverage="98.07" branchCoverage="100" maxCyclomaticComplexity="15" minCyclomaticComplexity="15" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>Poker.Hand Poker.ScoreLogic::SortByPointCards(Poker.Hand)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="21" uspid="190" ordinal="0" sl="190" sc="1" el="190" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="21" uspid="191" ordinal="1" sl="191" sc="1" el="191" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="21" uspid="192" ordinal="2" sl="192" sc="1" el="192" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="21" uspid="193" ordinal="3" sl="193" sc="1" el="193" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="21" uspid="194" ordinal="4" sl="194" sc="1" el="194" ec="2" bec="11" bev="11" fileid="6" />
+                <SequencePoint vc="59" uspid="190" ordinal="0" sl="190" sc="1" el="190" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="59" uspid="191" ordinal="1" sl="191" sc="1" el="191" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="59" uspid="192" ordinal="2" sl="192" sc="1" el="192" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="59" uspid="193" ordinal="3" sl="193" sc="1" el="193" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="59" uspid="194" ordinal="4" sl="194" sc="1" el="194" ec="2" bec="11" bev="11" fileid="6" />
                 <SequencePoint vc="2" uspid="198" ordinal="5" sl="198" sc="1" el="198" ec="2" bec="0" bev="0" fileid="6" />
                 <SequencePoint vc="2" uspid="200" ordinal="6" sl="200" sc="1" el="200" ec="2" bec="0" bev="0" fileid="6" />
                 <SequencePoint vc="2" uspid="203" ordinal="7" sl="203" sc="1" el="203" ec="2" bec="0" bev="0" fileid="6" />
                 <SequencePoint vc="2" uspid="204" ordinal="8" sl="204" sc="1" el="204" ec="2" bec="0" bev="0" fileid="6" />
                 <SequencePoint vc="2" uspid="205" ordinal="9" sl="205" sc="1" el="205" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="208" ordinal="10" sl="208" sc="1" el="208" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="209" ordinal="11" sl="209" sc="1" el="209" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="210" ordinal="12" sl="210" sc="1" el="210" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="214" ordinal="13" sl="214" sc="1" el="214" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="215" ordinal="14" sl="215" sc="1" el="215" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="216" ordinal="15" sl="216" sc="1" el="216" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="220" ordinal="16" sl="220" sc="1" el="220" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="222" ordinal="17" sl="222" sc="1" el="222" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="226" ordinal="18" sl="226" sc="1" el="226" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="227" ordinal="19" sl="227" sc="1" el="227" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="228" ordinal="20" sl="228" sc="1" el="228" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="231" ordinal="21" sl="231" sc="1" el="231" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="232" ordinal="22" sl="232" sc="1" el="232" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="233" ordinal="23" sl="233" sc="1" el="233" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="237" ordinal="24" sl="237" sc="1" el="237" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="238" ordinal="25" sl="238" sc="1" el="238" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="239" ordinal="26" sl="239" sc="1" el="239" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="240" ordinal="27" sl="240" sc="1" el="240" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="242" ordinal="28" sl="242" sc="1" el="242" ec="2" bec="2" bev="1" fileid="6" />
-                <SequencePoint vc="0" uspid="243" ordinal="29" sl="243" sc="1" el="243" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="0" uspid="244" ordinal="30" sl="244" sc="1" el="244" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="0" uspid="245" ordinal="31" sl="245" sc="1" el="245" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="0" uspid="246" ordinal="32" sl="246" sc="1" el="246" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="6" uspid="208" ordinal="10" sl="208" sc="1" el="208" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="6" uspid="209" ordinal="11" sl="209" sc="1" el="209" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="6" uspid="210" ordinal="12" sl="210" sc="1" el="210" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="8" uspid="214" ordinal="13" sl="214" sc="1" el="214" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="8" uspid="215" ordinal="14" sl="215" sc="1" el="215" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="8" uspid="216" ordinal="15" sl="216" sc="1" el="216" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="6" uspid="220" ordinal="16" sl="220" sc="1" el="220" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="6" uspid="222" ordinal="17" sl="222" sc="1" el="222" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="6" uspid="226" ordinal="18" sl="226" sc="1" el="226" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="6" uspid="227" ordinal="19" sl="227" sc="1" el="227" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="6" uspid="228" ordinal="20" sl="228" sc="1" el="228" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="8" uspid="231" ordinal="21" sl="231" sc="1" el="231" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="8" uspid="232" ordinal="22" sl="232" sc="1" el="232" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="8" uspid="233" ordinal="23" sl="233" sc="1" el="233" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="8" uspid="237" ordinal="24" sl="237" sc="1" el="237" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="8" uspid="238" ordinal="25" sl="238" sc="1" el="238" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="8" uspid="239" ordinal="26" sl="239" sc="1" el="239" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="8" uspid="240" ordinal="27" sl="240" sc="1" el="240" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="8" uspid="242" ordinal="28" sl="242" sc="1" el="242" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="6" uspid="243" ordinal="29" sl="243" sc="1" el="243" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="6" uspid="244" ordinal="30" sl="244" sc="1" el="244" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="6" uspid="245" ordinal="31" sl="245" sc="1" el="245" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="6" uspid="246" ordinal="32" sl="246" sc="1" el="246" ec="2" bec="0" bev="0" fileid="6" />
                 <SequencePoint vc="2" uspid="248" ordinal="33" sl="248" sc="1" el="248" ec="2" bec="0" bev="0" fileid="6" />
                 <SequencePoint vc="2" uspid="249" ordinal="34" sl="249" sc="1" el="249" ec="2" bec="0" bev="0" fileid="6" />
                 <SequencePoint vc="2" uspid="250" ordinal="35" sl="250" sc="1" el="250" ec="2" bec="0" bev="0" fileid="6" />
                 <SequencePoint vc="2" uspid="251" ordinal="36" sl="251" sc="1" el="251" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="253" ordinal="37" sl="253" sc="1" el="253" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="254" ordinal="38" sl="254" sc="1" el="254" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="258" ordinal="39" sl="258" sc="1" el="258" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="259" ordinal="40" sl="259" sc="1" el="259" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="260" ordinal="41" sl="260" sc="1" el="260" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="3" uspid="263" ordinal="42" sl="263" sc="1" el="263" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="8" uspid="253" ordinal="37" sl="253" sc="1" el="253" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="8" uspid="254" ordinal="38" sl="254" sc="1" el="254" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="6" uspid="258" ordinal="39" sl="258" sc="1" el="258" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="6" uspid="259" ordinal="40" sl="259" sc="1" el="259" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="6" uspid="260" ordinal="41" sl="260" sc="1" el="260" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="7" uspid="263" ordinal="42" sl="263" sc="1" el="263" ec="2" bec="0" bev="0" fileid="6" />
                 <SequencePoint vc="0" uspid="264" ordinal="43" sl="264" sc="1" el="264" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="3" uspid="265" ordinal="44" sl="265" sc="1" el="265" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="21" uspid="268" ordinal="45" sl="268" sc="1" el="268" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="273" uspid="269" ordinal="46" sl="269" sc="1" el="269" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="105" uspid="270" ordinal="47" sl="270" sc="1" el="270" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="105" uspid="271" ordinal="48" sl="271" sc="1" el="271" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="105" uspid="272" ordinal="49" sl="272" sc="1" el="272" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="21" uspid="274" ordinal="50" sl="274" sc="1" el="274" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="21" uspid="303" ordinal="51" sl="303" sc="1" el="303" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="7" uspid="265" ordinal="44" sl="265" sc="1" el="265" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="59" uspid="268" ordinal="45" sl="268" sc="1" el="268" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="767" uspid="269" ordinal="46" sl="269" sc="1" el="269" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="295" uspid="270" ordinal="47" sl="270" sc="1" el="270" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="295" uspid="271" ordinal="48" sl="271" sc="1" el="271" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="295" uspid="272" ordinal="49" sl="272" sc="1" el="272" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="59" uspid="274" ordinal="50" sl="274" sc="1" el="274" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="59" uspid="303" ordinal="51" sl="303" sc="1" el="303" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints>
                 <BranchPoint vc="2" uspid="194" ordinal="10" path="10" offset="40" offsetend="90" sl="194" fileid="6" />
                 <BranchPoint vc="2" uspid="194" ordinal="9" path="9" offset="40" offsetend="96" sl="194" fileid="6" />
-                <BranchPoint vc="2" uspid="194" ordinal="8" path="8" offset="40" offsetend="110" sl="194" fileid="6" />
-                <BranchPoint vc="2" uspid="194" ordinal="7" path="7" offset="40" offsetend="130" sl="194" fileid="6" />
-                <BranchPoint vc="2" uspid="194" ordinal="6" path="6" offset="40" offsetend="150" sl="194" fileid="6" />
-                <BranchPoint vc="2" uspid="194" ordinal="5" path="5" offset="40" offsetend="156" sl="194" fileid="6" />
-                <BranchPoint vc="2" uspid="194" ordinal="4" path="4" offset="40" offsetend="170" sl="194" fileid="6" />
-                <BranchPoint vc="2" uspid="194" ordinal="3" path="3" offset="40" offsetend="190" sl="194" fileid="6" />
-                <BranchPoint vc="0" uspid="242" ordinal="11" path="0" offset="289" offsetend="291" sl="242" fileid="6" />
+                <BranchPoint vc="6" uspid="194" ordinal="8" path="8" offset="40" offsetend="110" sl="194" fileid="6" />
+                <BranchPoint vc="8" uspid="194" ordinal="7" path="7" offset="40" offsetend="130" sl="194" fileid="6" />
+                <BranchPoint vc="6" uspid="194" ordinal="6" path="6" offset="40" offsetend="150" sl="194" fileid="6" />
+                <BranchPoint vc="6" uspid="194" ordinal="5" path="5" offset="40" offsetend="156" sl="194" fileid="6" />
+                <BranchPoint vc="8" uspid="194" ordinal="4" path="4" offset="40" offsetend="170" sl="194" fileid="6" />
+                <BranchPoint vc="8" uspid="194" ordinal="3" path="3" offset="40" offsetend="190" sl="194" fileid="6" />
+                <BranchPoint vc="6" uspid="242" ordinal="11" path="0" offset="289" offsetend="291" sl="242" fileid="6" />
                 <BranchPoint vc="2" uspid="242" ordinal="12" path="1" offset="289" offsetend="323" sl="242" fileid="6" />
-                <BranchPoint vc="2" uspid="194" ordinal="2" path="2" offset="40" offsetend="369" sl="194" fileid="6" />
-                <BranchPoint vc="3" uspid="194" ordinal="1" path="1" offset="40" offsetend="386" sl="194" fileid="6" />
-                <BranchPoint vc="21" uspid="194" ordinal="0" path="0" offset="40" offsetend="432" sl="194" fileid="6" />
-                <BranchPoint vc="105" uspid="269" ordinal="14" path="1" offset="506" offsetend="454" sl="269" fileid="6" />
-                <BranchPoint vc="21" uspid="269" ordinal="13" path="0" offset="506" offsetend="508" sl="269" fileid="6" />
+                <BranchPoint vc="6" uspid="194" ordinal="2" path="2" offset="40" offsetend="369" sl="194" fileid="6" />
+                <BranchPoint vc="7" uspid="194" ordinal="1" path="1" offset="40" offsetend="386" sl="194" fileid="6" />
+                <BranchPoint vc="59" uspid="194" ordinal="0" path="0" offset="40" offsetend="432" sl="194" fileid="6" />
+                <BranchPoint vc="295" uspid="269" ordinal="14" path="1" offset="506" offsetend="454" sl="269" fileid="6" />
+                <BranchPoint vc="59" uspid="269" ordinal="13" path="0" offset="506" offsetend="508" sl="269" fileid="6" />
               </BranchPoints>
-              <MethodPoint vc="47" uspid="0" p8:type="SequencePoint" ordinal="16" offset="16" sc="0" sl="190" ec="1" el="303" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+              <MethodPoint vc="51" uspid="0" p8:type="SequencePoint" ordinal="16" offset="16" sc="0" sl="190" ec="1" el="303" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="4" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
               <Summary numSequencePoints="7" visitedSequencePoints="7" numBranchPoints="4" visitedBranchPoints="4" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
@@ -1143,19 +1143,19 @@
               <Name>System.Boolean Poker.ScoreLogic::&lt;IsStraight&gt;g__isIncrementalByOne|6_0(System.Int32,Poker.ScoreLogic/&lt;&gt;c__DisplayClass6_0&amp;)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="3280" uspid="79" ordinal="0" sl="79" sc="1" el="79" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="19740" uspid="80" ordinal="1" sl="80" sc="1" el="80" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="8896" uspid="81" ordinal="2" sl="81" sc="1" el="81" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="13508" uspid="82" ordinal="3" sl="82" sc="1" el="82" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="6590" uspid="83" ordinal="4" sl="83" sc="1" el="83" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="974" uspid="84" ordinal="5" sl="84" sc="1" el="84" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="3280" uspid="85" ordinal="6" sl="85" sc="1" el="85" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="3333" uspid="79" ordinal="0" sl="79" sc="1" el="79" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="19972" uspid="80" ordinal="1" sl="80" sc="1" el="80" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="9004" uspid="81" ordinal="2" sl="81" sc="1" el="81" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="13706" uspid="82" ordinal="3" sl="82" sc="1" el="82" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="6653" uspid="83" ordinal="4" sl="83" sc="1" el="83" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="982" uspid="84" ordinal="5" sl="84" sc="1" el="84" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="3333" uspid="85" ordinal="6" sl="85" sc="1" el="85" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="8896" uspid="80" ordinal="3" path="1" offset="71" offsetend="5" sl="80" fileid="6" />
-                <BranchPoint vc="2306" uspid="82" ordinal="0" path="0" offset="51" offsetend="53" sl="82" fileid="6" />
-                <BranchPoint vc="6590" uspid="82" ordinal="1" path="1" offset="51" offsetend="58" sl="82" fileid="6" />
-                <BranchPoint vc="974" uspid="80" ordinal="2" path="0" offset="71" offsetend="73" sl="80" fileid="6" />
+                <BranchPoint vc="9004" uspid="80" ordinal="3" path="1" offset="71" offsetend="5" sl="80" fileid="6" />
+                <BranchPoint vc="2351" uspid="82" ordinal="0" path="0" offset="51" offsetend="53" sl="82" fileid="6" />
+                <BranchPoint vc="6653" uspid="82" ordinal="1" path="1" offset="51" offsetend="58" sl="82" fileid="6" />
+                <BranchPoint vc="982" uspid="80" ordinal="2" path="0" offset="71" offsetend="73" sl="80" fileid="6" />
               </BranchPoints>
               <MethodPoint vc="7" uspid="0" p8:type="SequencePoint" ordinal="17" offset="17" sc="0" sl="79" ec="1" el="85" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
             </Method>
@@ -1165,18 +1165,18 @@
               <Name>System.Void Poker.ScoreLogic::&lt;SortByPointCards&gt;g__StraightCase|16_0(Poker.ScoreLogic/&lt;&gt;c__DisplayClass16_0&amp;)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="4" uspid="277" ordinal="0" sl="277" sc="1" el="277" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="4" uspid="278" ordinal="1" sl="278" sc="1" el="278" ec="2" bec="2" bev="2" fileid="6" />
-                <SequencePoint vc="2" uspid="279" ordinal="2" sl="279" sc="1" el="279" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="280" ordinal="3" sl="280" sc="1" el="280" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="281" ordinal="4" sl="281" sc="1" el="281" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="282" ordinal="5" sl="282" sc="1" el="282" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="2" uspid="283" ordinal="6" sl="283" sc="1" el="283" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="4" uspid="284" ordinal="7" sl="284" sc="1" el="284" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="8" uspid="277" ordinal="0" sl="277" sc="1" el="277" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="8" uspid="278" ordinal="1" sl="278" sc="1" el="278" ec="2" bec="2" bev="2" fileid="6" />
+                <SequencePoint vc="3" uspid="279" ordinal="2" sl="279" sc="1" el="279" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="3" uspid="280" ordinal="3" sl="280" sc="1" el="280" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="3" uspid="281" ordinal="4" sl="281" sc="1" el="281" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="3" uspid="282" ordinal="5" sl="282" sc="1" el="282" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="3" uspid="283" ordinal="6" sl="283" sc="1" el="283" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="8" uspid="284" ordinal="7" sl="284" sc="1" el="284" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="2" uspid="278" ordinal="0" path="0" offset="24" offsetend="26" sl="278" fileid="6" />
-                <BranchPoint vc="4" uspid="278" ordinal="1" path="1" offset="24" offsetend="67" sl="278" fileid="6" />
+                <BranchPoint vc="3" uspid="278" ordinal="0" path="0" offset="24" offsetend="26" sl="278" fileid="6" />
+                <BranchPoint vc="8" uspid="278" ordinal="1" path="1" offset="24" offsetend="67" sl="278" fileid="6" />
               </BranchPoints>
               <MethodPoint vc="8" uspid="0" p8:type="SequencePoint" ordinal="18" offset="18" sc="0" sl="277" ec="1" el="284" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
             </Method>
@@ -1186,11 +1186,11 @@
               <Name>System.Collections.Generic.List`1&lt;Poker.ICard&gt; Poker.ScoreLogic::&lt;SortByPointCards&gt;g__TakeAndRemove|16_1(Poker.Rank,Poker.ScoreLogic/&lt;&gt;c__DisplayClass16_0&amp;)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="6" uspid="286" ordinal="0" sl="286" sc="1" el="286" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="24" uspid="287" ordinal="1" sl="287" sc="1" el="287" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="24" uspid="288" ordinal="2" sl="288" sc="1" el="288" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="6" uspid="289" ordinal="3" sl="289" sc="1" el="289" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="6" uspid="290" ordinal="4" sl="290" sc="1" el="290" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="24" uspid="286" ordinal="0" sl="286" sc="1" el="286" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="96" uspid="287" ordinal="1" sl="287" sc="1" el="287" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="96" uspid="288" ordinal="2" sl="288" sc="1" el="288" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="24" uspid="289" ordinal="3" sl="289" sc="1" el="289" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="24" uspid="290" ordinal="4" sl="290" sc="1" el="290" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="19" offset="19" sc="0" sl="286" ec="1" el="290" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
@@ -1201,16 +1201,16 @@
               <Name>System.Collections.Generic.List`1&lt;Poker.ICard&gt; Poker.ScoreLogic::&lt;SortByPointCards&gt;g__OrderByPopThenRank|16_2(Poker.ScoreLogic/&lt;&gt;c__DisplayClass16_0&amp;)</Name>
               <FileRef uid="6" />
               <SequencePoints>
-                <SequencePoint vc="8" uspid="292" ordinal="0" sl="292" sc="1" el="292" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="8" uspid="293" ordinal="1" sl="293" sc="1" el="293" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="48" uspid="294" ordinal="2" sl="294" sc="1" el="294" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="48" uspid="295" ordinal="3" sl="295" sc="1" el="295" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="28" uspid="292" ordinal="0" sl="292" sc="1" el="292" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="28" uspid="293" ordinal="1" sl="293" sc="1" el="293" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="168" uspid="294" ordinal="2" sl="294" sc="1" el="294" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="168" uspid="295" ordinal="3" sl="295" sc="1" el="295" ec="2" bec="0" bev="0" fileid="6" />
                 <SequencePoint vc="0" uspid="296" ordinal="4" sl="296" sc="1" el="296" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="8" uspid="297" ordinal="5" sl="297" sc="1" el="297" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="8" uspid="298" ordinal="6" sl="298" sc="1" el="298" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="8" uspid="299" ordinal="7" sl="299" sc="1" el="299" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="8" uspid="300" ordinal="8" sl="300" sc="1" el="300" ec="2" bec="0" bev="0" fileid="6" />
-                <SequencePoint vc="8" uspid="301" ordinal="9" sl="301" sc="1" el="301" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="28" uspid="297" ordinal="5" sl="297" sc="1" el="297" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="28" uspid="298" ordinal="6" sl="298" sc="1" el="298" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="28" uspid="299" ordinal="7" sl="299" sc="1" el="299" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="28" uspid="300" ordinal="8" sl="300" sc="1" el="300" ec="2" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="28" uspid="301" ordinal="9" sl="301" sc="1" el="301" ec="2" bec="0" bev="0" fileid="6" />
               </SequencePoints>
               <BranchPoints />
               <MethodPoint vc="9" uspid="0" p8:type="SequencePoint" ordinal="20" offset="20" sc="0" sl="292" ec="1" el="301" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
@@ -1218,29 +1218,22 @@
           </Methods>
         </Class>
         <Class>
-          <Summary numSequencePoints="10" visitedSequencePoints="0" numBranchPoints="4" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="2" />
+          <Summary numSequencePoints="8" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="50" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="2" />
           <FullName>Poker.Lib.GameFactory</FullName>
           <Methods>
-            <Method cyclomaticComplexity="4" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="6" visitedSequencePoints="0" numBranchPoints="4" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>Poker.Lib.IPokerGame Poker.Lib.GameFactory::NewGame(System.String[])</Name>
               <FileRef uid="7" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="6" ordinal="0" sl="6" sc="1" el="6" ec="2" bec="0" bev="0" fileid="7" />
-                <SequencePoint vc="0" uspid="7" ordinal="1" sl="7" sc="1" el="7" ec="2" bec="2" bev="0" fileid="7" />
-                <SequencePoint vc="0" uspid="8" ordinal="2" sl="8" sc="1" el="8" ec="2" bec="2" bev="0" fileid="7" />
-                <SequencePoint vc="0" uspid="9" ordinal="3" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="7" />
-                <SequencePoint vc="0" uspid="10" ordinal="4" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="7" />
-                <SequencePoint vc="0" uspid="11" ordinal="5" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="1" uspid="6" ordinal="0" sl="6" sc="1" el="6" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="1" uspid="7" ordinal="1" sl="7" sc="1" el="7" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="1" uspid="8" ordinal="2" sl="8" sc="1" el="8" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="1" uspid="9" ordinal="3" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="7" />
               </SequencePoints>
-              <BranchPoints>
-                <BranchPoint vc="0" uspid="7" ordinal="0" path="0" offset="9" offsetend="11" sl="7" fileid="7" />
-                <BranchPoint vc="0" uspid="7" ordinal="1" path="1" offset="9" offsetend="23" sl="7" fileid="7" />
-                <BranchPoint vc="0" uspid="8" ordinal="2" path="0" offset="31" offsetend="33" sl="8" fileid="7" />
-                <BranchPoint vc="0" uspid="8" ordinal="3" path="1" offset="31" offsetend="45" sl="8" fileid="7" />
-              </BranchPoints>
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="6" ec="1" el="11" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+              <BranchPoints />
+              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="6" ec="1" el="9" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
               <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
@@ -1248,106 +1241,117 @@
               <Name>Poker.Lib.IPokerGame Poker.Lib.GameFactory::LoadGame(System.String)</Name>
               <FileRef uid="7" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="14" ordinal="0" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="7" />
-                <SequencePoint vc="0" uspid="15" ordinal="1" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="7" />
-                <SequencePoint vc="0" uspid="16" ordinal="2" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="7" />
-                <SequencePoint vc="0" uspid="17" ordinal="3" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="13" ordinal="1" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="14" ordinal="2" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="7" />
+                <SequencePoint vc="0" uspid="15" ordinal="3" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="7" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="14" ec="1" el="17" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="12" ec="1" el="15" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
             </Method>
           </Methods>
         </Class>
         <Class>
-          <Summary numSequencePoints="70" visitedSequencePoints="0" numBranchPoints="10" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="10" />
+          <Summary numSequencePoints="76" visitedSequencePoints="57" numBranchPoints="18" visitedBranchPoints="16" sequenceCoverage="75" branchCoverage="88.88" maxCyclomaticComplexity="10" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="9" numMethods="11" />
           <FullName>Poker.Lib.StandardGame</FullName>
           <Methods>
-            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Boolean Poker.Lib.StandardGame::get_OnGoing()</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="13" ec="1" el="13" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>Poker.IPlayer[] Poker.Lib.StandardGame::get_Players()</Name>
               <FileRef uid="8" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="5" uspid="14" ordinal="0" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="8" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="13" ec="1" el="13" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="14" ec="1" el="14" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
             </Method>
-            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.Void Poker.Lib.StandardGame::Exit()</Name>
               <FileRef uid="8" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="38" ordinal="0" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="39" ordinal="1" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="40" ordinal="2" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="48" ordinal="0" sl="48" sc="1" el="48" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="49" ordinal="1" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="50" ordinal="2" sl="50" sc="1" el="50" ec="2" bec="0" bev="0" fileid="8" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="38" ec="1" el="40" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="48" ec="1" el="50" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
             </Method>
-            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="75" branchCoverage="50" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="8" visitedSequencePoints="6" numBranchPoints="2" visitedBranchPoints="1" sequenceCoverage="75" branchCoverage="50" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.Void Poker.Lib.StandardGame::RunGame()</Name>
               <FileRef uid="8" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="43" ordinal="0" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="44" ordinal="1" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="45" ordinal="2" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="46" ordinal="3" sl="46" sc="1" el="46" ec="2" bec="2" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="47" ordinal="4" sl="47" sc="1" el="47" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="48" ordinal="5" sl="48" sc="1" el="48" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="49" ordinal="6" sl="49" sc="1" el="49" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="50" ordinal="7" sl="50" sc="1" el="50" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="2" uspid="53" ordinal="0" sl="53" sc="1" el="53" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="2" uspid="54" ordinal="1" sl="54" sc="1" el="54" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="2" uspid="55" ordinal="2" sl="55" sc="1" el="55" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="2" uspid="56" ordinal="3" sl="56" sc="1" el="56" ec="2" bec="2" bev="1" fileid="8" />
+                <SequencePoint vc="2" uspid="57" ordinal="4" sl="57" sc="1" el="57" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="2" uspid="58" ordinal="5" sl="58" sc="1" el="58" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="59" ordinal="6" sl="59" sc="1" el="59" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="60" ordinal="7" sl="60" sc="1" el="60" ec="2" bec="0" bev="0" fileid="8" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="0" uspid="46" ordinal="1" path="1" offset="38" offsetend="21" sl="46" fileid="8" />
-                <BranchPoint vc="0" uspid="46" ordinal="0" path="0" offset="38" offsetend="40" sl="46" fileid="8" />
+                <BranchPoint vc="2" uspid="56" ordinal="1" path="1" offset="38" offsetend="21" sl="56" fileid="8" />
+                <BranchPoint vc="0" uspid="56" ordinal="0" path="0" offset="38" offsetend="40" sl="56" fileid="8" />
               </BranchPoints>
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="43" ec="1" el="50" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+              <MethodPoint vc="6" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="53" ec="1" el="60" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
             </Method>
-            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="6" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+            <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="66.66" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="6" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="66.66" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.Void Poker.Lib.StandardGame::fullGame()</Name>
               <FileRef uid="8" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="53" ordinal="0" sl="53" sc="1" el="53" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="54" ordinal="1" sl="54" sc="1" el="54" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="55" ordinal="2" sl="55" sc="1" el="55" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="56" ordinal="3" sl="56" sc="1" el="56" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="57" ordinal="4" sl="57" sc="1" el="57" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="58" ordinal="5" sl="58" sc="1" el="58" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="2" uspid="63" ordinal="0" sl="63" sc="1" el="63" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="2" uspid="64" ordinal="1" sl="64" sc="1" el="64" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="2" uspid="65" ordinal="2" sl="65" sc="1" el="65" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="66" ordinal="3" sl="66" sc="1" el="66" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="67" ordinal="4" sl="67" sc="1" el="67" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="68" ordinal="5" sl="68" sc="1" el="68" ec="2" bec="0" bev="0" fileid="8" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="53" ec="1" el="58" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="63" ec="1" el="68" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
             </Method>
-            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="13" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="61.53" branchCoverage="50" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="13" visitedSequencePoints="8" numBranchPoints="2" visitedBranchPoints="1" sequenceCoverage="61.53" branchCoverage="50" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.Void Poker.Lib.StandardGame::DetermineWinner()</Name>
               <FileRef uid="8" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="61" ordinal="0" sl="61" sc="1" el="61" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="62" ordinal="1" sl="62" sc="1" el="62" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="63" ordinal="2" sl="63" sc="1" el="63" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="64" ordinal="3" sl="64" sc="1" el="64" ec="2" bec="2" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="65" ordinal="4" sl="65" sc="1" el="65" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="66" ordinal="5" sl="66" sc="1" el="66" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="67" ordinal="6" sl="67" sc="1" el="67" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="68" ordinal="7" sl="68" sc="1" el="68" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="69" ordinal="8" sl="69" sc="1" el="69" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="71" ordinal="9" sl="71" sc="1" el="71" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="72" ordinal="10" sl="72" sc="1" el="72" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="73" ordinal="11" sl="73" sc="1" el="73" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="74" ordinal="12" sl="74" sc="1" el="74" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="71" ordinal="0" sl="71" sc="1" el="71" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="72" ordinal="1" sl="72" sc="1" el="72" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="73" ordinal="2" sl="73" sc="1" el="73" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="74" ordinal="3" sl="74" sc="1" el="74" ec="2" bec="2" bev="1" fileid="8" />
+                <SequencePoint vc="1" uspid="75" ordinal="4" sl="75" sc="1" el="75" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="76" ordinal="5" sl="76" sc="1" el="76" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="77" ordinal="6" sl="77" sc="1" el="77" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="78" ordinal="7" sl="78" sc="1" el="78" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="79" ordinal="8" sl="79" sc="1" el="79" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="81" ordinal="9" sl="81" sc="1" el="81" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="82" ordinal="10" sl="82" sc="1" el="82" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="83" ordinal="11" sl="83" sc="1" el="83" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="84" ordinal="12" sl="84" sc="1" el="84" ec="2" bec="0" bev="0" fileid="8" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="0" uspid="64" ordinal="0" path="0" offset="36" offsetend="38" sl="64" fileid="8" />
-                <BranchPoint vc="0" uspid="64" ordinal="1" path="1" offset="36" offsetend="82" sl="64" fileid="8" />
+                <BranchPoint vc="1" uspid="74" ordinal="0" path="0" offset="36" offsetend="38" sl="74" fileid="8" />
+                <BranchPoint vc="0" uspid="74" ordinal="1" path="1" offset="36" offsetend="82" sl="74" fileid="8" />
               </BranchPoints>
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="61" ec="1" el="74" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+              <MethodPoint vc="8" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="71" ec="1" el="84" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
               <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
@@ -1355,59 +1359,59 @@
               <Name>System.Void Poker.Lib.StandardGame::SaveGameAndExit(System.String)</Name>
               <FileRef uid="8" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="77" ordinal="0" sl="77" sc="1" el="77" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="78" ordinal="1" sl="78" sc="1" el="78" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="79" ordinal="2" sl="79" sc="1" el="79" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="80" ordinal="3" sl="80" sc="1" el="80" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="87" ordinal="0" sl="87" sc="1" el="87" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="88" ordinal="1" sl="88" sc="1" el="88" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="89" ordinal="2" sl="89" sc="1" el="89" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="90" ordinal="3" sl="90" sc="1" el="90" ec="2" bec="0" bev="0" fileid="8" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="77" ec="1" el="80" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="6" offset="6" sc="0" sl="87" ec="1" el="90" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
             </Method>
-            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.Void Poker.Lib.StandardGame::InitialDeal()</Name>
               <FileRef uid="8" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="82" ordinal="0" sl="82" sc="1" el="82" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="83" ordinal="1" sl="83" sc="1" el="83" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="84" ordinal="2" sl="84" sc="1" el="84" ec="2" bec="2" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="85" ordinal="3" sl="85" sc="1" el="85" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="86" ordinal="4" sl="86" sc="1" el="86" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="87" ordinal="5" sl="87" sc="1" el="87" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="88" ordinal="6" sl="88" sc="1" el="88" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="90" ordinal="7" sl="90" sc="1" el="90" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="2" uspid="92" ordinal="0" sl="92" sc="1" el="92" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="2" uspid="93" ordinal="1" sl="93" sc="1" el="93" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="14" uspid="94" ordinal="2" sl="94" sc="1" el="94" ec="2" bec="2" bev="2" fileid="8" />
+                <SequencePoint vc="4" uspid="95" ordinal="3" sl="95" sc="1" el="95" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="4" uspid="96" ordinal="4" sl="96" sc="1" el="96" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="4" uspid="97" ordinal="5" sl="97" sc="1" el="97" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="4" uspid="98" ordinal="6" sl="98" sc="1" el="98" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="2" uspid="100" ordinal="7" sl="100" sc="1" el="100" ec="2" bec="0" bev="0" fileid="8" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="0" uspid="84" ordinal="1" path="1" offset="102" offsetend="28" sl="84" fileid="8" />
-                <BranchPoint vc="0" uspid="84" ordinal="0" path="0" offset="102" offsetend="104" sl="84" fileid="8" />
+                <BranchPoint vc="4" uspid="94" ordinal="1" path="1" offset="102" offsetend="28" sl="94" fileid="8" />
+                <BranchPoint vc="2" uspid="94" ordinal="0" path="0" offset="102" offsetend="104" sl="94" fileid="8" />
               </BranchPoints>
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="6" offset="6" sc="0" sl="82" ec="1" el="90" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+              <MethodPoint vc="8" uspid="0" p8:type="SequencePoint" ordinal="7" offset="7" sc="0" sl="92" ec="1" el="100" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
             </Method>
-            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="12" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="12" visitedSequencePoints="12" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.Void Poker.Lib.StandardGame::Playerturns()</Name>
               <FileRef uid="8" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="94" ordinal="0" sl="94" sc="1" el="94" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="95" ordinal="1" sl="95" sc="1" el="95" ec="2" bec="2" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="96" ordinal="2" sl="96" sc="1" el="96" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="97" ordinal="3" sl="97" sc="1" el="97" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="98" ordinal="4" sl="98" sc="1" el="98" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="99" ordinal="5" sl="99" sc="1" el="99" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="100" ordinal="6" sl="100" sc="1" el="100" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="101" ordinal="7" sl="101" sc="1" el="101" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="102" ordinal="8" sl="102" sc="1" el="102" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="103" ordinal="9" sl="103" sc="1" el="103" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="104" ordinal="10" sl="104" sc="1" el="104" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="105" ordinal="11" sl="105" sc="1" el="105" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="2" uspid="104" ordinal="0" sl="104" sc="1" el="104" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="11" uspid="105" ordinal="1" sl="105" sc="1" el="105" ec="2" bec="2" bev="2" fileid="8" />
+                <SequencePoint vc="3" uspid="106" ordinal="2" sl="106" sc="1" el="106" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="3" uspid="107" ordinal="3" sl="107" sc="1" el="107" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="3" uspid="108" ordinal="4" sl="108" sc="1" el="108" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="3" uspid="109" ordinal="5" sl="109" sc="1" el="109" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="3" uspid="110" ordinal="6" sl="110" sc="1" el="110" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="3" uspid="111" ordinal="7" sl="111" sc="1" el="111" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="3" uspid="112" ordinal="8" sl="112" sc="1" el="112" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="3" uspid="113" ordinal="9" sl="113" sc="1" el="113" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="2" uspid="114" ordinal="10" sl="114" sc="1" el="114" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="1" uspid="115" ordinal="11" sl="115" sc="1" el="115" ec="2" bec="0" bev="0" fileid="8" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="0" uspid="95" ordinal="1" path="1" offset="140" offsetend="16" sl="95" fileid="8" />
-                <BranchPoint vc="0" uspid="95" ordinal="0" path="0" offset="140" offsetend="142" sl="95" fileid="8" />
+                <BranchPoint vc="3" uspid="105" ordinal="1" path="1" offset="140" offsetend="16" sl="105" fileid="8" />
+                <BranchPoint vc="1" uspid="105" ordinal="0" path="0" offset="140" offsetend="142" sl="105" fileid="8" />
               </BranchPoints>
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="7" offset="7" sc="0" sl="94" ec="1" el="105" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+              <MethodPoint vc="12" uspid="0" p8:type="SequencePoint" ordinal="8" offset="8" sc="0" sl="104" ec="1" el="115" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
               <Summary numSequencePoints="6" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
@@ -1415,37 +1419,50 @@
               <Name>System.Void Poker.Lib.StandardGame::.ctor(System.String)</Name>
               <FileRef uid="8" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="14" ordinal="0" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="15" ordinal="1" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="16" ordinal="2" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="17" ordinal="3" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="18" ordinal="4" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="19" ordinal="5" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="15" ordinal="0" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="16" ordinal="1" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="17" ordinal="2" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="18" ordinal="3" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="19" ordinal="4" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="0" uspid="20" ordinal="5" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="8" />
               </SequencePoints>
               <BranchPoints />
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="8" offset="8" sc="0" sl="14" ec="1" el="19" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="9" offset="9" sc="0" sl="15" ec="1" el="20" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
             </Method>
-            <Method cyclomaticComplexity="2" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="9" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+            <Method cyclomaticComplexity="10" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="14" visitedSequencePoints="14" numBranchPoints="10" visitedBranchPoints="10" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="10" minCyclomaticComplexity="10" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.Void Poker.Lib.StandardGame::.ctor(System.String[])</Name>
               <FileRef uid="8" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="21" ordinal="0" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="22" ordinal="1" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="23" ordinal="2" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="24" ordinal="3" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="25" ordinal="4" sl="25" sc="1" el="25" ec="2" bec="2" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="26" ordinal="5" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="27" ordinal="6" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="28" ordinal="7" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="8" />
-                <SequencePoint vc="0" uspid="29" ordinal="8" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="15" uspid="22" ordinal="0" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="15" uspid="23" ordinal="1" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="133" uspid="24" ordinal="2" sl="24" sc="1" el="24" ec="2" bec="2" bev="2" fileid="8" />
+                <SequencePoint vc="48" uspid="26" ordinal="3" sl="26" sc="1" el="26" ec="2" bec="2" bev="2" fileid="8" />
+                <SequencePoint vc="24" uspid="27" ordinal="4" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="9" uspid="29" ordinal="5" sl="29" sc="1" el="29" ec="2" bec="2" bev="2" fileid="8" />
+                <SequencePoint vc="8" uspid="31" ordinal="6" sl="31" sc="1" el="31" ec="2" bec="2" bev="2" fileid="8" />
+                <SequencePoint vc="5" uspid="33" ordinal="7" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="5" uspid="34" ordinal="8" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="42" uspid="35" ordinal="9" sl="35" sc="1" el="35" ec="2" bec="2" bev="2" fileid="8" />
+                <SequencePoint vc="16" uspid="36" ordinal="10" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="16" uspid="37" ordinal="11" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="16" uspid="38" ordinal="12" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="8" />
+                <SequencePoint vc="5" uspid="39" ordinal="13" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="8" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="0" uspid="25" ordinal="1" path="1" offset="68" offsetend="34" sl="25" fileid="8" />
-                <BranchPoint vc="0" uspid="25" ordinal="0" path="0" offset="68" offsetend="70" sl="25" fileid="8" />
+                <BranchPoint vc="32" uspid="24" ordinal="3" path="1" offset="44" offsetend="15" sl="24" fileid="8" />
+                <BranchPoint vc="8" uspid="26" ordinal="0" path="0" offset="26" offsetend="28" sl="26" fileid="8" />
+                <BranchPoint vc="24" uspid="26" ordinal="1" path="1" offset="26" offsetend="35" sl="26" fileid="8" />
+                <BranchPoint vc="7" uspid="24" ordinal="2" path="0" offset="44" offsetend="46" sl="24" fileid="8" />
+                <BranchPoint vc="1" uspid="29" ordinal="4" path="0" offset="56" offsetend="58" sl="29" fileid="8" />
+                <BranchPoint vc="6" uspid="29" ordinal="5" path="1" offset="56" offsetend="70" sl="29" fileid="8" />
+                <BranchPoint vc="1" uspid="31" ordinal="6" path="0" offset="80" offsetend="82" sl="31" fileid="8" />
+                <BranchPoint vc="5" uspid="31" ordinal="7" path="1" offset="80" offsetend="94" sl="31" fileid="8" />
+                <BranchPoint vc="16" uspid="35" ordinal="9" path="1" offset="161" offsetend="121" sl="35" fileid="8" />
+                <BranchPoint vc="5" uspid="35" ordinal="8" path="0" offset="161" offsetend="163" sl="35" fileid="8" />
               </BranchPoints>
-              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="9" offset="9" sc="0" sl="21" ec="1" el="29" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+              <MethodPoint vc="14" uspid="0" p8:type="SequencePoint" ordinal="10" offset="10" sc="0" sl="22" ec="1" el="39" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
             </Method>
           </Methods>
         </Class>

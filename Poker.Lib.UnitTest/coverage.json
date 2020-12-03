@@ -1,6 +1,6 @@
 {
   "PokerLib.dll": {
-    "C:\\Users\\Some-Fish\\Documents\\Newton\\Objektorienterad_programmering\\Lab-2---Poker\\PokerLib\\Player.cs": {
+    "c:\\Users\\leokr\\Documents\\Visual Studio Code\\Inlämningsuppgifter\\Lab-2---Poker\\PokerLib\\Player.cs": {
       "Player": {
         "System.Void Player::Give(System.Collections.Generic.List`1<Poker.ICard>)": {
           "Lines": {
@@ -168,7 +168,7 @@
         }
       }
     },
-    "C:\\Users\\Some-Fish\\Documents\\Newton\\Objektorienterad_programmering\\Lab-2---Poker\\PokerLib\\Card.cs": {
+    "c:\\Users\\leokr\\Documents\\Visual Studio Code\\Inlämningsuppgifter\\Lab-2---Poker\\PokerLib\\Card.cs": {
       "Poker.Card": {
         "Poker.Suite Poker.Card::get_Suite()": {
           "Lines": {
@@ -247,7 +247,7 @@
         }
       }
     },
-    "C:\\Users\\Some-Fish\\Documents\\Newton\\Objektorienterad_programmering\\Lab-2---Poker\\PokerLib\\Deck.cs": {
+    "c:\\Users\\leokr\\Documents\\Visual Studio Code\\Inlämningsuppgifter\\Lab-2---Poker\\PokerLib\\Deck.cs": {
       "Poker.Deck": {
         "System.Collections.Generic.List`1<Poker.ICard> Poker.Deck::get_Content()": {
           "Lines": {
@@ -386,7 +386,7 @@
         }
       }
     },
-    "C:\\Users\\Some-Fish\\Documents\\Newton\\Objektorienterad_programmering\\Lab-2---Poker\\PokerLib\\FileManager.cs": {
+    "c:\\Users\\leokr\\Documents\\Visual Studio Code\\Inlämningsuppgifter\\Lab-2---Poker\\PokerLib\\FileManager.cs": {
       "Poker.FileManager": {
         "System.Boolean Poker.FileManager::SaveGame(System.String,System.Collections.Generic.List`1<Poker.IPlayer>)": {
           "Lines": {
@@ -607,7 +607,7 @@
         }
       }
     },
-    "C:\\Users\\Some-Fish\\Documents\\Newton\\Objektorienterad_programmering\\Lab-2---Poker\\PokerLib\\Hand.cs": {
+    "c:\\Users\\leokr\\Documents\\Visual Studio Code\\Inlämningsuppgifter\\Lab-2---Poker\\PokerLib\\Hand.cs": {
       "Poker.Hand": {
         "System.Int32 Poker.Hand::get_Count()": {
           "Lines": {
@@ -774,7 +774,7 @@
         }
       }
     },
-    "C:\\Users\\Some-Fish\\Documents\\Newton\\Objektorienterad_programmering\\Lab-2---Poker\\PokerLib\\ScoreLogic.cs": {
+    "c:\\Users\\leokr\\Documents\\Visual Studio Code\\Inlämningsuppgifter\\Lab-2---Poker\\PokerLib\\ScoreLogic.cs": {
       "Poker.ScoreLogic": {
         "Poker.HandType Poker.ScoreLogic::DetermineHandType(System.Collections.Generic.List`1<Poker.ICard>)": {
           "Lines": {
@@ -1788,7 +1788,7 @@
         }
       }
     },
-    "C:\\Users\\Some-Fish\\Documents\\Newton\\Objektorienterad_programmering\\Lab-2---Poker\\PokerLib\\GameFactory.cs": {
+    "c:\\Users\\leokr\\Documents\\Visual Studio Code\\Inlämningsuppgifter\\Lab-2---Poker\\PokerLib\\GameFactory.cs": {
       "Poker.Lib.GameFactory": {
         "Poker.Lib.IPokerGame Poker.Lib.GameFactory::NewGame(System.String[])": {
           "Lines": {
@@ -1845,7 +1845,7 @@
         }
       }
     },
-    "C:\\Users\\Some-Fish\\Documents\\Newton\\Objektorienterad_programmering\\Lab-2---Poker\\PokerLib\\StandardGame.cs": {
+    "c:\\Users\\leokr\\Documents\\Visual Studio Code\\Inlämningsuppgifter\\Lab-2---Poker\\PokerLib\\StandardGame.cs": {
       "Poker.Lib.StandardGame": {
         "Poker.IPlayer[] Poker.Lib.StandardGame::get_Players()": {
           "Lines": {

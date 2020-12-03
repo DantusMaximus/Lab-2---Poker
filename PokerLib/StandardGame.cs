@@ -10,6 +10,7 @@ namespace Poker.Lib
         private List<IPlayer> players;
         private Deck deck;
         private bool onGoing;
+        public bool OnGoing { get=>onGoing;}
         public IPlayer[] Players { get => players.ToArray(); }
         public StandardGame(string fileName)
         {
@@ -20,6 +21,15 @@ namespace Poker.Lib
 
         public StandardGame(string[] playerNames)
         {
+            foreach(var playerName in playerNames){
+                
+                if(playerName == null){  throw new System.NullReferenceException();}
+            }
+
+            if (playerNames.Length > 5) { throw new System.Exception("Error: Too many players. At most 5 accepted."); }
+
+            if (playerNames.Length < 2) { throw new System.Exception("Error: Too few players. At least 2 required."); }
+
             deck = new Deck();
             players = new List<IPlayer>();
             for (int i = 0; i < playerNames.Length; i++)

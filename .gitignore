@@ -12,6 +12,7 @@ savedgame.txt
 *.user
 *.userosscache
 *.sln.docstates
+coverage.json
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

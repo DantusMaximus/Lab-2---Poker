@@ -85,7 +85,8 @@ namespace Poker.Lib
 
         public void SaveGameAndExit(string fileName)
         {
-            FileManager.SaveGame(fileName, players);
+            var writer = new Writer(fileName);
+            FileManager.SaveGame(writer, players);
             Exit();
         }
         private void InitialDeal()

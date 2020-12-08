@@ -51,7 +51,8 @@ Generated\ Files/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
-
+lcov.info
+lcov.opencover.xml
 # Build Results of an ATL Project
 [Dd]ebugPS/
 [Rr]eleasePS/

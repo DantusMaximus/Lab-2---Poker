@@ -10,15 +10,12 @@ namespace Poker
         //not relevant in current iteration
         private const string path = "";
         //not relevant in current iteration
-        static public bool SaveGame(string fileName, List<IPlayer> players)
+        static public bool SaveGame(IWriter writer, List<IPlayer> players)
         {
             CreateSaveDirIfNonExistent();
-            using(var writer = new StreamWriter(fileName))
-            {
             string saveFile = ConvertToString(players);
-            writer.Write(saveFile, fileName);
+            writer.Write(saveFile);
             return true;
-            }
         }
         static private void CreateSaveDirIfNonExistent()
         {

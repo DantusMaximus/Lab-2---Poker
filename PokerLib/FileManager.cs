@@ -27,9 +27,9 @@ namespace Poker
             }*/
             //not relevant in current iteration
         }
-        static public List<IPlayer> LoadGame(string fileName)
+        static public List<IPlayer> LoadGame(IReader reader)
         {
-            string[] playersStrings = FileToPlayerStrings(fileName);
+            string[] playersStrings = FileToPlayerStrings(reader);
             List<string> approvedPlayers = new List<string>();
             Regex savedFileFormat = new Regex("^\\w+ \\d+$");
             foreach (string playerString in playersStrings)
@@ -78,20 +78,9 @@ namespace Poker
             int wins = int.Parse(winsString);
             return new Player(name, wins);
         }
-        static private string[] FileToPlayerStrings(string fileName)
+        static private string[] FileToPlayerStrings(IReader reader)
         {
-            using (var stream = File.Open(path + fileName, FileMode.Open))
-            {
-                var playerStrings = new List<string>();
-                stream.Position = 0;
-                var reader = new StreamReader(stream);
-                string line;
-                while((line = reader.ReadLine()) != null)
-                {
-                   playerStrings.Add(line);
-                }        
-            return playerStrings.ToArray();
-            }
+                return reader.ReadAllLines();
         }
     }
 }

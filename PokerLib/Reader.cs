@@ -5,13 +5,25 @@ using System.Collections.Generic;
 
 namespace Poker
 {
-class Reader: IReader{
-    string fileName;
-    public Reader(string fileName){this.fileName = fileName;}
-        public void Read(string saveFileContent)
+    class Reader : IReader
+    {
+        Stream stream;
+        string fileName;
+        public Reader(string fileName) { this.fileName = fileName; }
+        public string[] ReadAllLines()
         {
-            using(StreamWriter writer = new StreamWriter(fileName)){
-               writer.Write(saveFileContent, fileName); 
+            using (var stream = File.Open(fileName, FileMode.Open))
+            {
+                using (var reader = new StreamReader(stream))
+                {
+                    var playerStrings = new List<string>();
+                    string line;
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        playerStrings.Add(line);
+                    }
+                    return playerStrings.ToArray();
+                }
             }
         }
     }

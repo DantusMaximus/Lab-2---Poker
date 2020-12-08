@@ -16,7 +16,8 @@ namespace Poker.Lib
         {
             deck = new Deck();
             this.fileName = fileName;
-            players = FileManager.LoadGame(fileName);
+            Reader reader = new Reader(fileName);
+            players = FileManager.LoadGame(reader);
         }
 
         public StandardGame(string[] playerNames)

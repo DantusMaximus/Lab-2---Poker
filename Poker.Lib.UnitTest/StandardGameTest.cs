@@ -93,16 +93,111 @@ namespace Poker.Lib.UnitTest
             void MockSelectCardsToDiscard(IPlayer player){}
             void MockRecievedReplacementCards(IPlayer player){}
             void SetHands(){
-               ChangeHand(0,"♣A♣K♣Q♣J♣10");
-               ChangeHand(1,"♠8♣8♠2♠A♦3");
+               ChangeHand(standardGame.Players[0],"♣A♣K♣Q♣J♣10");
+               ChangeHand(standardGame.Players[1],"♠8♣8♠2♠A♦3");
             }
             void MockWinner(IPlayer winner){
                 Assert.AreSame(standardGame.Players[0], winner);
                 Assert.Pass();
             }
             
-            void ChangeHand(int playerIndex, string newHand){
-                 Player player = ((Player)standardGame.Players[playerIndex]);
+        }
+
+        [Test]
+        public void Assert_RunGame_FinishesRunningWhenExitIsCalledAfterMatch(){
+            var playerNames = new string[] {"Magdalena", "Evert"};
+            StandardGame standardGame = new StandardGame(playerNames);
+            int newDealCalls =0;
+            standardGame.NewDeal += MockNewDeal;
+            standardGame.SelectCardsToDiscard += MockWithIPlayerParam;
+            standardGame.RecievedReplacementCards += MockWithIPlayerParam;
+            standardGame.ShowAllHands += SetHands;
+            standardGame.Draw += CallExitFunction;
+            standardGame.RunGame();
+
+            Assert.Pass();
+
+            void MockNewDeal(){    
+                if(++newDealCalls == 2){     Assert.Fail("Did not exit game. Started a new round instead.");      }
+            }
+
+            void CallExitFunction(IPlayer[] winners){
+               standardGame.Exit();
+            }
+            void SetHands(){
+               ChangeHand(standardGame.Players[0],"♣A♣K♣Q♣J♣10");
+               ChangeHand(standardGame.Players[1],"♣A♣K♣Q♣J♣10");
+            }
+            void MockWithIPlayerParam(IPlayer player){}    
+        }
+
+        //testa att köra "en till" TODO
+        [Test]
+        public void Assert_RunGame_CanRematch(){
+             var playerNames = new string[] {"Magdalena", "Evert"};
+            StandardGame standardGame = new StandardGame(playerNames);
+            int newDealCalls =0;
+            standardGame.NewDeal += MockNewDeal;
+            standardGame.SelectCardsToDiscard += MockWithIPlayerParam;
+            standardGame.RecievedReplacementCards += MockWithIPlayerParam;
+            standardGame.ShowAllHands += SetHands;
+            standardGame.Winner += MockWithIPlayerParam;
+
+
+
+            standardGame.RunGame();
+            void SetHands(){
+               ChangeHand(standardGame.Players[0],"♣A♣K♣Q♣J♣10");
+               ChangeHand(standardGame.Players[1],"♠8♣8♠2♠A♦3");
+            }
+            void MockNewDeal(){    
+                if(++newDealCalls == 2){     Assert.Pass();      }
+            }
+
+              
+            void MockWithoutParams(){}      
+            void MockWithIPlayerParam(IPlayer player){}
+    
+        }
+        //DetermineWinner on Draw TODO
+        [Test]
+        public void Assert_RunGame_DeterminesDrawBetweenMultipleWinners(){
+            
+            var playerNames = new string[] {"Magdalena", "Evert", "Saul"};
+            StandardGame standardGame = new StandardGame(playerNames);
+
+            standardGame.NewDeal += MockNewDeal;
+            standardGame.SelectCardsToDiscard += MockSelectCardsToDiscard;
+            standardGame.RecievedReplacementCards += MockRecievedReplacementCards;
+            standardGame.ShowAllHands += SetHands;
+            standardGame.Winner += Fail;
+            standardGame.Draw += MockDraw;
+            standardGame.RunGame();
+            
+            
+            void MockNewDeal(){}
+            void MockSelectCardsToDiscard(IPlayer player){}
+            void MockRecievedReplacementCards(IPlayer player){}
+            void SetHands(){
+               ChangeHand(standardGame.Players[0],"♣A♣K♣Q♦J♣10"); //winner
+               ChangeHand(standardGame.Players[1],"♠8♣8♠2♠A♦3");  //loser
+               ChangeHand(standardGame.Players[2],"♦A♦K♦Q♦J♣10"); //winner           
+            }
+
+            void MockDraw(IPlayer[] winners){
+                Assert.AreEqual(2, winners.Length);
+                Assert.Contains(standardGame.Players[0], winners);
+                Assert.Contains(standardGame.Players[2], winners);
+                Assert.Pass();
+            }
+             void Fail(IPlayer winner){
+                Assert.Fail("Only '" + winner.Name + "' won. Should have been Draw.");
+             }
+        }
+
+
+        void ChangeHand(IPlayer iPlayer, string newHand){
+                Player player = ((Player)iPlayer);
                 Hand hand = player.hand;                
                 List<ICard> firstHand = new List<ICard>(hand.Cards);
                 foreach(ICard card in firstHand){
@@ -113,10 +208,5 @@ namespace Poker.Lib.UnitTest
                 }
                 
             }
-            
-
-        }
-        //deck.ShuffleInCards TODO
-        //DetermineWinner on Draw TODO
     }
 }

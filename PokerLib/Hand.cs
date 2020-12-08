@@ -18,7 +18,7 @@ namespace Poker
         public HandType HandType { get; set; }
         public Hand(IPlayer player)
         {
-            if (player.Equals(null)){throw new NullReferenceException("Nonexistant Player");}
+            if (player.Equals(null)){throw new NullReferenceException("Nonexisting Player");}
             this.player = player;
             cards = new List<ICard>();
         }

@@ -42,7 +42,7 @@ namespace Poker.Lib.UnitTest
             deck.Draw(52);
             deck.ShuffleInCards();
             Assert.DoesNotThrow(delegate{
-                deck.Draw(1);
+                deck.Draw(52);
             });
         }
         //Draw

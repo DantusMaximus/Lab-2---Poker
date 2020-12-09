@@ -21,9 +21,6 @@ namespace Poker
                 return false;
             return true;
         }
-        public override int GetHashCode()
-        {
-            throw new System.NotImplementedException();
-        }
+ 
     }
 }

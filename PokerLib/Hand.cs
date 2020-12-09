@@ -18,13 +18,17 @@ namespace Poker
         public HandType HandType { get; set; }
         public Hand(IPlayer player)
         {
-            if (player.Equals(null)){throw new NullReferenceException("Nonexisting Player");}
+            if (player == null){
+                throw new NullReferenceException("Nonexisting Player");
+                }
             this.player = player;
             cards = new List<ICard>();
         }
         public Hand(IPlayer player, List<ICard> cards)
         {
-            if(player.Equals(null) || cards.Equals(null)){throw new NullReferenceException();}
+            if(player == null || cards == null){
+                throw new NullReferenceException();
+                }
             this.player = player;
             this.cards = cards;
         }
@@ -33,7 +37,9 @@ namespace Poker
         public void Add(ICard card)
         {
             if (cards.Contains(card)) { throw new Exception("Dublicate card"); }
-            if (IsFull()) { throw new Exception("Hand overflow"); }
+            if (IsFull()) { 
+                throw new Exception("Hand overflow"); 
+                }
             cards.Add(card);
             if(IsFull()){HandType = ScoreLogic.DetermineHandType(cards);}
         }

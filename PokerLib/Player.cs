@@ -14,7 +14,9 @@ class Player : IPlayer
     }
     public Player(string name, int wins)
     {
-        if(name.Equals(null)){throw new System.NullReferenceException();}
+        if(name == null){
+            throw new System.NullReferenceException();
+        }
         this.wins = wins;
         discard = new ICard[0];
         this.name = name;

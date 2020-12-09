@@ -7,24 +7,17 @@ namespace Poker
 {
     class Reader : IReader
     {
-        Stream stream;
         string fileName;
         public Reader(string fileName) { this.fileName = fileName; }
-        public string[] ReadAllLines()
+        public string ReadToEnd()
         {
-            using (var stream = File.Open(fileName, FileMode.Open))
-            {
-                using (var reader = new StreamReader(stream))
-                {
-                    var playerStrings = new List<string>();
-                    string line;
-                    while ((line = reader.ReadLine()) != null)
-                    {
-                        playerStrings.Add(line);
-                    }
-                    return playerStrings.ToArray();
-                }
+            if(!File.Exists(fileName)){
+                throw new FileNotFoundException("savefile not found");
             }
+            using (var stream = File.Open(fileName, FileMode.Open))
+            using (var reader = new StreamReader(stream)){
+            return reader.ReadToEnd();
+            }           
         }
     }
 }

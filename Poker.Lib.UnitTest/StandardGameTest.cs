@@ -9,6 +9,15 @@ namespace Poker.Lib.UnitTest
         [SetUp]
 
         [Test]
+        public void Assert_Constructor_ThrowsException_OnNullReader(){
+            Assert.Throws(typeof(System.NullReferenceException),
+            delegate { 
+                IReader reader = null;
+                new StandardGame(reader);
+                 });
+        }
+
+        [Test]
         public void Assert_Constructor_ThrowsExceptionOnNullPlayers()
         {
             var playerNames = new string[] { null, null };

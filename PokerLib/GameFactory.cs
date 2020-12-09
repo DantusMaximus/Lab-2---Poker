@@ -10,8 +10,7 @@ namespace Poker.Lib
 
         public static IPokerGame LoadGame(string fileName)
         {
-            StandardGame standardGame = new StandardGame(fileName);
-            return standardGame;
+            return new StandardGame(new Reader(fileName));            
         }
     }
 }

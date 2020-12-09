@@ -2,6 +2,7 @@ using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Poker
 {
@@ -30,17 +31,17 @@ namespace Poker
         static public List<IPlayer> LoadGame(IReader reader)
         {
             string[] playersStrings = FileToPlayerStrings(reader);
-            List<string> approvedPlayers = new List<string>();
+            List<string> approvedPlayers = new List<string>();           
             Regex savedFileFormat = new Regex("^\\w+ \\d+$");
             foreach (string playerString in playersStrings)
-            {
+            {               
                 if (playerString == "")
                 {
                     continue;
                 }
                 if (!savedFileFormat.IsMatch(playerString))
                 {
-                    throw new System.Exception("Felaktigt filformat");
+                    throw new System.Exception("Felaktigt filformat on line with " + playerString );
                 }
                 approvedPlayers.Add(playerString);
             }
@@ -79,8 +80,9 @@ namespace Poker
             return new Player(name, wins);
         }
         static private string[] FileToPlayerStrings(IReader reader)
-        {
-                return reader.ReadAllLines();
+        {       
+            string fullFile = reader.ReadToEnd();
+            return fullFile.Split("\n", System.StringSplitOptions.None).ToArray();
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 namespace Poker
 {
 public interface IReader{
-    string[] ReadAllLines();
+    string ReadToEnd();
 
 }
 }

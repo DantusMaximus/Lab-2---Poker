@@ -4,19 +4,16 @@ using System.Runtime.CompilerServices;
 namespace Poker.Lib
 {
     class StandardGame : IPokerGame
-    {
-        private string fileName;
+    {      
 
         private List<IPlayer> players;
         private Deck deck;
         private bool onGoing;
-        public bool OnGoing { get=>onGoing;}
+        public bool OnGoing { get=>onGoing; }
         public IPlayer[] Players { get => players.ToArray(); }
-        public StandardGame(string fileName)
+        public StandardGame(IReader reader)
         {
             deck = new Deck();
-            this.fileName = fileName;
-            Reader reader = new Reader(fileName);
             players = FileManager.LoadGame(reader);
         }
 
@@ -85,9 +82,8 @@ namespace Poker.Lib
         }
 
         public void SaveGameAndExit(string fileName)
-        {
-            var writer = new Writer(fileName);
-            FileManager.SaveGame(writer, players);
+        {         
+            FileManager.SaveGame(new Writer(fileName), players);
             Exit();
         }
         private void InitialDeal()

@@ -149,9 +149,8 @@ namespace Poker
             return player.OrderBy(player => player.HandType).Last().HandType;
         }
         public static List<ICard> SortByRankAndSuite(List<ICard> cards)
-        {
-            var query = cards.OrderBy(card => (int)card.Suite);
-            query = cards.OrderBy(card => (int)card.Rank);
+        {           
+            var query = cards.OrderBy(card => (int)card.Rank);
             cards = new List<ICard>();
             foreach (ICard card in query)
             {
@@ -260,8 +259,7 @@ namespace Poker
                         break;
                     }
                 case HandType.HighCard:
-                    {
-                        cards.OrderBy(Card => Card.Rank);
+                    {                 
                         break;
                     }
             }
@@ -293,7 +291,6 @@ namespace Poker
                 Rank popRank = MostPopularCard(cards);
                 List<ICard> pair = cards.FindAll(card => card.Rank == popRank);
                 List<ICard> rest = cards.FindAll(card => card.Rank != popRank);
-                rest.OrderBy(card => card.Rank);
                 cards = new List<ICard>();
                 cards.AddRange(pair);
                 cards.AddRange(rest);

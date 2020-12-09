@@ -36,6 +36,16 @@ namespace Poker.Lib.UnitTest
            
         }
         [Test]
+        public void Assert_Add_ThrowsErrorWhenCardAlreadyInHand(){  
+            hand.Add(new Card(Rank.Ace,Suite.Clubs));
+
+            Assert.Throws(typeof(System.Exception), delegate{                
+                    hand.Add(new Card(Rank.Ace,Suite.Clubs));                       
+                }
+            );
+           
+        }
+        [Test]
         public void Assert_Contains_ReturnsTrueWhenTrue(){           
             Card testCard1 = new Card(Rank.Two,Suite.Clubs);
             Card testCard2 = new Card(Rank.Two,Suite.Clubs);

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 namespace Poker.Lib.UnitTest
 {
-    /*public class DeckTest{
+    public class DeckTest{
       
         Deck deck;
 
@@ -57,5 +57,5 @@ namespace Poker.Lib.UnitTest
                             select gr;
             Assert.AreEqual(52,differentCards.Count());
         }
-    }*/
+    }
 }

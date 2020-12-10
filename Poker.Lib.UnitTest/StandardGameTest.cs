@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 using System.Linq;
 namespace Poker.Lib.UnitTest
 {
-    public class StandardGameTest
+    /*public class StandardGameTest
     {
         [SetUp]
 
@@ -70,14 +70,6 @@ namespace Poker.Lib.UnitTest
             int a = 0;
             standardGame.SelectCardsToDiscard += OnSelectCardsToDiscards;
             standardGame.RecievedReplacementCards += OnSelectCardsToDiscards;
-            /*
-            game.NewDeal += OnNewDeal; DONE
-            game.SelectCardsToDiscard += OnSelectCardsToDiscard; DONE
-            game.RecievedReplacementCards += OnRecievedReplacementCards; DONE
-            game.ShowAllHands += OnShowAllHands;
-            game.Winner += OnWinner;
-            game.Draw += OnDraw;
-            */
             standardGame.RunGame();
             void OnSelectCardsToDiscards(IPlayer player)
             {
@@ -234,5 +226,5 @@ namespace Poker.Lib.UnitTest
             }
 
         }
-    }
+    }*/
 }

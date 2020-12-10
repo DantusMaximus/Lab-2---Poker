@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CoverageSession>
-  <Summary numSequencePoints="490" visitedSequencePoints="401" numBranchPoints="147" visitedBranchPoints="128" sequenceCoverage="99.83" branchCoverage="87.07" maxCyclomaticComplexity="186" minCyclomaticComplexity="186" visitedClasses="7" numClasses="8" visitedMethods="62" numMethods="73" />
+  <Summary numSequencePoints="490" visitedSequencePoints="401" numBranchPoints="147" visitedBranchPoints="128" sequenceCoverage="0" branchCoverage="87.07" maxCyclomaticComplexity="186" minCyclomaticComplexity="186" visitedClasses="7" numClasses="8" visitedMethods="62" numMethods="73" />
   <Modules>
     <Module hash="3A8B76FD-C1BE-4D1F-8634-0C64FABE9965">
       <ModulePath>PokerLib.dll</ModulePath>

@@ -26,3 +26,6 @@ jobs:
     - name: Coverage Assurance
       run: ((`cat lcov.opencover.xml | sed -En "s/^  <Summary.*sequenceCoverage=\"([^\.]*)\..*$/\1/p"` >= 95))
       shell: bash
+    - name: Coverage TestPont
+      run: cat `cat lcov.opencover.xml | sed -En "s/^  <Summary.*sequenceCoverage=\"([^\.]*)\..*$/\1/p"`
+      shell: bash

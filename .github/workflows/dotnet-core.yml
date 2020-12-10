@@ -23,5 +23,6 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
-    - name: Coverage assurance
-      run: ´cat lcov.opencover.xml | sed -En "s/^  <Summary.*sequenceCoverage=\"([^\"]*)\".*$/\1/p"´ >= 95
+    - name: Display the path
+      run: cat lcov.opencover.xml | sed -En "s/^  <Summary.*sequenceCoverage=\"([^\"]*)\".*$/\1/p" >= 95
+      shell: bash

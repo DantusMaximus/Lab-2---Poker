@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 using System.Linq;
 namespace Poker.Lib.UnitTest
 {
-    /*public class StandardGameTest
+    public class StandardGameTest
     {
         [SetUp]
 
@@ -226,5 +226,5 @@ namespace Poker.Lib.UnitTest
             }
 
         }
-    }*/
+    }
 }

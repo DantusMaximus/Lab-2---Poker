@@ -22,6 +22,7 @@ namespace Poker.Lib
             foreach(var playerName in playerNames){
                 
                 if(playerName == null){  throw new System.NullReferenceException();}
+                if(playerName.Split(' ').Length != 1) { throw new System.Exception("Error: Invalid name.");}
             }
 
             if (playerNames.Length > 5) { throw new System.Exception("Error: Too many players. At most 5 accepted."); }

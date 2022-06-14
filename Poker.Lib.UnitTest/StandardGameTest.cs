@@ -16,7 +16,13 @@ namespace Poker.Lib.UnitTest
                 new StandardGame(reader);
                  });
         }
-
+        [Test]
+        public void Assert_Valid_Name()
+        {
+            var playerNames = new string[] { "Åke Göran", "Göran" };
+            Assert.Throws(typeof(System.Exception),
+            delegate { new StandardGame(playerNames); });
+        }
         [Test]
         public void Assert_Constructor_ThrowsExceptionOnNullPlayers()
         {
@@ -170,7 +176,6 @@ namespace Poker.Lib.UnitTest
             void MockWithIPlayerParam(IPlayer player) { }
 
         }
-        //DetermineWinner on Draw TODO
         [Test]
         public void Assert_RunGame_DeterminesDrawBetweenMultipleWinners()
         {
@@ -209,8 +214,6 @@ namespace Poker.Lib.UnitTest
                 Assert.Fail("Only '" + winner.Name + "' won. Should have been Draw.");
             }
         }
-
-
         void ChangeHand(IPlayer iPlayer, string newHand)
         {
             Player player = ((Player)iPlayer);
